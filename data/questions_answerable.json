@@ -1,0 +1,341 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "How does the NIST AI RMF define an AI system?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 6,
+        "evidence": "The AI RMF refers to an AI system as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments. AI systems are designed to operate with varying levels of autonomy"
+      }
+    ],
+    "expected_answer": "An engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments, operating with varying levels of autonomy.",
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "When considering the negative impact of a potential event in the AI RMF, what two components determine risk?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 9,
+        "evidence": "When considering the negative impact of a potential event, risk is a function of 1) the negative impact, or magnitude of harm, that would arise if the circumstance or event occurs and 2) the likelihood of occurrence"
+      }
+    ],
+    "expected_answer": "Risk is a function of (1) the negative impact, or magnitude of harm, that would arise if the circumstance or event occurs, and (2) the likelihood of occurrence.",
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "If an organization is unable to measure an AI risk accurately, does that indicate the AI system poses low or high risk?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 10,
+        "evidence": "The inability to appropriately measure AI risks does not imply that an AI system necessarily poses either a high or low risk."
+      }
+    ],
+    "expected_answer": "No. The inability to appropriately measure AI risks does not imply that an AI system necessarily poses either a high or low risk.",
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "When challenges in specifying AI risk tolerances remain unresolved, can a risk management framework always be readily applied to mitigate negative AI risks?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 12,
+        "evidence": "To the extent that challenges for specifying AI risk tolerances remain unresolved, there may be contexts where a risk management framework is not yet readily applicable for mitigating negative AI risks."
+      }
+    ],
+    "expected_answer": "No. While the AI RMF can prioritize risk, it does not prescribe risk tolerance, and where challenges for specifying AI risk tolerances remain unresolved, there may be contexts where a risk management framework is not yet readily applicable for mitigating negative AI risks.",
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "What are the seven characteristics of trustworthy AI systems listed by the NIST AI RMF, and how should they be balanced?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 17,
+        "evidence": "Characteristics of trustworthy AI systems include: valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed. Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use."
+      }
+    ],
+    "expected_answer": "The seven characteristics are valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed; creating trustworthy AI requires balancing each based on the AI system's context of use.",
+    "filter": null
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "What is the goal of AI robustness under unanticipated conditions, and how must a system perform if operating in an unexpected setting?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 19,
+        "evidence": "Robustness is a goal for appropriate system functionality in a broad set of conditions and circumstances, including uses of AI systems not initially anticipated. Robustness requires not only that the system perform exactly as it does under expected uses, but also that it should perform in ways that minimize potential harms to people if it is operating in an unexpected setting."
+      }
+    ],
+    "expected_answer": "Robustness aims for appropriate system functionality across a broad set of conditions including unanticipated uses; it requires performing as expected and minimizing potential harms to people if operating in an unexpected setting.",
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Does making an AI system transparent guarantee that it is accurate, secure, privacy-enhanced, or fair?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 21,
+        "evidence": "A transparent system is not necessarily an accurate, privacy-enhanced, secure, or fair system. However, it is difficult to determine whether an opaque system possesses such characteristics, and to do so over time as complex systems evolve."
+      }
+    ],
+    "expected_answer": "No. A transparent system is not necessarily an accurate, privacy-enhanced, secure, or fair system, though it is difficult to determine whether an opaque system possesses those characteristics.",
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "What distinct questions do transparency, explainability, and interpretability answer about an AI system?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 22,
+        "evidence": "Transparency can answer the question of “what happened” in the system. Explainability can answer the question of “how” a decision was made in the system. Interpretability can answer the question of “why” a decision was made by the system and its meaning or context to the user."
+      }
+    ],
+    "expected_answer": "Transparency answers 'what happened' in the system, explainability answers 'how' a decision was made, and interpretability answers 'why' a decision was made along with its meaning or context to the user.",
+    "filter": null
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What three major categories of AI bias does NIST identify, and do they require discriminatory intent or prejudice to occur?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 23,
+        "evidence": "NIST has identified three major categories of AI bias to be considered and managed: systemic, computational and statistical, and human-cognitive. Each of these can occur in the absence of prejudice, partiality, or discriminatory intent."
+      }
+    ],
+    "expected_answer": "Systemic, computational and statistical, and human-cognitive bias; each can occur even in the absence of prejudice, partiality, or discriminatory intent.",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Why can datasets used to train AI systems create risks that differ from traditional software?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 43,
+        "evidence": "The data used for building an AI system may not be a true or appropriate representation of the context or intended use of the AI system, and the ground truth may either not exist or not be available."
+      }
+    ],
+    "expected_answer": "Training data may not truthfully or appropriately represent the intended context, ground truth may not exist or be available, and datasets can become detached from their original context or become stale relative to deployment.",
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Under Human-AI interaction considerations in the AI RMF, do all AI systems require human oversight?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 45,
+        "evidence": "Some AI systems may not require human oversight, such as models used to improve video compression. Other systems may specifically require human oversight."
+      }
+    ],
+    "expected_answer": "No. Human-AI configurations range from fully autonomous to fully manual; some AI systems may not require human oversight (such as models used to improve video compression), while other systems specifically require it.",
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "In the 2023 AI RMF Core Framework under the Measure function, what does MEASURE 1.1 require for AI risks or trustworthiness characteristics that will not or cannot be measured?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 34,
+        "evidence": "MEASURE 1.1: Approaches and metrics for measurement of AI risks enumerated during the MAP function are selected for implementation starting with the most significant AI risks. The risks or trustworthiness characteristics that will not – or cannot – be measured are properly documented."
+      }
+    ],
+    "expected_answer": "Measurement starts with the most significant AI risks identified during MAP, and any risks or trustworthiness characteristics that will not or cannot be measured must be properly documented.",
+    "filter": {
+      "year": 2023,
+      "section": "measure"
+    }
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "In the core AI RMF 1.0 framework (not the GAI profile) under the Manage function, what mechanisms must post-deployment AI system monitoring plans include under MANAGE 4.1?",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 38,
+        "evidence": "MANAGE 4.1: Post-deployment AI system monitoring plans are implemented, including mechanisms for capturing and evaluating input from users and other relevant AI actors, appeal and override, decommissioning, incident response, recovery, and change management."
+      }
+    ],
+    "expected_answer": "Post-deployment monitoring plans must include mechanisms for capturing and evaluating input from users and other relevant AI actors, appeal and override, decommissioning, incident response, recovery, and change management.",
+    "filter": {
+      "document_type": "core_framework",
+      "section": "manage"
+    }
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Why are confabulations a natural byproduct of how generative AI models are designed?",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 10,
+        "evidence": "Confabulations are a natural result of the way generative models are designed: they generate outputs that approximate the statistical distribution of their training data; for example, LLMs predict the next token or word in a sentence or phrase."
+      }
+    ],
+    "expected_answer": "Generative models generate outputs approximating the statistical distribution of their training data (for instance, LLMs predicting the next token or word), which can yield both accurate outputs and factually inaccurate or inconsistent ones.",
+    "filter": null
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Can model distillation or compression eliminate the environmental impacts of generative AI models?",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 12,
+        "evidence": "Methods for creating smaller versions of trained models, such as model distillation or compression, could reduce environmental impacts at inference time, but training and tuning such models may still contribute to their environmental impacts."
+      }
+    ],
+    "expected_answer": "No. Although creating smaller model versions via distillation or compression can reduce environmental impacts at inference time, training and tuning those models may still contribute to their environmental impacts, and there is no agreed-upon method to estimate environmental impacts from GAI.",
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "question": "What triggers 'model collapse' when training generative AI models on synthetic data?",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 13,
+        "evidence": "Model collapse can occur when model training over-relies on synthetic data, resulting in data points disappearing from the distribution of the new model’s outputs."
+      }
+    ],
+    "expected_answer": "Model collapse occurs when model training over-relies on synthetic data, causing data points to disappear from the new model's output distribution, threatening robustness and amplifying homogenization.",
+    "filter": null
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "question": "In the Generative AI Profile under the Govern function, what balance must transparency policies under GV-1.2-001 achieve regarding training data origin?",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 18,
+        "evidence": "Establish transparency policies and processes for documenting the origin and history of training data and generated data for GAI applications to advance digital content transparency, while balancing the proprietary nature of training approaches."
+      }
+    ],
+    "expected_answer": "Transparency policies and processes should document the origin and history of training data and generated data for GAI applications to advance digital content transparency, while balancing the proprietary nature of training approaches.",
+    "filter": {
+      "document_type": "generative_ai_profile",
+      "section": "govern"
+    }
+  },
+  {
+    "id": "t01",
+    "type": "paraphrase",
+    "split": "test",
+    "question": "Why is using the NIST AI RMF alone insufficient for effective AI risk management, and what challenge can smaller organizations face?",
+    "expected_answer": "Organizations must establish accountability mechanisms, roles and responsibilities, culture, and incentive structures backed by senior-level commitment; using the AI RMF alone does not create these incentives or cultural changes, and small to medium-sized organizations may face different challenges than large ones depending on capabilities and resources.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 14,
+        "evidence": "Organizations need to establish and maintain the appropriate accountability mechanisms, roles and responsibilities, culture, and incentive structures for risk management to be effective. Use of the AI RMF alone will not lead to these changes or provide the appropriate incentives. Effective risk management is realized through organizational commitment at senior levels and may require cultural change within an organization or industry. In addition, small to medium-sized organizations managing AI risks or implementing the AI RMF may face different challenges than large organizations, depending on their capabilities and resources."
+      }
+    ]
+  },
+  {
+    "id": "t02",
+    "type": "dieu_kien_ngoai_le",
+    "split": "test",
+    "question": "Does the NIST AI RMF mandate a fixed template for AI RMF cross-sectoral profiles?",
+    "expected_answer": "No. The NIST AI RMF does not prescribe profile templates, allowing for flexibility in implementation.",
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 39,
+        "evidence": "This Framework does not prescribe profile templates, allowing for flexibility in implementation."
+      }
+    ]
+  },
+  {
+    "id": "t03",
+    "type": "truc_tiep",
+    "split": "test",
+    "question": "How do indirect prompt injection attacks differ from direct prompt injections in GAI systems, and what exploits have security researchers demonstrated?",
+    "expected_answer": "Direct prompt injections input malicious prompts directly into a GAI system, whereas indirect prompt injection attacks remotely exploit LLM-integrated applications without a direct interface by injecting prompts into data likely to be retrieved; researchers have demonstrated exploiting vulnerabilities to steal proprietary data or run malicious code remotely.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 15,
+        "evidence": "In direct prompt injections, attackers might craft malicious prompts and input them directly to a GAI system, with a variety of downstream negative consequences to interconnected systems. Indirect prompt injection attacks occur when adversaries remotely (i.e., without a direct interface) exploit LLM-integrated applications by injecting prompts into data likely to be retrieved. Security researchers have already demonstrated how indirect prompt injections can exploit vulnerabilities by stealing proprietary data or running malicious code remotely on a machine."
+      }
+    ]
+  },
+  {
+    "id": "t04",
+    "type": "truc_tiep",
+    "split": "test",
+    "question": "Under MEASURE 2.6 in NIST AI 600-1, what must be demonstrated about safety before deploying an AI system, and what do safety metrics reflect?",
+    "expected_answer": "The system must be demonstrated to be safe with residual negative risk not exceeding risk tolerance and able to fail safely (especially beyond its knowledge limits); safety metrics reflect system reliability and robustness, real-time monitoring, and response times for AI system failures.",
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 36,
+        "evidence": "The AI system to be deployed is demonstrated to be safe, its residual negative risk does not exceed the risk tolerance, and it can fail safely, particularly if made to operate beyond its knowledge limits. Safety metrics reflect system reliability and robustness, real-time monitoring, and response times for AI system failures."
+      }
+    ]
+  },
+  {
+    "id": "t05",
+    "type": "metadata_filter",
+    "split": "test",
+    "question": "In the 2023 AI RMF Core Framework under the Map function, what must be understood and documented under MAP 1.1?",
+    "expected_answer": "Intended purposes, potentially beneficial uses, context-specific laws, norms and expectations, and prospective deployment settings for the AI system must be understood and documented.",
+    "filter": {
+      "year": 2023,
+      "section": "map"
+    },
+    "gold": [
+      {
+        "source_id": "nist-ai-100-1",
+        "page": 31,
+        "evidence": "MAP 1.1: Intended purposes, potentially beneficial uses, context-specific laws, norms and expectations, and prospective settings in which the AI system will be deployed are understood and documented."
+      }
+    ]
+  },
+  {
+    "id": "t06",
+    "type": "metadata_filter",
+    "split": "test",
+    "question": "In the Generative AI Profile under the Manage function, what types of controls does MG-3.1-001 mention for applying organizational risk tolerances to third-party GAI resources?",
+    "expected_answer": "Controls include acquisition and procurement processes, assessing personnel credentials and qualifications, performing background checks, filtering GAI inputs and outputs, grounding, fine tuning, and retrieval-augmented generation.",
+    "filter": {
+      "document_type": "generative_ai_profile",
+      "section": "manage"
+    },
+    "gold": [
+      {
+        "source_id": "nist-ai-600-1",
+        "page": 46,
+        "evidence": "Apply organizational risk tolerances and controls (e.g., acquisition and procurement processes; assessing personnel credentials and qualifications, performing background checks; filtering GAI input and outputs, grounding, fine tuning, retrieval-augmented generation) to third-party GAI resources"
+      }
+    ]
+  }
+]

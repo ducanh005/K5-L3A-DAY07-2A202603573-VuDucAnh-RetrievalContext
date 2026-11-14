@@ -1,0 +1,229 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "How does the NIST AI RMF define an AI system?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "When considering the negative impact of a potential event in the AI RMF, what two components determine risk?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "If an organization is unable to measure an AI risk accurately, does that indicate the AI system poses low or high risk?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "When challenges in specifying AI risk tolerances remain unresolved, can a risk management framework always be readily applied to mitigate negative AI risks?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "What are the seven characteristics of trustworthy AI systems listed by the NIST AI RMF, and how should they be balanced?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "What is the goal of AI robustness under unanticipated conditions, and how must a system perform if operating in an unexpected setting?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Does making an AI system transparent guarantee that it is accurate, secure, privacy-enhanced, or fair?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "What distinct questions do transparency, explainability, and interpretability answer about an AI system?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What three major categories of AI bias does NIST identify, and do they require discriminatory intent or prejudice to occur?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Why can datasets used to train AI systems create risks that differ from traditional software?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Under Human-AI interaction considerations in the AI RMF, do all AI systems require human oversight?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "In the 2023 AI RMF Core Framework under the Measure function, what does MEASURE 1.1 require for AI risks or trustworthiness characteristics that will not or cannot be measured?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "year": 2023,
+      "section": "measure"
+    }
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "In the core AI RMF 1.0 framework (not the GAI profile) under the Manage function, what mechanisms must post-deployment AI system monitoring plans include under MANAGE 4.1?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "document_type": "core_framework",
+      "section": "manage"
+    }
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Why are confabulations a natural byproduct of how generative AI models are designed?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Can model distillation or compression eliminate the environmental impacts of generative AI models?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "question": "What triggers 'model collapse' when training generative AI models on synthetic data?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": null
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "question": "In the Generative AI Profile under the Govern function, what balance must transparency policies under GV-1.2-001 achieve regarding training data origin?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "document_type": "generative_ai_profile",
+      "section": "govern"
+    }
+  },
+  {
+    "id": "t01",
+    "split": "test",
+    "question": "Why is using the NIST AI RMF alone insufficient for effective AI risk management, and what challenge can smaller organizations face?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "question": "Does the NIST AI RMF mandate a fixed template for AI RMF cross-sectoral profiles?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "question": "How do indirect prompt injection attacks differ from direct prompt injections in GAI systems, and what exploits have security researchers demonstrated?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "question": "Under MEASURE 2.6 in NIST AI 600-1, what must be demonstrated about safety before deploying an AI system, and what do safety metrics reflect?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "question": "In the 2023 AI RMF Core Framework under the Map function, what must be understood and documented under MAP 1.1?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "year": 2023,
+      "section": "map"
+    }
+  },
+  {
+    "id": "t06",
+    "split": "test",
+    "question": "In the Generative AI Profile under the Manage function, what types of controls does MG-3.1-001 mention for applying organizational risk tolerances to third-party GAI resources?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "document_type": "generative_ai_profile",
+      "section": "manage"
+    }
+  },
+  {
+    "id": "u_dev_01",
+    "split": "dev",
+    "question": "Under the NIST AI RMF 1.0 or Generative AI Profile, what exact maximum administrative fine or percentage of global annual turnover is specified as a statutory penalty for non-compliance?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Checked all 48 physical pages of NIST.AI.100-1.pdf and 64 physical pages of NIST.AI.600-1.pdf: terms 'administrative fine', 'global turnover', 'statutory penalty', 'penalty', 'fines', 'non-compliance', and 'percentage' occur 0 times. NIST AI RMF is voluntary and defines no monetary fines."
+  },
+  {
+    "id": "u_dev_02",
+    "split": "dev",
+    "question": "What minimum benchmark accuracy percentage (such as an MMLU or SWE-bench score) does NIST AI 100-1 or NIST AI 600-1 mandate before deploying a generative AI model in production?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Checked all physical pages of both PDFs: 'mmlu', 'swe-bench', and 'percentage' occur 0 times; all 14 mentions of 'benchmark' discuss qualitative benchmark selection, label errors, or bias evaluation (e.g., MS-2.3-001, MS-2.11-001) without any numeric accuracy cutoff."
+  },
+  {
+    "id": "u_test_01",
+    "split": "test",
+    "question": "How does NIST AI 600-1 prescribe aligning its suggested actions with EU AI Act Article 5 prohibited AI practices and ISO/IEC 42001 certification audit requirements?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Checked all physical pages of both PDFs: 'eu ai act', 'article 5', '42001', 'prohibited ai', and 'certification audit' occur 0 times."
+  },
+  {
+    "id": "u_test_02",
+    "split": "test",
+    "question": "What specific GPU cluster power cap (in megawatts or kilowatt-hours) or cooling water budget (in liters per token) is required by NIST AI 600-1 for foundation model training?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Checked all physical pages of both PDFs: 'gpu', 'megawatt', and 'kilowatt' occur 0 times; 'liter' only appears in 'literacy' (p.37) and 'Literature' (p.59), and 'watt' only in an excluded bibliography citation (p.60). While MS-2.12-003 suggests measuring energy/water consumption, no numeric caps are specified."
+  }
+]
