@@ -1,0 +1,1372 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "How does the NIST AI RMF define an AI system?",
+    "answerable": true,
+    "filters_used": null,
+    "strategy": "dense_pgvector",
+    "model": "gemini-3.8-flash",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 2400,
+    "status": "answered",
+    "answer": "According to the NIST AI RMF, an AI system is defined as \"an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments\" [B:nist-ai-100-1:p006:c02]. Furthermore, AI systems are designed to operate with varying levels of autonomy [B:nist-ai-100-1:p006:c02].",
+    "citations": [
+      "B:nist-ai-100-1:p006:c02"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "define AI system definition",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p006:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 6,
+            "text": "The AI RMF refers to an AI system as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments. AI systems are designed to operate with varying levels of autonomy (Adapted from: OECD Recommendation on AI:2019; ISO/IEC 22989:2022).",
+            "metadata": {
+              "year": 2023,
+              "section": "executive_summary",
+              "char_len": 360,
+              "strategy": "B",
+              "raw_chars": 3108,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 6,
+              "normalized_chars": 3061
+            },
+            "score": 0.7553548362639657,
+            "distance": 0.2446451637360343,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p031:c03",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 31,
+            "text": "MAP 2: Categorization of the AI system is performed.\n\nMAP 2.1: The specific tasks and methods used to implement the tasks that the AI system will support are defined (e.g., classifiers, generative models, recommenders).\n\nMAP 2.2: Information about the AI system’s knowledge limits and how system output may be utilized and overseen by humans is documented. Documentation provides sufficient information to assist relevant AI actors when making decisions and taking subsequent actions.",
+            "metadata": {
+              "year": 2023,
+              "section": "map",
+              "char_len": 484,
+              "strategy": "B",
+              "raw_chars": 2095,
+              "chunk_index": 3,
+              "document_type": "core_framework",
+              "physical_page": 31,
+              "normalized_chars": 2010
+            },
+            "score": 0.7027427731309681,
+            "distance": 0.2972572268690319,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p042:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 42,
+            "text": "Third-party entities include providers, developers, vendors, and evaluators of data, algorithms, models, and/or systems and related services for another organization or the organization’s customers or clients. Third-party entities are responsible for AI design and development tasks, in whole or in part. By definition, they are external to the design, development, or deployment team of the organization that acquires its technologies or services. The technologies acquired from third-party entities may be complex or opaque, and risk tolerances may not align with the deploying or operating organization.\n\nEnd users of an AI system are the individuals or groups that use the system for specific purposes. These individuals or groups interact with an AI system in a specific context. End users can range in competency from AI experts to first-time technology end users.",
+            "metadata": {
+              "year": 2023,
+              "section": "appendix_a",
+              "char_len": 870,
+              "strategy": "B",
+              "raw_chars": 2063,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 42,
+              "normalized_chars": 2027
+            },
+            "score": 0.6764839686011113,
+            "distance": 0.32351603139888874,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p006:c02 | starter/data/NIST.AI.100-1.pdf | page 6]\nThe AI RMF refers to an AI system as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommendations, or decisions influencing real or virtual environments. AI systems are designed to operate with varying levels of autonomy (Adapted from: OECD Recommendation on AI:2019; ISO/IEC 22989:2022).\n\n[B:nist-ai-100-1:p031:c03 | starter/data/NIST.AI.100-1.pdf | page 31]\nMAP 2: Categorization of the AI system is performed.\n\nMAP 2.1: The specific tasks and methods used to implement the tasks that the AI system will support are defined (e.g., classifiers, generative models, recommenders).\n\nMAP 2.2: Information about the AI system’s knowledge limits and how system output may be utilized and overseen by humans is documented. Documentation provides sufficient information to assist relevant AI actors when making decisions and taking subsequent actions.\n\n[B:nist-ai-100-1:p042:c02 | starter/data/NIST.AI.100-1.pdf | page 42]\nThird-party entities include providers, developers, vendors, and evaluators of data, algorithms, models, and/or systems and related services for another organization or the organization’s customers or clients. Third-party entities are responsible for AI design and development tasks, in whole or in part. By definition, they are external to the design, development, or deployment team of the organization that acquires its technologies or services. The technologies acquired from third-party entities may be complex or opaque, and risk tolerances may not align with the deploying or operating organization.\n\nEnd users of an AI system are the individuals or groups that use the system for specific purposes. These individuals or groups interact with an AI system in a specific context. End users can range in competency from AI experts to first-time technology end users.",
+        "context_ids": [
+          "B:nist-ai-100-1:p006:c02",
+          "B:nist-ai-100-1:p031:c03",
+          "B:nist-ai-100-1:p042:c02"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "reason": "Find the definition of an AI system in the NIST AI RMF document.",
+          "query": "define AI system definition"
+        },
+        "latency_ms": 1997.48,
+        "prompt_tokens": 605,
+        "candidates_tokens": 39,
+        "thoughts_tokens": 28,
+        "total_tokens": 672
+      },
+      {
+        "turn": 2,
+        "decision_kind": "answer",
+        "tool": "submit_answer",
+        "args": {
+          "sufficient_evidence": true,
+          "citations": [
+            "B:nist-ai-100-1:p006:c02"
+          ]
+        },
+        "latency_ms": 4666.55,
+        "prompt_tokens": 1200,
+        "candidates_tokens": 151,
+        "thoughts_tokens": 247,
+        "total_tokens": 1598
+      }
+    ],
+    "search_calls": 1,
+    "usage": {
+      "prompt_tokens": 1805,
+      "candidates_tokens": 190,
+      "thoughts_tokens": 275,
+      "total_tokens": 2270
+    },
+    "elapsed_ms": 7149.85,
+    "error": null
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "question": "What are the seven characteristics of trustworthy AI systems listed by the NIST AI RMF, and how should they be balanced?",
+    "answerable": true,
+    "filters_used": null,
+    "strategy": "dense_pgvector",
+    "model": "gemini-3.8-flash",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 2400,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "characteristics of trustworthy AI systems",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p017:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 17,
+            "text": "Neglecting these characteristics can increase the probability and magnitude of negative consequences.\n\nFig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.\n\nTrustworthiness characteristics (shown in Figure 4) are inextricably tied to social and organizational behavior, the datasets used by AI systems, selection of AI models and algorithms and the decisions made by those who build them, and the interactions with the humans who provide insight from and oversight of such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 880,
+              "strategy": "B",
+              "raw_chars": 2649,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 17,
+              "normalized_chars": 2604
+            },
+            "score": 0.77803336250981,
+            "distance": 0.22196663749018997,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p020:c04",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 20,
+            "text": "3.4 Accountable and Transparent\n\nTrustworthy AI depends upon accountability. Accountability presupposes transparency. Transparency reflects the extent to which information about an AI system and its outputs is available to individuals interacting with such a system – regardless of whether they are even aware that they are doing so. Meaningful transparency provides access to appropriate levels of information based on the stage of the AI lifecycle and tailored to the role or knowledge of AI actors or individuals interacting with or using the AI system. By promoting higher levels of understanding, transparency increases confidence in the AI system.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 653,
+              "strategy": "B",
+              "raw_chars": 3130,
+              "chunk_index": 4,
+              "document_type": "core_framework",
+              "physical_page": 20,
+              "normalized_chars": 3091
+            },
+            "score": 0.7716288524313054,
+            "distance": 0.2283711475686946,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p018:c05",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 18,
+            "text": "3.1 Valid and Reliable\n\nValidation is the “confirmation, through the provision of objective evidence, that the re-quirements for a specific intended use or application have been fulfilled” (Source: ISO 9000:2015). Deployment of AI systems which are inaccurate, unreliable, or poorly generalized to data and settings beyond their training creates and increases negative AI risks and reduces trustworthiness.\n\nReliability is defined in the same standard as the “ability of an item to perform as required, without failure, for a given time interval, under given conditions” (Source: ISO/IEC TS 5723:2022). Reliability is a goal for overall correctness of AI system operation under the conditions of expected use and over a given period of time, including the entire lifetime of the system.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 786,
+              "strategy": "B",
+              "raw_chars": 2993,
+              "chunk_index": 5,
+              "document_type": "core_framework",
+              "physical_page": 18,
+              "normalized_chars": 2950
+            },
+            "score": 0.769313009895445,
+            "distance": 0.23068699010455496,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p017:c02 | starter/data/NIST.AI.100-1.pdf | page 17]\nNeglecting these characteristics can increase the probability and magnitude of negative consequences.\n\nFig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.\n\nTrustworthiness characteristics (shown in Figure 4) are inextricably tied to social and organizational behavior, the datasets used by AI systems, selection of AI models and algorithms and the decisions made by those who build them, and the interactions with the humans who provide insight from and oversight of such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics.\n\n[B:nist-ai-100-1:p020:c04 | starter/data/NIST.AI.100-1.pdf | page 20]\n3.4 Accountable and Transparent\n\nTrustworthy AI depends upon accountability. Accountability presupposes transparency. Transparency reflects the extent to which information about an AI system and its outputs is available to individuals interacting with such a system – regardless of whether they are even aware that they are doing so. Meaningful transparency provides access to appropriate levels of information based on the stage of the AI lifecycle and tailored to the role or knowledge of AI actors or individuals interacting with or using the AI system. By promoting higher levels of understanding, transparency increases confidence in the AI system.",
+        "context_ids": [
+          "B:nist-ai-100-1:p017:c02",
+          "B:nist-ai-100-1:p020:c04"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "characteristics of trustworthy AI systems valid reliable safe secure privacy explainable",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p018:c05",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 18,
+            "text": "3.1 Valid and Reliable\n\nValidation is the “confirmation, through the provision of objective evidence, that the re-quirements for a specific intended use or application have been fulfilled” (Source: ISO 9000:2015). Deployment of AI systems which are inaccurate, unreliable, or poorly generalized to data and settings beyond their training creates and increases negative AI risks and reduces trustworthiness.\n\nReliability is defined in the same standard as the “ability of an item to perform as required, without failure, for a given time interval, under given conditions” (Source: ISO/IEC TS 5723:2022). Reliability is a goal for overall correctness of AI system operation under the conditions of expected use and over a given period of time, including the entire lifetime of the system.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 786,
+              "strategy": "B",
+              "raw_chars": 2993,
+              "chunk_index": 5,
+              "document_type": "core_framework",
+              "physical_page": 18,
+              "normalized_chars": 2950
+            },
+            "score": 0.79496724560564,
+            "distance": 0.20503275439435997,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p017:c01",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 17,
+            "text": "3. AI Risks and Trustworthiness\n\nFor AI systems to be trustworthy, they often need to be responsive to a multiplicity of criteria that are of value to interested parties. Approaches which enhance AI trustworthiness can reduce negative AI risks. This Framework articulates the following characteristics of trustworthy AI and offers guidance for addressing them. Characteristics of trustworthy AI systems include: valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed. Creating trustworthy AI requires balancing each of these characteristics based on the AI system’s context of use. While all characteristics are socio-technical system attributes, accountability and transparency also relate to the processes and activities internal to an AI system and its external setting.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 879,
+              "strategy": "B",
+              "raw_chars": 2649,
+              "chunk_index": 1,
+              "document_type": "core_framework",
+              "physical_page": 17,
+              "normalized_chars": 2604
+            },
+            "score": 0.7750315167038012,
+            "distance": 0.22496848329619878,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p017:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 17,
+            "text": "Neglecting these characteristics can increase the probability and magnitude of negative consequences.\n\nFig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.\n\nTrustworthiness characteristics (shown in Figure 4) are inextricably tied to social and organizational behavior, the datasets used by AI systems, selection of AI models and algorithms and the decisions made by those who build them, and the interactions with the humans who provide insight from and oversight of such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 880,
+              "strategy": "B",
+              "raw_chars": 2649,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 17,
+              "normalized_chars": 2604
+            },
+            "score": 0.7736065022232089,
+            "distance": 0.22639349777679108,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p017:c02 | starter/data/NIST.AI.100-1.pdf | page 17]\nNeglecting these characteristics can increase the probability and magnitude of negative consequences.\n\nFig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.\n\nTrustworthiness characteristics (shown in Figure 4) are inextricably tied to social and organizational behavior, the datasets used by AI systems, selection of AI models and algorithms and the decisions made by those who build them, and the interactions with the humans who provide insight from and oversight of such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics.\n\n[B:nist-ai-100-1:p020:c04 | starter/data/NIST.AI.100-1.pdf | page 20]\n3.4 Accountable and Transparent\n\nTrustworthy AI depends upon accountability. Accountability presupposes transparency. Transparency reflects the extent to which information about an AI system and its outputs is available to individuals interacting with such a system – regardless of whether they are even aware that they are doing so. Meaningful transparency provides access to appropriate levels of information based on the stage of the AI lifecycle and tailored to the role or knowledge of AI actors or individuals interacting with or using the AI system. By promoting higher levels of understanding, transparency increases confidence in the AI system.",
+        "context_ids": [
+          "B:nist-ai-100-1:p017:c02",
+          "B:nist-ai-100-1:p020:c04"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "\"characteristics of trustworthy AI\" balance trade-off",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p017:c03",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 17,
+            "text": "Addressing AI trustworthiness characteristics individually will not ensure AI system trustworthiness; tradeoffs are usually involved, rarely do all characteristics apply in every setting, and some will be more or less important in any given situation. Ultimately, trustworthiness is a social concept that ranges across a spectrum and is only as strong as its weakest characteristics.\n\nWhen managing AI risks, organizations can face difficult decisions in balancing these characteristics. For example, in certain scenarios tradeoffs may emerge between optimizing for interpretability and achieving privacy. In other cases, organizations might face a tradeoff between predictive accuracy and interpretability. Or, under certain conditions such as data sparsity, privacy-enhancing techniques can result in a loss in accuracy, affecting decisions",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 842,
+              "strategy": "B",
+              "raw_chars": 2649,
+              "chunk_index": 3,
+              "document_type": "core_framework",
+              "physical_page": 17,
+              "normalized_chars": 2604
+            },
+            "score": 0.8050761818885803,
+            "distance": 0.19492381811141968,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p018:c04",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 18,
+            "text": "Trustworthiness characteristics explained in this document influence each other. Highly secure but unfair systems, accurate but opaque and uninterpretable systems, and inaccurate but secure, privacy-enhanced, and transparent systems are all undesirable. A comprehensive approach to risk management calls for balancing tradeoffs among the trustworthiness characteristics. It is the joint responsibility of all AI actors to determine whether AI technology is an appropriate or necessary tool for a given context or purpose, and how to use it responsibly. The decision to commission or deploy an AI system should be based on a contextual assessment of trustworthiness characteristics and the relative risks, impacts, costs, and benefits, and informed by a broad set of interested parties.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 785,
+              "strategy": "B",
+              "raw_chars": 2993,
+              "chunk_index": 4,
+              "document_type": "core_framework",
+              "physical_page": 18,
+              "normalized_chars": 2950
+            },
+            "score": 0.7899163004731032,
+            "distance": 0.21008369952689676,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p017:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 17,
+            "text": "Neglecting these characteristics can increase the probability and magnitude of negative consequences.\n\nFig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.\n\nTrustworthiness characteristics (shown in Figure 4) are inextricably tied to social and organizational behavior, the datasets used by AI systems, selection of AI models and algorithms and the decisions made by those who build them, and the interactions with the humans who provide insight from and oversight of such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 880,
+              "strategy": "B",
+              "raw_chars": 2649,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 17,
+              "normalized_chars": 2604
+            },
+            "score": 0.7700568437576294,
+            "distance": 0.2299431562423706,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p017:c02 | starter/data/NIST.AI.100-1.pdf | page 17]\nNeglecting these characteristics can increase the probability and magnitude of negative consequences.\n\nFig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.\n\nTrustworthiness characteristics (shown in Figure 4) are inextricably tied to social and organizational behavior, the datasets used by AI systems, selection of AI models and algorithms and the decisions made by those who build them, and the interactions with the humans who provide insight from and oversight of such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics.\n\n[B:nist-ai-100-1:p020:c04 | starter/data/NIST.AI.100-1.pdf | page 20]\n3.4 Accountable and Transparent\n\nTrustworthy AI depends upon accountability. Accountability presupposes transparency. Transparency reflects the extent to which information about an AI system and its outputs is available to individuals interacting with such a system – regardless of whether they are even aware that they are doing so. Meaningful transparency provides access to appropriate levels of information based on the stage of the AI lifecycle and tailored to the role or knowledge of AI actors or individuals interacting with or using the AI system. By promoting higher levels of understanding, transparency increases confidence in the AI system.",
+        "context_ids": [
+          "B:nist-ai-100-1:p017:c02",
+          "B:nist-ai-100-1:p020:c04"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "characteristics of trustworthy AI systems valid and reliable safe",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p018:c05",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 18,
+            "text": "3.1 Valid and Reliable\n\nValidation is the “confirmation, through the provision of objective evidence, that the re-quirements for a specific intended use or application have been fulfilled” (Source: ISO 9000:2015). Deployment of AI systems which are inaccurate, unreliable, or poorly generalized to data and settings beyond their training creates and increases negative AI risks and reduces trustworthiness.\n\nReliability is defined in the same standard as the “ability of an item to perform as required, without failure, for a given time interval, under given conditions” (Source: ISO/IEC TS 5723:2022). Reliability is a goal for overall correctness of AI system operation under the conditions of expected use and over a given period of time, including the entire lifetime of the system.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 786,
+              "strategy": "B",
+              "raw_chars": 2993,
+              "chunk_index": 5,
+              "document_type": "core_framework",
+              "physical_page": 18,
+              "normalized_chars": 2950
+            },
+            "score": 0.8073792824005225,
+            "distance": 0.19262071759947752,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p017:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 17,
+            "text": "Neglecting these characteristics can increase the probability and magnitude of negative consequences.\n\nFig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.\n\nTrustworthiness characteristics (shown in Figure 4) are inextricably tied to social and organizational behavior, the datasets used by AI systems, selection of AI models and algorithms and the decisions made by those who build them, and the interactions with the humans who provide insight from and oversight of such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 880,
+              "strategy": "B",
+              "raw_chars": 2649,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 17,
+              "normalized_chars": 2604
+            },
+            "score": 0.7898876541786002,
+            "distance": 0.21011234582139982,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p019:c03",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 19,
+            "text": "Validity and reliability for deployed AI systems are often assessed by ongoing testing or monitoring that confirms a system is performing as intended. Measurement of validity, accuracy, robustness, and reliability contribute to trustworthiness and should take into consideration that certain types of failures can cause greater harm. AI risk management efforts should prioritize the minimization of potential negative impacts, and may need to include human intervention in cases where the AI system cannot detect or correct errors.\n\n3.2 Safe\n\nAI systems should “not under defined conditions, lead to a state in which human life, health, property, or the environment is endangered” (Source: ISO/IEC TS 5723:2022). Safe operation of AI systems is improved through:",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 762,
+              "strategy": "B",
+              "raw_chars": 2782,
+              "chunk_index": 3,
+              "document_type": "core_framework",
+              "physical_page": 19,
+              "normalized_chars": 2747
+            },
+            "score": 0.7784804569769191,
+            "distance": 0.22151954302308086,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p017:c02 | starter/data/NIST.AI.100-1.pdf | page 17]\nNeglecting these characteristics can increase the probability and magnitude of negative consequences.\n\nFig. 4. Characteristics of trustworthy AI systems. Valid & Reliable is a necessary condition of trustworthiness and is shown as the base for other trustworthiness characteristics. Accountable & Transparent is shown as a vertical box because it relates to all other characteristics.\n\nTrustworthiness characteristics (shown in Figure 4) are inextricably tied to social and organizational behavior, the datasets used by AI systems, selection of AI models and algorithms and the decisions made by those who build them, and the interactions with the humans who provide insight from and oversight of such systems. Human judgment should be employed when deciding on the specific metrics related to AI trustworthiness characteristics and the precise threshold values for those metrics.\n\n[B:nist-ai-100-1:p020:c04 | starter/data/NIST.AI.100-1.pdf | page 20]\n3.4 Accountable and Transparent\n\nTrustworthy AI depends upon accountability. Accountability presupposes transparency. Transparency reflects the extent to which information about an AI system and its outputs is available to individuals interacting with such a system – regardless of whether they are even aware that they are doing so. Meaningful transparency provides access to appropriate levels of information based on the stage of the AI lifecycle and tailored to the role or knowledge of AI actors or individuals interacting with or using the AI system. By promoting higher levels of understanding, transparency increases confidence in the AI system.",
+        "context_ids": [
+          "B:nist-ai-100-1:p017:c02",
+          "B:nist-ai-100-1:p020:c04"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "query": "characteristics of trustworthy AI systems",
+          "reason": "Find the seven characteristics of trustworthy AI systems and how they should be balanced."
+        },
+        "latency_ms": 2759.13,
+        "prompt_tokens": 617,
+        "candidates_tokens": 40,
+        "thoughts_tokens": 54,
+        "total_tokens": 711
+      },
+      {
+        "turn": 2,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "reason": "Find the list of the seven characteristics of trustworthy AI systems in Section 3 of NIST AI RMF and how trade-offs or balancing among them should be handled.",
+          "query": "characteristics of trustworthy AI systems valid reliable safe secure privacy explainable"
+        },
+        "latency_ms": 3338.47,
+        "prompt_tokens": 1061,
+        "candidates_tokens": 65,
+        "thoughts_tokens": 70,
+        "total_tokens": 1196
+      },
+      {
+        "turn": 3,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "reason": "Find the seven characteristics of trustworthy AI systems and how they should be balanced/trade-offs between them.",
+          "query": "\"characteristics of trustworthy AI\" balance trade-off"
+        },
+        "latency_ms": 2448.46,
+        "prompt_tokens": 1075,
+        "candidates_tokens": 51,
+        "thoughts_tokens": 66,
+        "total_tokens": 1192
+      },
+      {
+        "turn": 4,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "query": "characteristics of trustworthy AI systems valid and reliable safe",
+          "reason": "Find the explicit list of the seven characteristics of trustworthy AI systems and how they should be balanced in Section 3."
+        },
+        "latency_ms": 3955.03,
+        "prompt_tokens": 1086,
+        "candidates_tokens": 52,
+        "thoughts_tokens": 226,
+        "total_tokens": 1364
+      },
+      {
+        "turn": 5,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "query": "\"Characteristics of Trustworthy AI Systems\" trade-offs balance",
+          "reason": "Find the list of seven characteristics and details on balancing / trade-offs among them."
+        },
+        "latency_ms": 3703.22,
+        "prompt_tokens": 1097,
+        "candidates_tokens": 49,
+        "thoughts_tokens": 151,
+        "total_tokens": 1297
+      }
+    ],
+    "search_calls": 4,
+    "usage": {
+      "prompt_tokens": 4936,
+      "candidates_tokens": 257,
+      "thoughts_tokens": 567,
+      "total_tokens": 5760
+    },
+    "elapsed_ms": 18248.41,
+    "error": null
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "question": "In the 2023 AI RMF Core Framework under the Measure function, what does MEASURE 1.1 require for AI risks or trustworthiness characteristics that will not or cannot be measured?",
+    "answerable": true,
+    "filters_used": {
+      "year": 2023,
+      "section": "measure"
+    },
+    "strategy": "dense_pgvector",
+    "model": "gemini-3.8-flash",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 2400,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "MEASURE 1.1",
+        "filter": {
+          "year": 2023,
+          "section": "measure"
+        },
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p034:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 34,
+            "text": "MEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are involved in regular assessments and updates. Domain experts, users, AI actors external to the team that developed or deployed the AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 374,
+              "strategy": "B",
+              "raw_chars": 2104,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 34,
+              "normalized_chars": 2023
+            },
+            "score": 0.6708211898803711,
+            "distance": 0.3291788101196289,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p033:c04",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 33,
+            "text": "After completing the MEASURE function, objective, repeatable, or scalable test, evaluation, verification, and validation (TEVV) processes including metrics, methods, and methodologies are in place, followed, and documented. Metrics and measurement methodologies should adhere to scientific, legal, and ethical norms and be carried out in an open and transparent process. New types of measurement, qualitative and quantitative, may need to be developed. The degree to which each measurement type provides unique and meaningful information to the assessment of AI risks should be considered. Framework users will enhance their capacity to comprehensively evaluate system trustworthiness, identify and track existing and emergent risks, and verify efficacy of the metrics. Measurement outcomes will be utilized in the MANAGE function to assist risk monitoring and response efforts.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 878,
+              "strategy": "B",
+              "raw_chars": 2748,
+              "chunk_index": 4,
+              "document_type": "core_framework",
+              "physical_page": 33,
+              "normalized_chars": 2675
+            },
+            "score": 0.6575769186019897,
+            "distance": 0.34242308139801025,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p033:c05",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 33,
+            "text": "It is incumbent on Framework users to continue applying the MEASURE function to AI systems as knowledge, methodologies, risks, and impacts evolve over time.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 156,
+              "strategy": "B",
+              "raw_chars": 2748,
+              "chunk_index": 5,
+              "document_type": "core_framework",
+              "physical_page": 33,
+              "normalized_chars": 2675
+            },
+            "score": 0.6554723968034172,
+            "distance": 0.3445276031965828,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p034:c02 | starter/data/NIST.AI.100-1.pdf | page 34]\nMEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are involved in regular assessments and updates. Domain experts, users, AI actors external to the team that developed or deployed the AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.\n\n[B:nist-ai-100-1:p033:c04 | starter/data/NIST.AI.100-1.pdf | page 33]\nAfter completing the MEASURE function, objective, repeatable, or scalable test, evaluation, verification, and validation (TEVV) processes including metrics, methods, and methodologies are in place, followed, and documented. Metrics and measurement methodologies should adhere to scientific, legal, and ethical norms and be carried out in an open and transparent process. New types of measurement, qualitative and quantitative, may need to be developed. The degree to which each measurement type provides unique and meaningful information to the assessment of AI risks should be considered. Framework users will enhance their capacity to comprehensively evaluate system trustworthiness, identify and track existing and emergent risks, and verify efficacy of the metrics. Measurement outcomes will be utilized in the MANAGE function to assist risk monitoring and response efforts.\n\n[B:nist-ai-100-1:p033:c05 | starter/data/NIST.AI.100-1.pdf | page 33]\nIt is incumbent on Framework users to continue applying the MEASURE function to AI systems as knowledge, methodologies, risks, and impacts evolve over time.",
+        "context_ids": [
+          "B:nist-ai-100-1:p034:c02",
+          "B:nist-ai-100-1:p033:c04",
+          "B:nist-ai-100-1:p033:c05"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "MEASURE 1.1 cannot be measured",
+        "filter": {
+          "year": 2023,
+          "section": "measure"
+        },
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p033:c05",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 33,
+            "text": "It is incumbent on Framework users to continue applying the MEASURE function to AI systems as knowledge, methodologies, risks, and impacts evolve over time.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 156,
+              "strategy": "B",
+              "raw_chars": 2748,
+              "chunk_index": 5,
+              "document_type": "core_framework",
+              "physical_page": 33,
+              "normalized_chars": 2675
+            },
+            "score": 0.6493314086593889,
+            "distance": 0.3506685913406111,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p034:c01",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 34,
+            "text": "Practices related to measuring AI risks are described in the NIST AI RMF Playbook. Table 3 lists the MEASURE function’s categories and subcategories.\n\nTable 3: Categories and subcategories for the MEASURE function.\n\nMEASURE 1: Appropriate methods and metrics are identified and applied.\n\nMEASURE 1.1: Approaches and metrics for measurement of AI risks enumerated during the MAP function are selected for implementation starting with the most significant AI risks. The risks or trustworthiness characteristics that will not – or cannot – be measured are properly documented.\n\nMEASURE 1.2: Appropriateness of AI metrics and effectiveness of existing controls are regularly assessed and updated, including reports of errors and potential impacts on affected communities.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 767,
+              "strategy": "B",
+              "raw_chars": 2104,
+              "chunk_index": 1,
+              "document_type": "core_framework",
+              "physical_page": 34,
+              "normalized_chars": 2023
+            },
+            "score": 0.6362817097818367,
+            "distance": 0.36371829021816326,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p034:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 34,
+            "text": "MEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are involved in regular assessments and updates. Domain experts, users, AI actors external to the team that developed or deployed the AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 374,
+              "strategy": "B",
+              "raw_chars": 2104,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 34,
+              "normalized_chars": 2023
+            },
+            "score": 0.6316378304850412,
+            "distance": 0.3683621695149588,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p034:c02 | starter/data/NIST.AI.100-1.pdf | page 34]\nMEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are involved in regular assessments and updates. Domain experts, users, AI actors external to the team that developed or deployed the AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.\n\n[B:nist-ai-100-1:p033:c04 | starter/data/NIST.AI.100-1.pdf | page 33]\nAfter completing the MEASURE function, objective, repeatable, or scalable test, evaluation, verification, and validation (TEVV) processes including metrics, methods, and methodologies are in place, followed, and documented. Metrics and measurement methodologies should adhere to scientific, legal, and ethical norms and be carried out in an open and transparent process. New types of measurement, qualitative and quantitative, may need to be developed. The degree to which each measurement type provides unique and meaningful information to the assessment of AI risks should be considered. Framework users will enhance their capacity to comprehensively evaluate system trustworthiness, identify and track existing and emergent risks, and verify efficacy of the metrics. Measurement outcomes will be utilized in the MANAGE function to assist risk monitoring and response efforts.\n\n[B:nist-ai-100-1:p033:c05 | starter/data/NIST.AI.100-1.pdf | page 33]\nIt is incumbent on Framework users to continue applying the MEASURE function to AI systems as knowledge, methodologies, risks, and impacts evolve over time.",
+        "context_ids": [
+          "B:nist-ai-100-1:p034:c02",
+          "B:nist-ai-100-1:p033:c04",
+          "B:nist-ai-100-1:p033:c05"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "MEASURE 1.1",
+        "filter": {
+          "year": 2023,
+          "section": "measure"
+        },
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p034:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 34,
+            "text": "MEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are involved in regular assessments and updates. Domain experts, users, AI actors external to the team that developed or deployed the AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 374,
+              "strategy": "B",
+              "raw_chars": 2104,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 34,
+              "normalized_chars": 2023
+            },
+            "score": 0.6708211898803711,
+            "distance": 0.3291788101196289,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p033:c04",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 33,
+            "text": "After completing the MEASURE function, objective, repeatable, or scalable test, evaluation, verification, and validation (TEVV) processes including metrics, methods, and methodologies are in place, followed, and documented. Metrics and measurement methodologies should adhere to scientific, legal, and ethical norms and be carried out in an open and transparent process. New types of measurement, qualitative and quantitative, may need to be developed. The degree to which each measurement type provides unique and meaningful information to the assessment of AI risks should be considered. Framework users will enhance their capacity to comprehensively evaluate system trustworthiness, identify and track existing and emergent risks, and verify efficacy of the metrics. Measurement outcomes will be utilized in the MANAGE function to assist risk monitoring and response efforts.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 878,
+              "strategy": "B",
+              "raw_chars": 2748,
+              "chunk_index": 4,
+              "document_type": "core_framework",
+              "physical_page": 33,
+              "normalized_chars": 2675
+            },
+            "score": 0.6575769186019897,
+            "distance": 0.34242308139801025,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p033:c05",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 33,
+            "text": "It is incumbent on Framework users to continue applying the MEASURE function to AI systems as knowledge, methodologies, risks, and impacts evolve over time.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 156,
+              "strategy": "B",
+              "raw_chars": 2748,
+              "chunk_index": 5,
+              "document_type": "core_framework",
+              "physical_page": 33,
+              "normalized_chars": 2675
+            },
+            "score": 0.6554723968034172,
+            "distance": 0.3445276031965828,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p034:c02 | starter/data/NIST.AI.100-1.pdf | page 34]\nMEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are involved in regular assessments and updates. Domain experts, users, AI actors external to the team that developed or deployed the AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.\n\n[B:nist-ai-100-1:p033:c04 | starter/data/NIST.AI.100-1.pdf | page 33]\nAfter completing the MEASURE function, objective, repeatable, or scalable test, evaluation, verification, and validation (TEVV) processes including metrics, methods, and methodologies are in place, followed, and documented. Metrics and measurement methodologies should adhere to scientific, legal, and ethical norms and be carried out in an open and transparent process. New types of measurement, qualitative and quantitative, may need to be developed. The degree to which each measurement type provides unique and meaningful information to the assessment of AI risks should be considered. Framework users will enhance their capacity to comprehensively evaluate system trustworthiness, identify and track existing and emergent risks, and verify efficacy of the metrics. Measurement outcomes will be utilized in the MANAGE function to assist risk monitoring and response efforts.\n\n[B:nist-ai-100-1:p033:c05 | starter/data/NIST.AI.100-1.pdf | page 33]\nIt is incumbent on Framework users to continue applying the MEASURE function to AI systems as knowledge, methodologies, risks, and impacts evolve over time.",
+        "context_ids": [
+          "B:nist-ai-100-1:p034:c02",
+          "B:nist-ai-100-1:p033:c04",
+          "B:nist-ai-100-1:p033:c05"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "MEASURE 1.1 approaches methods metrics",
+        "filter": {
+          "year": 2023,
+          "section": "measure"
+        },
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p033:c04",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 33,
+            "text": "After completing the MEASURE function, objective, repeatable, or scalable test, evaluation, verification, and validation (TEVV) processes including metrics, methods, and methodologies are in place, followed, and documented. Metrics and measurement methodologies should adhere to scientific, legal, and ethical norms and be carried out in an open and transparent process. New types of measurement, qualitative and quantitative, may need to be developed. The degree to which each measurement type provides unique and meaningful information to the assessment of AI risks should be considered. Framework users will enhance their capacity to comprehensively evaluate system trustworthiness, identify and track existing and emergent risks, and verify efficacy of the metrics. Measurement outcomes will be utilized in the MANAGE function to assist risk monitoring and response efforts.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 878,
+              "strategy": "B",
+              "raw_chars": 2748,
+              "chunk_index": 4,
+              "document_type": "core_framework",
+              "physical_page": 33,
+              "normalized_chars": 2675
+            },
+            "score": 0.7225386500358582,
+            "distance": 0.27746134996414185,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p034:c01",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 34,
+            "text": "Practices related to measuring AI risks are described in the NIST AI RMF Playbook. Table 3 lists the MEASURE function’s categories and subcategories.\n\nTable 3: Categories and subcategories for the MEASURE function.\n\nMEASURE 1: Appropriate methods and metrics are identified and applied.\n\nMEASURE 1.1: Approaches and metrics for measurement of AI risks enumerated during the MAP function are selected for implementation starting with the most significant AI risks. The risks or trustworthiness characteristics that will not – or cannot – be measured are properly documented.\n\nMEASURE 1.2: Appropriateness of AI metrics and effectiveness of existing controls are regularly assessed and updated, including reports of errors and potential impacts on affected communities.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 767,
+              "strategy": "B",
+              "raw_chars": 2104,
+              "chunk_index": 1,
+              "document_type": "core_framework",
+              "physical_page": 34,
+              "normalized_chars": 2023
+            },
+            "score": 0.7105137878350158,
+            "distance": 0.28948621216498416,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p033:c05",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 33,
+            "text": "It is incumbent on Framework users to continue applying the MEASURE function to AI systems as knowledge, methodologies, risks, and impacts evolve over time.",
+            "metadata": {
+              "year": 2023,
+              "section": "measure",
+              "char_len": 156,
+              "strategy": "B",
+              "raw_chars": 2748,
+              "chunk_index": 5,
+              "document_type": "core_framework",
+              "physical_page": 33,
+              "normalized_chars": 2675
+            },
+            "score": 0.7066217100580103,
+            "distance": 0.29337828994198967,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-100-1:p034:c02 | starter/data/NIST.AI.100-1.pdf | page 34]\nMEASURE 1.3: Internal experts who did not serve as front-line developers for the system and/or independent assessors are involved in regular assessments and updates. Domain experts, users, AI actors external to the team that developed or deployed the AI system, and affected communities are consulted in support of assessments as necessary per organizational risk tolerance.\n\n[B:nist-ai-100-1:p033:c04 | starter/data/NIST.AI.100-1.pdf | page 33]\nAfter completing the MEASURE function, objective, repeatable, or scalable test, evaluation, verification, and validation (TEVV) processes including metrics, methods, and methodologies are in place, followed, and documented. Metrics and measurement methodologies should adhere to scientific, legal, and ethical norms and be carried out in an open and transparent process. New types of measurement, qualitative and quantitative, may need to be developed. The degree to which each measurement type provides unique and meaningful information to the assessment of AI risks should be considered. Framework users will enhance their capacity to comprehensively evaluate system trustworthiness, identify and track existing and emergent risks, and verify efficacy of the metrics. Measurement outcomes will be utilized in the MANAGE function to assist risk monitoring and response efforts.\n\n[B:nist-ai-100-1:p033:c05 | starter/data/NIST.AI.100-1.pdf | page 33]\nIt is incumbent on Framework users to continue applying the MEASURE function to AI systems as knowledge, methodologies, risks, and impacts evolve over time.",
+        "context_ids": [
+          "B:nist-ai-100-1:p034:c02",
+          "B:nist-ai-100-1:p033:c04",
+          "B:nist-ai-100-1:p033:c05"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "reason": "Find the specific text of MEASURE 1.1 in the AI RMF Core Framework",
+          "query": "MEASURE 1.1"
+        },
+        "latency_ms": 2520.1,
+        "prompt_tokens": 633,
+        "candidates_tokens": 44,
+        "thoughts_tokens": 87,
+        "total_tokens": 764
+      },
+      {
+        "turn": 2,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "query": "MEASURE 1.1 cannot be measured",
+          "reason": "Find the exact text of MEASURE 1.1 regarding AI risks or characteristics that will not or cannot be measured."
+        },
+        "latency_ms": 3076.96,
+        "prompt_tokens": 1135,
+        "candidates_tokens": 53,
+        "thoughts_tokens": 114,
+        "total_tokens": 1302
+      },
+      {
+        "turn": 3,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "query": "MEASURE 1.1",
+          "reason": "Search for MEASURE 1.1 subcategory in the NIST AI RMF Core Framework."
+        },
+        "latency_ms": 3970.98,
+        "prompt_tokens": 1146,
+        "candidates_tokens": 45,
+        "thoughts_tokens": 74,
+        "total_tokens": 1265
+      },
+      {
+        "turn": 4,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "reason": "Find the exact text of MEASURE 1.1 subcategory in NIST AI RMF Core",
+          "query": "MEASURE 1.1 approaches methods metrics"
+        },
+        "latency_ms": 2915.74,
+        "prompt_tokens": 1154,
+        "candidates_tokens": 48,
+        "thoughts_tokens": 75,
+        "total_tokens": 1277
+      },
+      {
+        "turn": 5,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "query": "\"MEASURE 1.1\"",
+          "reason": "Find the exact text and requirement of MEASURE 1.1 in the Measure function table."
+        },
+        "latency_ms": 3812.24,
+        "prompt_tokens": 1165,
+        "candidates_tokens": 47,
+        "thoughts_tokens": 147,
+        "total_tokens": 1359
+      }
+    ],
+    "search_calls": 4,
+    "usage": {
+      "prompt_tokens": 5233,
+      "candidates_tokens": 237,
+      "thoughts_tokens": 497,
+      "total_tokens": 5967
+    },
+    "elapsed_ms": 18328.37,
+    "error": null
+  },
+  {
+    "query_id": "u_dev_01",
+    "split": "dev",
+    "question": "Under the NIST AI RMF 1.0 or Generative AI Profile, what exact maximum administrative fine or percentage of global annual turnover is specified as a statutory penalty for non-compliance?",
+    "answerable": false,
+    "filters_used": null,
+    "strategy": "dense_pgvector",
+    "model": "gemini-3.8-flash",
+    "max_searches": 4,
+    "top_k": 3,
+    "budget_chars": 2400,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "voluntary fine penalty statutory non-compliance administrative",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-600-1:p014:c06",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 14,
+            "text": "12 See also https://doi.org/10.6028/NIST.AI.100-4, to be published.",
+            "metadata": {
+              "year": 2024,
+              "section": "gai_risks_overview",
+              "char_len": 67,
+              "strategy": "B",
+              "raw_chars": 3257,
+              "chunk_index": 6,
+              "document_type": "generative_ai_profile",
+              "physical_page": 14,
+              "normalized_chars": 3226
+            },
+            "score": 0.5973968683897518,
+            "distance": 0.4026031316102482,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p022:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 22,
+            "text": "3.6 Privacy-Enhanced\n\nPrivacy refers generally to the norms and practices that help to safeguard human autonomy, identity, and dignity. These norms and practices typically address freedom from intrusion, limiting observation, or individuals’ agency to consent to disclosure or control of facets of their identities (e.g., body, data, reputation). (See The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management.)",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 445,
+              "strategy": "B",
+              "raw_chars": 2830,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 22,
+              "normalized_chars": 2794
+            },
+            "score": 0.588931679725647,
+            "distance": 0.411068320274353,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p018:c01",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 18,
+            "text": "about fairness and other values in certain domains. Dealing with tradeoffs requires taking into account the decision-making context. These analyses can highlight the existence and extent of tradeoffs between different measures, but they do not answer questions about how to navigate the tradeoff. Those depend on the values at play in the relevant context and should be resolved in a manner that is both transparent and appropriately justifiable.",
+            "metadata": {
+              "year": 2023,
+              "section": "ai_risks_and_trustworthiness",
+              "char_len": 446,
+              "strategy": "B",
+              "raw_chars": 2993,
+              "chunk_index": 1,
+              "document_type": "core_framework",
+              "physical_page": 18,
+              "normalized_chars": 2950
+            },
+            "score": 0.576554536819458,
+            "distance": 0.423445463180542,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-600-1:p014:c06 | starter/data/NIST.AI.600-1.pdf | page 14]\n12 See also https://doi.org/10.6028/NIST.AI.100-4, to be published.\n\n[B:nist-ai-100-1:p022:c02 | starter/data/NIST.AI.100-1.pdf | page 22]\n3.6 Privacy-Enhanced\n\nPrivacy refers generally to the norms and practices that help to safeguard human autonomy, identity, and dignity. These norms and practices typically address freedom from intrusion, limiting observation, or individuals’ agency to consent to disclosure or control of facets of their identities (e.g., body, data, reputation). (See The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management.)\n\n[B:nist-ai-100-1:p018:c01 | starter/data/NIST.AI.100-1.pdf | page 18]\nabout fairness and other values in certain domains. Dealing with tradeoffs requires taking into account the decision-making context. These analyses can highlight the existence and extent of tradeoffs between different measures, but they do not answer questions about how to navigate the tradeoff. Those depend on the values at play in the relevant context and should be resolved in a manner that is both transparent and appropriately justifiable.",
+        "context_ids": [
+          "B:nist-ai-600-1:p014:c06",
+          "B:nist-ai-100-1:p022:c02",
+          "B:nist-ai-100-1:p018:c01"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "voluntary guidance regulation penalty",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-600-1:p017:c03",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 17,
+            "text": "GOVERN 1.1: Legal and regulatory requirements involving AI are understood, managed, and documented.\n\nAction ID Suggested Action GAI Risks\n\nGV-1.1-001 Align GAI development and use with applicable laws and regulations, including\n\nthose related to data privacy, copyright and intellectual property law.\n\nData Privacy; Harmful Bias and Homogenization; Intellectual Property\n\nAI Actor Tasks: Governance and Oversight\n\n14 AI Actors are defined by the OECD as “those who play an active role in the AI system lifecycle, including organizations and individuals that deploy or operate AI.” See Appendix A of the AI RMF for additional descriptions of AI Actors and AI Actor Tasks.",
+            "metadata": {
+              "year": 2024,
+              "section": "govern",
+              "char_len": 670,
+              "strategy": "B",
+              "raw_chars": 1914,
+              "chunk_index": 3,
+              "document_type": "generative_ai_profile",
+              "physical_page": 17,
+              "normalized_chars": 1871
+            },
+            "score": 0.6337702652079036,
+            "distance": 0.3662297347920964,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p012:c03",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 12,
+            "text": "The Framework is intended to be flexible and to augment existing risk practices which should align with applicable laws, regulations, and norms. Organizations should follow existing regulations and guidelines for risk criteria, tolerance, and response established by organizational, domain, discipline, sector, or professional requirements. Some sectors or industries may have established definitions of harm or established documentation, reporting, and disclosure requirements. Within sectors, risk management may depend on existing guidelines for specific applications and use case settings. Where established guidelines do not exist, organizations should define reasonable risk tolerance. Once tolerance is defined, this AI RMF can be used to manage risks and to document risk management processes.\n\n1.2.3 Risk Prioritization",
+            "metadata": {
+              "year": 2023,
+              "section": "framing_risk",
+              "char_len": 828,
+              "strategy": "B",
+              "raw_chars": 2965,
+              "chunk_index": 3,
+              "document_type": "core_framework",
+              "physical_page": 12,
+              "normalized_chars": 2929
+            },
+            "score": 0.6255581974983215,
+            "distance": 0.37444180250167847,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-600-1:p014:c06",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 14,
+            "text": "12 See also https://doi.org/10.6028/NIST.AI.100-4, to be published.",
+            "metadata": {
+              "year": 2024,
+              "section": "gai_risks_overview",
+              "char_len": 67,
+              "strategy": "B",
+              "raw_chars": 3257,
+              "chunk_index": 6,
+              "document_type": "generative_ai_profile",
+              "physical_page": 14,
+              "normalized_chars": 3226
+            },
+            "score": 0.6254325695464784,
+            "distance": 0.3745674304535216,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-600-1:p014:c06 | starter/data/NIST.AI.600-1.pdf | page 14]\n12 See also https://doi.org/10.6028/NIST.AI.100-4, to be published.\n\n[B:nist-ai-100-1:p022:c02 | starter/data/NIST.AI.100-1.pdf | page 22]\n3.6 Privacy-Enhanced\n\nPrivacy refers generally to the norms and practices that help to safeguard human autonomy, identity, and dignity. These norms and practices typically address freedom from intrusion, limiting observation, or individuals’ agency to consent to disclosure or control of facets of their identities (e.g., body, data, reputation). (See The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management.)\n\n[B:nist-ai-100-1:p018:c01 | starter/data/NIST.AI.100-1.pdf | page 18]\nabout fairness and other values in certain domains. Dealing with tradeoffs requires taking into account the decision-making context. These analyses can highlight the existence and extent of tradeoffs between different measures, but they do not answer questions about how to navigate the tradeoff. Those depend on the values at play in the relevant context and should be resolved in a manner that is both transparent and appropriately justifiable.\n\n[B:nist-ai-600-1:p017:c03 | starter/data/NIST.AI.600-1.pdf | page 17]\nGOVERN 1.1: Legal and regulatory requirements involving AI are understood, managed, and documented.\n\nAction ID Suggested Action GAI Risks\n\nGV-1.1-001 Align GAI development and use with applicable laws and regulations, including\n\nthose related to data privacy, copyright and intellectual property law.\n\nData Privacy; Harmful Bias and Homogenization; Intellectual Property\n\nAI Actor Tasks: Governance and Oversight\n\n14 AI Actors are defined by the OECD as “those who play an active role in the AI system lifecycle, including organizations and individuals that deploy or operate AI.” See Appendix A of the AI RMF for additional descriptions of AI Actors and AI Actor Tasks.",
+        "context_ids": [
+          "B:nist-ai-600-1:p014:c06",
+          "B:nist-ai-100-1:p022:c02",
+          "B:nist-ai-100-1:p018:c01",
+          "B:nist-ai-600-1:p017:c03"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "NIST AI RMF voluntary non-regulatory mandatory penalty fine",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p007:c03",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 7,
+            "text": "As directed by the National Artificial Intelligence Initiative Act of 2020 (P.L. 116-283), the goal of the AI RMF is to offer a resource to the organizations designing, developing, deploying, or using AI systems to help manage the many risks of AI and promote trustworthy and responsible development and use of AI systems. The Framework is intended to be voluntary, rights-preserving, non-sector-specific, and use-case agnostic, providing flexibility to organizations of all sizes and in all sectors and throughout society to implement the approaches in the Framework.",
+            "metadata": {
+              "year": 2023,
+              "section": "executive_summary",
+              "char_len": 568,
+              "strategy": "B",
+              "raw_chars": 3100,
+              "chunk_index": 3,
+              "document_type": "core_framework",
+              "physical_page": 7,
+              "normalized_chars": 3062
+            },
+            "score": 0.7346585611897282,
+            "distance": 0.26534143881027183,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p008:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 8,
+            "text": "Development of the AI RMF by NIST in collaboration with the private and public sectors is directed and consistent with its broader AI efforts called for by the National AI Initiative Act of 2020, the National Security Commission on Artificial Intelligence recommendations, and the Plan for Federal Engagement in Developing Technical Standards and Related Tools. Engagement with the AI community during this Framework’s development – via responses to a formal Request for Information, three widely attended workshops, public comments on a concept paper and two drafts of the Framework, discussions at multiple public forums, and many small group meetings – has informed development of the AI RMF 1.0 as well as AI research and development and evaluation conducted by NIST and others.",
+            "metadata": {
+              "year": 2023,
+              "section": "executive_summary",
+              "char_len": 782,
+              "strategy": "B",
+              "raw_chars": 1872,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 8,
+              "normalized_chars": 1833
+            },
+            "score": 0.7311097601386837,
+            "distance": 0.2688902398613163,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-600-1:p016:c05",
+            "source_id": "nist-ai-600-1",
+            "source": "starter/data/NIST.AI.600-1.pdf",
+            "page": 16,
+            "text": "13 As this document was focused on the GAI PWG efforts and primary considerations (see Appendix A), AI RMF subcategories not addressed here may be added later.",
+            "metadata": {
+              "year": 2024,
+              "section": "gai_risks_overview",
+              "char_len": 159,
+              "strategy": "B",
+              "raw_chars": 2957,
+              "chunk_index": 5,
+              "document_type": "generative_ai_profile",
+              "physical_page": 16,
+              "normalized_chars": 2919
+            },
+            "score": 0.7175300762829256,
+            "distance": 0.28246992371707436,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-600-1:p014:c06 | starter/data/NIST.AI.600-1.pdf | page 14]\n12 See also https://doi.org/10.6028/NIST.AI.100-4, to be published.\n\n[B:nist-ai-100-1:p022:c02 | starter/data/NIST.AI.100-1.pdf | page 22]\n3.6 Privacy-Enhanced\n\nPrivacy refers generally to the norms and practices that help to safeguard human autonomy, identity, and dignity. These norms and practices typically address freedom from intrusion, limiting observation, or individuals’ agency to consent to disclosure or control of facets of their identities (e.g., body, data, reputation). (See The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management.)\n\n[B:nist-ai-100-1:p018:c01 | starter/data/NIST.AI.100-1.pdf | page 18]\nabout fairness and other values in certain domains. Dealing with tradeoffs requires taking into account the decision-making context. These analyses can highlight the existence and extent of tradeoffs between different measures, but they do not answer questions about how to navigate the tradeoff. Those depend on the values at play in the relevant context and should be resolved in a manner that is both transparent and appropriately justifiable.\n\n[B:nist-ai-600-1:p017:c03 | starter/data/NIST.AI.600-1.pdf | page 17]\nGOVERN 1.1: Legal and regulatory requirements involving AI are understood, managed, and documented.\n\nAction ID Suggested Action GAI Risks\n\nGV-1.1-001 Align GAI development and use with applicable laws and regulations, including\n\nthose related to data privacy, copyright and intellectual property law.\n\nData Privacy; Harmful Bias and Homogenization; Intellectual Property\n\nAI Actor Tasks: Governance and Oversight\n\n14 AI Actors are defined by the OECD as “those who play an active role in the AI system lifecycle, including organizations and individuals that deploy or operate AI.” See Appendix A of the AI RMF for additional descriptions of AI Actors and AI Actor Tasks.\n\n[B:nist-ai-600-1:p016:c05 | starter/data/NIST.AI.600-1.pdf | page 16]\n13 As this document was focused on the GAI PWG efforts and primary considerations (see Appendix A), AI RMF subcategories not addressed here may be added later.",
+        "context_ids": [
+          "B:nist-ai-600-1:p014:c06",
+          "B:nist-ai-100-1:p022:c02",
+          "B:nist-ai-100-1:p018:c01",
+          "B:nist-ai-600-1:p017:c03",
+          "B:nist-ai-600-1:p016:c05"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "NIST AI RMF voluntary non-regulatory",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:nist-ai-100-1:p008:c02",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 8,
+            "text": "Development of the AI RMF by NIST in collaboration with the private and public sectors is directed and consistent with its broader AI efforts called for by the National AI Initiative Act of 2020, the National Security Commission on Artificial Intelligence recommendations, and the Plan for Federal Engagement in Developing Technical Standards and Related Tools. Engagement with the AI community during this Framework’s development – via responses to a formal Request for Information, three widely attended workshops, public comments on a concept paper and two drafts of the Framework, discussions at multiple public forums, and many small group meetings – has informed development of the AI RMF 1.0 as well as AI research and development and evaluation conducted by NIST and others.",
+            "metadata": {
+              "year": 2023,
+              "section": "executive_summary",
+              "char_len": 782,
+              "strategy": "B",
+              "raw_chars": 1872,
+              "chunk_index": 2,
+              "document_type": "core_framework",
+              "physical_page": 8,
+              "normalized_chars": 1833
+            },
+            "score": 0.7970196008682251,
+            "distance": 0.2029803991317749,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p007:c03",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 7,
+            "text": "As directed by the National Artificial Intelligence Initiative Act of 2020 (P.L. 116-283), the goal of the AI RMF is to offer a resource to the organizations designing, developing, deploying, or using AI systems to help manage the many risks of AI and promote trustworthy and responsible development and use of AI systems. The Framework is intended to be voluntary, rights-preserving, non-sector-specific, and use-case agnostic, providing flexibility to organizations of all sizes and in all sectors and throughout society to implement the approaches in the Framework.",
+            "metadata": {
+              "year": 2023,
+              "section": "executive_summary",
+              "char_len": 568,
+              "strategy": "B",
+              "raw_chars": 3100,
+              "chunk_index": 3,
+              "document_type": "core_framework",
+              "physical_page": 7,
+              "normalized_chars": 3062
+            },
+            "score": 0.7921717762947083,
+            "distance": 0.20782822370529175,
+            "strategy": "dense_pgvector"
+          },
+          {
+            "id": "B:nist-ai-100-1:p026:c01",
+            "source_id": "nist-ai-100-1",
+            "source": "starter/data/NIST.AI.100-1.pdf",
+            "page": 26,
+            "text": "deployed, or evaluated – which can create opportunities to surface problems and identify existing and emergent risks.\n\nAn online companion resource to the AI RMF, the NIST AI RMF Playbook, is available to help organizations navigate the AI RMF and achieve its outcomes through suggested tactical actions they can apply within their own contexts. Like the AI RMF, the Playbook is voluntary and organizations can utilize the suggestions according to their needs and interests. Playbook users can create tailored guidance selected from suggested material for their own use and contribute their suggestions for sharing with the broader community. Along with the AI RMF, the Playbook is part of the NIST Trustworthy and Responsible AI Resource Center.",
+            "metadata": {
+              "year": 2023,
+              "section": "govern",
+              "char_len": 746,
+              "strategy": "B",
+              "raw_chars": 2695,
+              "chunk_index": 1,
+              "document_type": "core_framework",
+              "physical_page": 26,
+              "normalized_chars": 2657
+            },
+            "score": 0.7770058512687683,
+            "distance": 0.2229941487312317,
+            "strategy": "dense_pgvector"
+          }
+        ],
+        "context": "[B:nist-ai-600-1:p014:c06 | starter/data/NIST.AI.600-1.pdf | page 14]\n12 See also https://doi.org/10.6028/NIST.AI.100-4, to be published.\n\n[B:nist-ai-100-1:p022:c02 | starter/data/NIST.AI.100-1.pdf | page 22]\n3.6 Privacy-Enhanced\n\nPrivacy refers generally to the norms and practices that help to safeguard human autonomy, identity, and dignity. These norms and practices typically address freedom from intrusion, limiting observation, or individuals’ agency to consent to disclosure or control of facets of their identities (e.g., body, data, reputation). (See The NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management.)\n\n[B:nist-ai-100-1:p018:c01 | starter/data/NIST.AI.100-1.pdf | page 18]\nabout fairness and other values in certain domains. Dealing with tradeoffs requires taking into account the decision-making context. These analyses can highlight the existence and extent of tradeoffs between different measures, but they do not answer questions about how to navigate the tradeoff. Those depend on the values at play in the relevant context and should be resolved in a manner that is both transparent and appropriately justifiable.\n\n[B:nist-ai-600-1:p017:c03 | starter/data/NIST.AI.600-1.pdf | page 17]\nGOVERN 1.1: Legal and regulatory requirements involving AI are understood, managed, and documented.\n\nAction ID Suggested Action GAI Risks\n\nGV-1.1-001 Align GAI development and use with applicable laws and regulations, including\n\nthose related to data privacy, copyright and intellectual property law.\n\nData Privacy; Harmful Bias and Homogenization; Intellectual Property\n\nAI Actor Tasks: Governance and Oversight\n\n14 AI Actors are defined by the OECD as “those who play an active role in the AI system lifecycle, including organizations and individuals that deploy or operate AI.” See Appendix A of the AI RMF for additional descriptions of AI Actors and AI Actor Tasks.\n\n[B:nist-ai-600-1:p016:c05 | starter/data/NIST.AI.600-1.pdf | page 16]\n13 As this document was focused on the GAI PWG efforts and primary considerations (see Appendix A), AI RMF subcategories not addressed here may be added later.",
+        "context_ids": [
+          "B:nist-ai-600-1:p014:c06",
+          "B:nist-ai-100-1:p022:c02",
+          "B:nist-ai-100-1:p018:c01",
+          "B:nist-ai-600-1:p017:c03",
+          "B:nist-ai-600-1:p016:c05"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "reason": "Check if NIST AI RMF 1.0 or Generative AI Profile mentions statutory penalties, administrative fines, or its voluntary nature.",
+          "query": "voluntary fine penalty statutory non-compliance administrative"
+        },
+        "latency_ms": 3231.49,
+        "prompt_tokens": 631,
+        "candidates_tokens": 55,
+        "thoughts_tokens": 107,
+        "total_tokens": 793
+      },
+      {
+        "turn": 2,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "reason": "Check whether NIST AI RMF is voluntary and whether any penalty/fine is specified.",
+          "query": "voluntary guidance regulation penalty"
+        },
+        "latency_ms": 3770.77,
+        "prompt_tokens": 1079,
+        "candidates_tokens": 41,
+        "thoughts_tokens": 155,
+        "total_tokens": 1275
+      },
+      {
+        "turn": 3,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "query": "NIST AI RMF voluntary non-regulatory mandatory penalty fine",
+          "reason": "Check whether the NIST AI RMF specifies fines/penalties or states it is voluntary and non-regulatory."
+        },
+        "latency_ms": 2962.48,
+        "prompt_tokens": 1293,
+        "candidates_tokens": 55,
+        "thoughts_tokens": 150,
+        "total_tokens": 1498
+      },
+      {
+        "turn": 4,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "reason": "Check whether NIST AI RMF is voluntary and non-regulatory",
+          "query": "NIST AI RMF voluntary non-regulatory"
+        },
+        "latency_ms": 4368.6,
+        "prompt_tokens": 1410,
+        "candidates_tokens": 41,
+        "thoughts_tokens": 196,
+        "total_tokens": 1647
+      },
+      {
+        "turn": 5,
+        "decision_kind": "search",
+        "tool": "search_documents",
+        "args": {
+          "query": "voluntary non-regulatory framework",
+          "reason": "Check if the documents specify that the Framework is voluntary and non-regulatory."
+        },
+        "latency_ms": 6769.84,
+        "prompt_tokens": 1421,
+        "candidates_tokens": 40,
+        "thoughts_tokens": 474,
+        "total_tokens": 1935
+      }
+    ],
+    "search_calls": 4,
+    "usage": {
+      "prompt_tokens": 5834,
+      "candidates_tokens": 232,
+      "thoughts_tokens": 1082,
+      "total_tokens": 7148
+    },
+    "elapsed_ms": 22690.89,
+    "error": null
+  }
+]

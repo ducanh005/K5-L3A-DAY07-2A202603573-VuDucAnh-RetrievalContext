@@ -12,7 +12,7 @@ DAY6_ROOT = Path(os.getenv("DAY6_ROOT", r"D:\AI thuc chien\K5-L3A-DAY06-2A202603
 
 DEFAULT_EMBEDDING_MODEL = "gemini-embedding-001"
 DEFAULT_EMBEDDING_DIMENSIONS = 768
-DEFAULT_AGENT_MODEL = "gemini-2.5-flash"
+DEFAULT_AGENT_MODEL = "gemini-3.8-flash"
 DEFAULT_PG_TABLE = "day6_chunks_b"
 
 
