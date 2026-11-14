@@ -1,0 +1,50 @@
+[
+  {
+    "query_id": "t01",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Completely answers why AI RMF alone is insufficient (accountability, roles, culture, incentives, senior commitment) and SME vs large org challenges verbatim from [B:nist-ai-100-1:p014:c01]."
+  },
+  {
+    "query_id": "t02",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers No and cites no prescribed profile templates allowing flexibility from [B:nist-ai-100-1:p039:c01]."
+  },
+  {
+    "query_id": "t03",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Accurately contrasts direct vs indirect prompt injection and states both demonstrated exploits (stealing proprietary data, running remote malicious code) from [B:nist-ai-600-1:p015:c02]."
+  },
+  {
+    "query_id": "t04",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "States all pre-deployment safety conditions (safe, residual risk <= tolerance, fail safely beyond knowledge limits) and all 3 safety metric aspects from [B:nist-ai-600-1:p036:c01]."
+  },
+  {
+    "query_id": "t05",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Lists all 4 MAP 1.1 documented elements and considerations accurately from [B:nist-ai-100-1:p031:c01]."
+  },
+  {
+    "query_id": "t06",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Lists all third-party control examples (acquisition/procurement, personnel credentials, background checks, filtering, grounding, fine tuning, RAG) and scope from [B:nist-ai-600-1:p046:c02]."
+  },
+  {
+    "query_id": "u_test_01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Intentionally abstained after 4 hybrid searches verifying EU AI Act Article 5 and ISO/IEC 42001 are absent from corpus."
+  },
+  {
+    "query_id": "u_test_02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Intentionally abstained after 4 hybrid searches verifying no numeric megawatt/kWh or liters/token cap exists."
+  }
+]

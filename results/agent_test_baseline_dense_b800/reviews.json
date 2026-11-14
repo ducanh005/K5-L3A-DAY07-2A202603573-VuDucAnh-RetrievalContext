@@ -1,0 +1,50 @@
+[
+  {
+    "query_id": "t01",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after hitting search_limit on 5th search."
+  },
+  {
+    "query_id": "t02",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers No and cites no prescribed profile templates for flexibility verbatim from [B:nist-ai-100-1:p039:c01]."
+  },
+  {
+    "query_id": "t03",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention: Rank-1 [B:nist-ai-600-1:p015:c02] dropped by starter budget=800 across all 4 searches."
+  },
+  {
+    "query_id": "t04",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention: [B:nist-ai-600-1:p036:c01] dropped by budget=800 and FIFO locked p035:c01."
+  },
+  {
+    "query_id": "t05",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Lists all 4 MAP 1.1 documented items and considerations accurately from [B:nist-ai-100-1:p031:c01]."
+  },
+  {
+    "query_id": "t06",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention: Rank-1 [B:nist-ai-600-1:p046:c02] dropped by budget=800 while p046:c03 filled context."
+  },
+  {
+    "query_id": "u_test_01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Correctly abstained when EU AI Act Article 5 and ISO/IEC 42001 are absent from corpus."
+  },
+  {
+    "query_id": "u_test_02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Correctly abstained when numeric GPU cluster power cap and cooling water budget are absent from corpus."
+  }
+]
