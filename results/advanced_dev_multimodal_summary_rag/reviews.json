@@ -1,0 +1,102 @@
+[
+  {
+    "query_id": "adv_dev_01",
+    "passed": false,
+    "reason": "Abstained on Box SPM.1 Table 1 (no vision inspect and/or bracket/budget limit)."
+  },
+  {
+    "query_id": "adv_dev_02",
+    "passed": false,
+    "reason": "Abstained because ingestion summary did not encode exact Table 2.1 color-key cells for Greenland/Antarctic without inspecting the PNG."
+  },
+  {
+    "query_id": "adv_dev_03",
+    "passed": true,
+    "reason": "Recovered all three SETTLEMENTS AND INFRASTRUCTURE options, feasibility/synergy levels, and confidence dots from [VIS:Table_SPM7_Feasibility:p043] summary."
+  },
+  {
+    "query_id": "adv_dev_04",
+    "passed": false,
+    "reason": "Ingestion summary error propagated into answer: missed diagonal red-and-green stripe on Animal and livestock health and productivity and misreported all four indicators as 2 dots (Medium) instead of 1 dot (Low) for Animal and livestock."
+  },
+  {
+    "query_id": "adv_dev_05",
+    "passed": true,
+    "reason": "Recovered Emissions -> Climate -> Impacts/Risks, Mitigation/Adaptation policies, and all 5 SSP curves from [VIS:CrossBox2_Diagram:p081, ADV_TXT:p082:c01]."
+  },
+  {
+    "query_id": "adv_dev_06",
+    "passed": true,
+    "reason": "Matched '>3 million years ago' and panel (b) 1850-1900 SD / 1-in-6-year drought definition [VIS:Figure_3_1:p086, ADV_TXT:p086:c03]."
+  },
+  {
+    "query_id": "adv_dev_07",
+    "passed": true,
+    "reason": "Recovered 410 ppm CO2, 1866 ppb CH4, 332 ppb N2O, and 1.1°C from [VIS:Figure_2_1:p059] summary."
+  },
+  {
+    "query_id": "adv_dev_08",
+    "passed": false,
+    "reason": "Abstained without inspecting VIS:Figure_2_2_charts:p061 pixel callouts for Eastern Asia shares."
+  },
+  {
+    "query_id": "adv_dev_09",
+    "passed": true,
+    "reason": "Recovered USD 55-148/MWh, $2020/MWh vs $2020/kWh, and panel (b) GW/EV scales from [VIS:Figure_2_4:p070, ADV_TXT:p070:c01]."
+  },
+  {
+    "query_id": "adv_dev_10",
+    "passed": true,
+    "reason": "Extracted C1 CO2 early 2050s (~2052) vs GHG ~2098 ('not all pathways reach net zero GHG by 2100') and C3 CO2 ~2071 vs GHG >2100 from [ADV_TXT:p101:c03, VIS:Figure_3_6:p102]."
+  },
+  {
+    "query_id": "adv_dev_11",
+    "passed": false,
+    "reason": "Abstained on multi-hop join (had panel d from Table_Fig2_2d, but Figure_2_2_charts was dropped by 7000-char packing budget)."
+  },
+  {
+    "query_id": "adv_dev_12",
+    "passed": false,
+    "reason": "Abstained when combining Table 2.2 and Figure 2.5 without inspecting visual crops / enough packing budget."
+  },
+  {
+    "query_id": "adv_dev_13",
+    "passed": true,
+    "reason": "Combined Section 3.3.1 warming/budget (0.27-0.63°C / 0.45°C, ~500 GtCO2) with Figure 3.5a infrastructure comparison [ADV_TXT:p098:c01, VIS:Figure_3_5:p099]."
+  },
+  {
+    "query_id": "adv_dev_14",
+    "passed": true,
+    "reason": "Exact SPM A.2.1 sea level totals and rates [ADV_TXT:p021:c03]."
+  },
+  {
+    "query_id": "adv_dev_15",
+    "passed": true,
+    "reason": "Exact Section 2.2 cost reductions, carbon pricing coverage, and finance increase [ADV_TXT:p069:c02,c05,c06]."
+  },
+  {
+    "query_id": "adv_dev_16",
+    "passed": true,
+    "reason": "Exact Section 2.2.3 adaptation countries, water share, and avoided emissions [ADV_TXT:p071:c01,c02]."
+  },
+  {
+    "query_id": "adv_dev_17",
+    "passed": true,
+    "reason": "Named all four SRM methods and three conclusions [ADV_TXT:p088:c03,c04]."
+  },
+  {
+    "query_id": "adv_dev_18",
+    "passed": true,
+    "reason": "Correctly abstained on 2022/2023 emissions inventory."
+  },
+  {
+    "query_id": "adv_dev_19",
+    "passed": true,
+    "reason": "Correctly abstained on unassessed/unallocated cells in Figure SPM.7 / 4.4a."
+  },
+  {
+    "query_id": "adv_dev_20",
+    "passed": true,
+    "reason": "Correctly abstained on absent COP27 Loss and Damage Fund pledge."
+  }
+]

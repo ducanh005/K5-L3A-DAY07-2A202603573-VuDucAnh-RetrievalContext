@@ -1,0 +1,102 @@
+[
+  {
+    "query_id": "adv_dev_01",
+    "passed": true,
+    "reason": "Correctly lists C3 (limit warming to 2°C (>67%), Low SSP1-2.6, RCP2.6), C6 (limit warming to 3°C (>50%), Intermediate SSP2-4.5, RCP 4.5), and C8 (exceed warming of 4°C (>50%), Very high SSP5-8.5, RCP 8.5) with [ADV_TXT:p026:c01]."
+  },
+  {
+    "query_id": "adv_dev_02",
+    "passed": false,
+    "reason": "Abstained on answerable Table 2.1 color-key matrix because extracted text lacked color-coded cell values."
+  },
+  {
+    "query_id": "adv_dev_03",
+    "passed": false,
+    "reason": "Abstained on answerable Figure SPM.7 panel (a) feasibility/synergy/confidence-dot matrix."
+  },
+  {
+    "query_id": "adv_dev_04",
+    "passed": false,
+    "reason": "Abstained on answerable Figure SPM.1 panel (a) striped/solid circles and attribution confidence dots."
+  },
+  {
+    "query_id": "adv_dev_05",
+    "passed": false,
+    "reason": "Abstained on answerable Cross-Section Box.2 Figure 1 diagram labels and SSP scenario lines."
+  },
+  {
+    "query_id": "adv_dev_06",
+    "passed": true,
+    "reason": "Extracted 'over 3 million years ago' annotation and panel (b) definition of 1 standard deviation (1850-1900 interannual variability, 1-in-6-year drought) from Figure 3.1 text/caption [ADV_TXT:p086:c01..c03]."
+  },
+  {
+    "query_id": "adv_dev_07",
+    "passed": false,
+    "reason": "Abstained on answerable Figure 2.1b/c annotated concentrations and warming label."
+  },
+  {
+    "query_id": "adv_dev_08",
+    "passed": false,
+    "reason": "Abstained on answerable Figure 2.2c stacked area regional GHG shares."
+  },
+  {
+    "query_id": "adv_dev_09",
+    "passed": true,
+    "reason": "Extracted USD 55-148/MWh fossil reference band, $2020/MWh vs $2020/kWh units, and panel (b) GW (0-800, 0-40) and millions of EVs (0-8) scales from page text/panel labels [ADV_TXT:p070:c01..c03]."
+  },
+  {
+    "query_id": "adv_dev_10",
+    "passed": false,
+    "reason": "Failed to read Figure 3.6c timing chart visually: only vaguely said C1 net zero GHG is 'in the second half of the century' (missing ~2095-2100 median & annotation), and misattributed the C1 'not all scenarios reach net zero GHG by 2100' callout onto C3 while missing that C3 median is beyond 2100."
+  },
+  {
+    "query_id": "adv_dev_11",
+    "passed": true,
+    "reason": "Recovered all requested North America (23%, 366M, 61, 19) and Southern Asia (4%, 1836M, 6.2, 2.6) values from p.61 text blocks [ADV_TXT:p061:c01..c02]."
+  },
+  {
+    "query_id": "adv_dev_12",
+    "passed": false,
+    "reason": "Omitted the conditional NDC 2030 emissions gap vs 1.5°C pathways (16-23 GtCO2-eq/yr) in part (3), citing only the unconditional gap (19-26 GtCO2-eq/yr)."
+  },
+  {
+    "query_id": "adv_dev_13",
+    "passed": true,
+    "reason": "Accurately combined Section 3.3.1 (0.27-0.63°C / best 0.45°C, 500 GtCO2 [300-600]) and Figure 3.5a comparison (existing > 1.5°C, existing+planned ~ 2°C 83%) [ADV_TXT:p098:c01,c02,p099:c01,p036:c01,p074:c01]."
+  },
+  {
+    "query_id": "adv_dev_14",
+    "passed": true,
+    "reason": "Verbatim match for 0.20 [0.15 to 0.25] m total and 1.3, 1.9, 3.7 mm yr-1 rates in SPM A.2.1 [ADV_TXT:p021:c03]."
+  },
+  {
+    "query_id": "adv_dev_15",
+    "passed": true,
+    "reason": "Exact figures (85% solar, 55% wind, 85% Li-ion, >20% carbon pricing, up to 60% finance) grounded in [ADV_TXT:p069:c02,c05,c06]."
+  },
+  {
+    "query_id": "adv_dev_16",
+    "passed": true,
+    "reason": "Exact figures (>=170 countries, ~60% water adaptation, 5.9 GtCO2-eq yr-1 avoided emissions) grounded in [ADV_TXT:p071:c01,c02]."
+  },
+  {
+    "query_id": "adv_dev_17",
+    "passed": true,
+    "reason": "Named all four SRM approaches from Footnote 122 and all three requested conclusions from Section 3.1.2 [ADV_TXT:p088:c03,c04]."
+  },
+  {
+    "query_id": "adv_dev_18",
+    "passed": true,
+    "reason": "Correctly abstained on 2022/2023 observed global GHG emissions inventory."
+  },
+  {
+    "query_id": "adv_dev_19",
+    "passed": true,
+    "reason": "Correctly abstained without fabricating unassessed/unallocated values on Figure SPM.7 / 4.4a."
+  },
+  {
+    "query_id": "adv_dev_20",
+    "passed": true,
+    "reason": "Correctly abstained on absent COP27 Loss and Damage Fund pledge."
+  }
+]

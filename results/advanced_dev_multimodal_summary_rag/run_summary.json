@@ -1,0 +1,14 @@
+{
+  "config": "multimodal_summary_rag",
+  "split": "dev",
+  "cases": 20,
+  "answered": 12,
+  "abstain": 8,
+  "errors": 0,
+  "avg_search_calls": 3.25,
+  "avg_inspect_calls": 0.0,
+  "total_agent_tokens": 237625,
+  "embed_api_calls": 65,
+  "wall_seconds": 505.42,
+  "median_case_ms": 23075.17
+}

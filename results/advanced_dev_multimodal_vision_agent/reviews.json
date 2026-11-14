@@ -1,0 +1,102 @@
+[
+  {
+    "query_id": "adv_dev_01",
+    "passed": true,
+    "reason": "Correctly lists C3 (limit warming to 2C >67%, Low SSP1-2.6, RCP2.6), C6 (limit warming to 3C >50%, Intermediate SSP2-4.5, RCP 4.5), and C8 (exceed warming of 4C >50%, Very high SSP5-8.5, RCP 8.5) with VIS:Table_Box_SPM1:p026."
+  },
+  {
+    "query_id": "adv_dev_02",
+    "passed": true,
+    "reason": "Accurately identifies Greenland Observed=Virtually certain (dark maroon), Human=Medium confidence (pale cream, no text), Antarctic Observed=Very likely (orange), Human=unshaded/white with 'Limited evidence & medium agreement' [VIS:Table_2_1:p063]."
+  },
+  {
+    "query_id": "adv_dev_03",
+    "passed": false,
+    "reason": "Got rows 1 and 2 exact, but misread Green infrastructure potential feasibility color fill (medium purple = Medium, 3 dots High confidence) as High (dark blue)."
+  },
+  {
+    "query_id": "adv_dev_04",
+    "passed": true,
+    "reason": "Correctly distinguishes striped red-and-green indicators (Physical water availability; Animal and livestock health and productivity) from solid red (Agriculture/crop production; Fisheries yields and aquaculture production) AND exact attribution confidence dots (2 dots Medium for 3 rows, 1 dot Low for Animal and livestock) [VIS:Figure_SPM1:p023]."
+  },
+  {
+    "query_id": "adv_dev_05",
+    "passed": true,
+    "reason": "Correctly identifies Emissions -> Climate -> Impacts / Risks, Mitigation Policy and Adaptation Policy underneath, and all five SSP scenarios (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5) [VIS:CrossBox2_Diagram:p081]."
+  },
+  {
+    "query_id": "adv_dev_06",
+    "passed": true,
+    "reason": "Correctly gives over 3 million years ago for >=2.5C sustained temperature and explains the 1850-1900 interannual variability standard deviation metric (1 SD = droughts once every six years) [VIS:Figure_3_1:p086]."
+  },
+  {
+    "query_id": "adv_dev_07",
+    "passed": true,
+    "reason": "Exact 2019 concentrations (CO2=410 ppm, CH4=1866 ppb, N2O=332 ppb) and 1.1C temperature increase (2011-2020 vs 1850-1900) with VIS:Figure_2_1:p059."
+  },
+  {
+    "query_id": "adv_dev_08",
+    "passed": true,
+    "reason": "Exact global totals (38, 42, 53, 59 GtCO2-eq) and Eastern Asia percentage shares (13%, 16%, 24%, 27%) for 1990, 2000, 2010, and 2019 [VIS:Figure_2_2_charts:p061]."
+  },
+  {
+    "query_id": "adv_dev_09",
+    "passed": true,
+    "reason": "Exact yellow band USD 55-148/MWh, panel (a) $2020/MWh (0-600) vs $2020/kWh (0-1600), and panel (b) GW (0-800 vs 0-40) and millions of EVs (0-8) [VIS:Figure_2_4:p070]."
+  },
+  {
+    "query_id": "adv_dev_10",
+    "passed": true,
+    "reason": "Accurately compares C1 net zero CO2 (~2050 median) vs net zero GHG (~2095-2100 median, 'not all scenarios reach net zero GHG by 2100') and C3 net zero CO2 (early 2070s) vs net zero GHG (no median before 2100) [VIS:Figure_3_6:p102]."
+  },
+  {
+    "query_id": "adv_dev_11",
+    "passed": true,
+    "reason": "Accurately joins panel (a) cumulative CO2 share (23% vs 4%) and panel (d) indicators (366 vs 1836 million, 61 vs 6.2 USD1000_PPP, 19 vs 2.6 tCO2-eq/person) [VIS:Figure_2_2_charts:p061, VIS:Table_Fig2_2d:p061]."
+  },
+  {
+    "query_id": "adv_dev_12",
+    "passed": true,
+    "reason": "Accurately combines Table 2.2 (57 [52-60], 53 [50-57], 50 [47-55] GtCO2-eq/yr and 2030 emissions gaps 19-26 / 16-23 GtCO2-eq/yr) with Figure 2.5(b) (+5%, -4%, -26%, -43%) [VIS:Table_2_2:p074, VIS:Figure_2_5:p075]."
+  },
+  {
+    "query_id": "adv_dev_13",
+    "passed": true,
+    "reason": "Combines Section 3.3.1 (0.27-0.63C best estimate 0.45C per 1000 GtCO2; 500 GtCO2 [300-600] 1.5C budget) with Figure 3.5(a) (existing infrastructure exceeds 500 GtCO2 dashed line; existing+planned approaches ~900-1000 GtCO2 / 2C 83% line) [ADV_TXT:p098:c01, ADV_TXT:p098:c02, VIS:Figure_3_5:p099]."
+  },
+  {
+    "query_id": "adv_dev_14",
+    "passed": true,
+    "reason": "Exact 1901-2018 GMSL rise (0.20 [0.15 to 0.25] m) and all three sub-period rates (1.3, 1.9, 3.7 mm/yr with uncertainty brackets) [ADV_TXT:p021:c03]."
+  },
+  {
+    "query_id": "adv_dev_15",
+    "passed": true,
+    "reason": "Exact cost reductions (85% solar, 55% wind, 85% Li-ion), >20% GHG emissions coverage by 2020, and up to 60% climate finance increase [ADV_TXT:p069:c02, p069:c05, p069:c06]."
+  },
+  {
+    "query_id": "adv_dev_16",
+    "passed": true,
+    "reason": "Exact >=170 countries, ~60% water-related adaptation share, and 5.9 GtCO2-eq/yr avoided emissions in 2016 [ADV_TXT:p071:c01, p071:c02]."
+  },
+  {
+    "query_id": "adv_dev_17",
+    "passed": true,
+    "reason": "Names all four SRM approaches from Footnote 122 and explains effects on atmospheric CO2, ocean acidification, and rapid climate change upon sudden termination [ADV_TXT:p088:c03, p088:c04]."
+  },
+  {
+    "query_id": "adv_dev_18",
+    "passed": true,
+    "reason": "Correctly abstains; clarifies historical observed GHG inventory ends in 2019 (59 +/- 6.6 GtCO2-eq) and 2022/2023 data are absent."
+  },
+  {
+    "query_id": "adv_dev_19",
+    "passed": true,
+    "reason": "Correctly abstains; explicitly identifies 'not assessed' for Coastal defence mitigation synergy and grey 'Cost not allocated due to high variability or lack of data' for Electric vehicles."
+  },
+  {
+    "query_id": "adv_dev_20",
+    "passed": true,
+    "reason": "Correctly abstains; notes COP27 / Sharm el-Sheikh Loss and Damage Fund pledge is not in Section 4.8 or the report."
+  }
+]

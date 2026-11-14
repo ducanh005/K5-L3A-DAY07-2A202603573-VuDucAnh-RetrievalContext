@@ -1,0 +1,955 @@
+{
+  "document": {
+    "id": "ipcc-ar6-syr-2023",
+    "title": "Climate Change 2023: Synthesis Report (AR6 Full Volume — SPM, Longer Report & Annexes)",
+    "official_url": "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf",
+    "doi": "10.59327/IPCC/AR6-9789291691647",
+    "isbn": "978-92-9169-164-7",
+    "pdf_sha256": "f5258cf9434fd8887848e334197b6397ad6e107a6f06ddf21a00b2bce3f5dee6",
+    "license_summary": "Copyright IPCC 2023 (ISBN 978-92-9169-164-7). Short extracts permitted with attribution; raw PDF downloaded from official URL rather than redistributed in git."
+  },
+  "indexing_config": {
+    "text_chunk_max_chars": 1100,
+    "text_chunk_overlap": 120,
+    "crop_dpi": 200,
+    "vision_extraction_model": "gemini-3.8-flash",
+    "embedding_model": "gemini-embedding-2",
+    "embedding_dimensions": 768
+  },
+  "coverage_audit": {
+    "total_pdf_pages": 186,
+    "indexed_pages_count": 175,
+    "skipped_blank_pages_count": 11,
+    "skipped_blank_pages": [
+      {
+        "pdf_page": 2,
+        "printed_page": "frontmatter",
+        "section": "Frontmatter",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 6,
+        "printed_page": "iv",
+        "section": "Frontmatter",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 12,
+        "printed_page": "x",
+        "section": "Frontmatter",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 18,
+        "printed_page": "2",
+        "section": "Summary for Policymakers",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 52,
+        "printed_page": "36",
+        "section": "Summary for Policymakers",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 56,
+        "printed_page": "40",
+        "section": "Section 1: Introduction",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 106,
+        "printed_page": "90",
+        "section": "Section 3: Long-Term Futures",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 132,
+        "printed_page": "116",
+        "section": "Section 4: Near-Term Responses",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 134,
+        "printed_page": "118",
+        "section": "Annex I: Glossary",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 150,
+        "printed_page": "134",
+        "section": "Annex II: Acronyms and Units",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      },
+      {
+        "pdf_page": 158,
+        "printed_page": "142",
+        "section": "Annex III: Contributors",
+        "reason": "Blank spacer/transition page (0 extractable characters, no raster images or structural drawings).",
+        "impact": "None — intentionally empty separator page before major sections."
+      }
+    ],
+    "divider_or_cover_pages": [
+      {
+        "pdf_page": 1,
+        "printed_page": "cover",
+        "section": "Frontmatter",
+        "chars": 96,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 5,
+        "printed_page": "iii",
+        "section": "Frontmatter",
+        "chars": 24,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 8,
+        "printed_page": "vi",
+        "section": "Frontmatter",
+        "chars": 7,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 53,
+        "printed_page": "37",
+        "section": "Section 1: Introduction",
+        "chars": 25,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 57,
+        "printed_page": "41",
+        "section": "Section 2: Current Status and Trends",
+        "chars": 38,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 83,
+        "printed_page": "67",
+        "section": "Section 3: Long-Term Futures",
+        "chars": 55,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 107,
+        "printed_page": "91",
+        "section": "Section 4: Near-Term Responses",
+        "chars": 55,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 133,
+        "printed_page": "117",
+        "section": "Annex I: Glossary",
+        "chars": 7,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 151,
+        "printed_page": "135",
+        "section": "Annex III: Contributors",
+        "chars": 26,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 159,
+        "printed_page": "143",
+        "section": "Annex IV: Expert Reviewers",
+        "chars": 37,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 175,
+        "printed_page": "159",
+        "section": "Annex V: List of Publications",
+        "chars": 83,
+        "note": "Cover or section-divider title page (indexed in full)."
+      },
+      {
+        "pdf_page": 179,
+        "printed_page": "163",
+        "section": "Index",
+        "chars": 9,
+        "note": "Cover or section-divider title page (indexed in full)."
+      }
+    ],
+    "total_text_chunks": 787
+  },
+  "visual_regions_count": 37,
+  "visual_modality_counts": {
+    "table": 9,
+    "chart": 14,
+    "diagram_map": 14
+  },
+  "visual_catalog": [
+    {
+      "region_id": "VIS:Figure_SPM1:p023",
+      "label": "Figure SPM.1",
+      "modality": "diagram_map",
+      "pdf_page": 23,
+      "caption_page": 23,
+      "printed_page": "7",
+      "bbox": [
+        45.0,
+        48.0,
+        565.0,
+        745.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_SPM1_p023.png",
+      "image_size": [
+        1445,
+        1937
+      ]
+    },
+    {
+      "region_id": "VIS:Table_Box_SPM1:p026",
+      "label": "Box SPM.1, Table 1",
+      "modality": "table",
+      "pdf_page": 26,
+      "caption_page": 26,
+      "printed_page": "10",
+      "bbox": [
+        65.0,
+        48.0,
+        550.0,
+        350.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Table_Box_SPM1_p026.png",
+      "image_size": [
+        1348,
+        840
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_SPM2:p030",
+      "label": "Figure SPM.2",
+      "modality": "diagram_map",
+      "pdf_page": 30,
+      "caption_page": 30,
+      "printed_page": "14",
+      "bbox": [
+        45.0,
+        45.0,
+        565.0,
+        750.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_SPM2_p030.png",
+      "image_size": [
+        1445,
+        1959
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_SPM3:p032",
+      "label": "Figure SPM.3",
+      "modality": "diagram_map",
+      "pdf_page": 32,
+      "caption_page": 32,
+      "printed_page": "16",
+      "bbox": [
+        45.0,
+        45.0,
+        565.0,
+        755.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_SPM3_p032.png",
+      "image_size": [
+        1445,
+        1973
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_SPM4:p033",
+      "label": "Figure SPM.4",
+      "modality": "chart",
+      "pdf_page": 33,
+      "caption_page": 34,
+      "printed_page": "17",
+      "bbox": [
+        45.0,
+        120.0,
+        565.0,
+        745.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_SPM4_p033.png",
+      "image_size": [
+        1445,
+        1737
+      ]
+    },
+    {
+      "region_id": "VIS:Table_SPM1:p037",
+      "label": "Table SPM.1",
+      "modality": "table",
+      "pdf_page": 37,
+      "caption_page": 37,
+      "printed_page": "21",
+      "bbox": [
+        60.0,
+        48.0,
+        555.0,
+        165.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Table_SPM1_p037.png",
+      "image_size": [
+        1376,
+        326
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_SPM5:p038",
+      "label": "Figure SPM.5",
+      "modality": "chart",
+      "pdf_page": 38,
+      "caption_page": 39,
+      "printed_page": "22",
+      "bbox": [
+        45.0,
+        52.0,
+        565.0,
+        725.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_SPM5_p038.png",
+      "image_size": [
+        1445,
+        1870
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_SPM6:p041",
+      "label": "Figure SPM.6",
+      "modality": "diagram_map",
+      "pdf_page": 41,
+      "caption_page": 41,
+      "printed_page": "25",
+      "bbox": [
+        45.0,
+        52.0,
+        565.0,
+        750.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_SPM6_p041.png",
+      "image_size": [
+        1445,
+        1940
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_SPM7:p043",
+      "label": "Figure SPM.7",
+      "modality": "chart",
+      "pdf_page": 43,
+      "caption_page": 43,
+      "printed_page": "27",
+      "bbox": [
+        50.0,
+        48.0,
+        565.0,
+        750.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_SPM7_p043.png",
+      "image_size": [
+        1432,
+        1951
+      ]
+    },
+    {
+      "region_id": "VIS:Table_SPM7_Feasibility:p043",
+      "label": "Figure SPM.7 Adaptation Feasibility Table",
+      "modality": "table",
+      "pdf_page": 43,
+      "caption_page": 43,
+      "printed_page": "27",
+      "bbox": [
+        50.0,
+        56.0,
+        412.0,
+        628.0
+      ],
+      "section": "Summary for Policymakers",
+      "crop_relpath": "data/advanced/crops/VIS_Table_SPM7_Feasibility_p043.png",
+      "image_size": [
+        1007,
+        1590
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_1_1:p055",
+      "label": "Figure 1.1",
+      "modality": "diagram_map",
+      "pdf_page": 55,
+      "caption_page": 55,
+      "printed_page": "39",
+      "bbox": [
+        40.0,
+        65.0,
+        570.0,
+        210.0
+      ],
+      "section": "Section 1: Introduction",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_1_1_p055.png",
+      "image_size": [
+        1473,
+        404
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_2_1:p059",
+      "label": "Figure 2.1",
+      "modality": "chart",
+      "pdf_page": 59,
+      "caption_page": 59,
+      "printed_page": "43",
+      "bbox": [
+        45.0,
+        45.0,
+        570.0,
+        735.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_2_1_p059.png",
+      "image_size": [
+        1459,
+        1917
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_2_2_charts:p061",
+      "label": "Figure 2.2 Panels (a)-(c)",
+      "modality": "chart",
+      "pdf_page": 61,
+      "caption_page": 62,
+      "printed_page": "45",
+      "bbox": [
+        42.0,
+        45.0,
+        575.0,
+        582.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_2_2_charts_p061.png",
+      "image_size": [
+        1482,
+        1492
+      ]
+    },
+    {
+      "region_id": "VIS:Table_Fig2_2d:p061",
+      "label": "Figure 2.2 Panel (d) Table",
+      "modality": "table",
+      "pdf_page": 61,
+      "caption_page": 62,
+      "printed_page": "45",
+      "bbox": [
+        42.0,
+        565.0,
+        575.0,
+        750.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Table_Fig2_2d_p061.png",
+      "image_size": [
+        1482,
+        515
+      ]
+    },
+    {
+      "region_id": "VIS:Table_2_1:p063",
+      "label": "Table 2.1",
+      "modality": "table",
+      "pdf_page": 63,
+      "caption_page": 63,
+      "printed_page": "47",
+      "bbox": [
+        40.0,
+        42.0,
+        570.0,
+        610.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Table_2_1_p063.png",
+      "image_size": [
+        1473,
+        1579
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_2_3a:p064",
+      "label": "Figure 2.3 Panel (a)",
+      "modality": "chart",
+      "pdf_page": 64,
+      "caption_page": 66,
+      "printed_page": "48",
+      "bbox": [
+        35.0,
+        45.0,
+        565.0,
+        745.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_2_3a_p064.png",
+      "image_size": [
+        1473,
+        1945
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_2_3b:p065",
+      "label": "Figure 2.3 Panel (b)",
+      "modality": "diagram_map",
+      "pdf_page": 65,
+      "caption_page": 66,
+      "printed_page": "49",
+      "bbox": [
+        45.0,
+        45.0,
+        575.0,
+        745.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_2_3b_p065.png",
+      "image_size": [
+        1473,
+        1945
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_2_4:p070",
+      "label": "Figure 2.4",
+      "modality": "chart",
+      "pdf_page": 70,
+      "caption_page": 70,
+      "printed_page": "54",
+      "bbox": [
+        35.0,
+        50.0,
+        565.0,
+        645.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_2_4_p070.png",
+      "image_size": [
+        1473,
+        1654
+      ]
+    },
+    {
+      "region_id": "VIS:Table_2_2:p074",
+      "label": "Table 2.2",
+      "modality": "table",
+      "pdf_page": 74,
+      "caption_page": 74,
+      "printed_page": "58",
+      "bbox": [
+        35.0,
+        240.0,
+        560.0,
+        610.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Table_2_2_p074.png",
+      "image_size": [
+        1459,
+        1029
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_2_5:p075",
+      "label": "Figure 2.5",
+      "modality": "chart",
+      "pdf_page": 75,
+      "caption_page": 75,
+      "printed_page": "59",
+      "bbox": [
+        45.0,
+        45.0,
+        575.0,
+        480.0
+      ],
+      "section": "Section 2: Current Status and Trends",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_2_5_p075.png",
+      "image_size": [
+        1473,
+        1209
+      ]
+    },
+    {
+      "region_id": "VIS:CrossBox2_Diagram:p081",
+      "label": "Cross-Section Box.2 Figure 1",
+      "modality": "diagram_map",
+      "pdf_page": 81,
+      "caption_page": 82,
+      "printed_page": "65",
+      "bbox": [
+        45.0,
+        42.0,
+        575.0,
+        425.0
+      ],
+      "section": "Section 2: Cross-Section Box 2",
+      "crop_relpath": "data/advanced/crops/VIS_CrossBox2_Diagram_p081.png",
+      "image_size": [
+        1473,
+        1065
+      ]
+    },
+    {
+      "region_id": "VIS:Table_CrossBox2_Risk:p081",
+      "label": "Cross-Section Box.2 Table & Risk Venn",
+      "modality": "table",
+      "pdf_page": 81,
+      "caption_page": 82,
+      "printed_page": "65",
+      "bbox": [
+        45.0,
+        420.0,
+        575.0,
+        748.0
+      ],
+      "section": "Section 2: Cross-Section Box 2",
+      "crop_relpath": "data/advanced/crops/VIS_Table_CrossBox2_Risk_p081.png",
+      "image_size": [
+        1473,
+        912
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_3_1:p086",
+      "label": "Figure 3.1",
+      "modality": "diagram_map",
+      "pdf_page": 86,
+      "caption_page": 86,
+      "printed_page": "70",
+      "bbox": [
+        35.0,
+        45.0,
+        565.0,
+        745.0
+      ],
+      "section": "Section 3: Long-Term Futures",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_3_1_p086.png",
+      "image_size": [
+        1473,
+        1945
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_3_2:p089",
+      "label": "Figure 3.2",
+      "modality": "diagram_map",
+      "pdf_page": 89,
+      "caption_page": 90,
+      "printed_page": "73",
+      "bbox": [
+        45.0,
+        45.0,
+        575.0,
+        745.0
+      ],
+      "section": "Section 3: Long-Term Futures",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_3_2_p089.png",
+      "image_size": [
+        1473,
+        1945
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_3_3_rfc:p091",
+      "label": "Figure 3.3 Panels (a)-(b)",
+      "modality": "diagram_map",
+      "pdf_page": 91,
+      "caption_page": 93,
+      "printed_page": "75",
+      "bbox": [
+        45.0,
+        45.0,
+        575.0,
+        745.0
+      ],
+      "section": "Section 3: Long-Term Futures",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_3_3_rfc_p091.png",
+      "image_size": [
+        1473,
+        1945
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_3_3_reg:p092",
+      "label": "Figure 3.3 Panels (c)-(d)",
+      "modality": "diagram_map",
+      "pdf_page": 92,
+      "caption_page": 93,
+      "printed_page": "76",
+      "bbox": [
+        35.0,
+        45.0,
+        565.0,
+        745.0
+      ],
+      "section": "Section 3: Long-Term Futures",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_3_3_reg_p092.png",
+      "image_size": [
+        1473,
+        1945
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_3_4:p096",
+      "label": "Figure 3.4",
+      "modality": "chart",
+      "pdf_page": 96,
+      "caption_page": 97,
+      "printed_page": "80",
+      "bbox": [
+        35.0,
+        45.0,
+        565.0,
+        745.0
+      ],
+      "section": "Section 3: Long-Term Futures",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_3_4_p096.png",
+      "image_size": [
+        1473,
+        1945
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_3_5:p099",
+      "label": "Figure 3.5",
+      "modality": "chart",
+      "pdf_page": 99,
+      "caption_page": 99,
+      "printed_page": "83",
+      "bbox": [
+        45.0,
+        45.0,
+        575.0,
+        520.0
+      ],
+      "section": "Section 3: Long-Term Futures",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_3_5_p099.png",
+      "image_size": [
+        1473,
+        1320
+      ]
+    },
+    {
+      "region_id": "VIS:Table_3_1:p100",
+      "label": "Table 3.1",
+      "modality": "table",
+      "pdf_page": 100,
+      "caption_page": 100,
+      "printed_page": "84",
+      "bbox": [
+        35.0,
+        40.0,
+        568.0,
+        675.0
+      ],
+      "section": "Section 3: Long-Term Futures",
+      "crop_relpath": "data/advanced/crops/VIS_Table_3_1_p100.png",
+      "image_size": [
+        1481,
+        1764
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_3_6:p102",
+      "label": "Figure 3.6",
+      "modality": "chart",
+      "pdf_page": 102,
+      "caption_page": 102,
+      "printed_page": "86",
+      "bbox": [
+        35.0,
+        45.0,
+        565.0,
+        510.0
+      ],
+      "section": "Section 3: Long-Term Futures",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_3_6_p102.png",
+      "image_size": [
+        1473,
+        1292
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_4_1:p110",
+      "label": "Figure 4.1",
+      "modality": "chart",
+      "pdf_page": 110,
+      "caption_page": 111,
+      "printed_page": "94",
+      "bbox": [
+        35.0,
+        42.0,
+        568.0,
+        748.0
+      ],
+      "section": "Section 4: Near-Term Responses",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_4_1_p110.png",
+      "image_size": [
+        1481,
+        1962
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_4_2:p113",
+      "label": "Figure 4.2",
+      "modality": "diagram_map",
+      "pdf_page": 113,
+      "caption_page": 113,
+      "printed_page": "97",
+      "bbox": [
+        45.0,
+        48.0,
+        570.0,
+        750.0
+      ],
+      "section": "Section 4: Near-Term Responses",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_4_2_p113.png",
+      "image_size": [
+        1459,
+        1951
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_4_3:p116",
+      "label": "Figure 4.3",
+      "modality": "diagram_map",
+      "pdf_page": 116,
+      "caption_page": 117,
+      "printed_page": "100",
+      "bbox": [
+        35.0,
+        42.0,
+        565.0,
+        748.0
+      ],
+      "section": "Section 4: Near-Term Responses",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_4_3_p116.png",
+      "image_size": [
+        1473,
+        1962
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_4_4:p119",
+      "label": "Figure 4.4",
+      "modality": "chart",
+      "pdf_page": 119,
+      "caption_page": 120,
+      "printed_page": "103",
+      "bbox": [
+        45.0,
+        45.0,
+        570.0,
+        750.0
+      ],
+      "section": "Section 4: Near-Term Responses",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_4_4_p119.png",
+      "image_size": [
+        1459,
+        1959
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_4_5:p125",
+      "label": "Figure 4.5",
+      "modality": "diagram_map",
+      "pdf_page": 125,
+      "caption_page": 125,
+      "printed_page": "109",
+      "bbox": [
+        45.0,
+        45.0,
+        570.0,
+        645.0
+      ],
+      "section": "Section 4: Near-Term Responses",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_4_5_p125.png",
+      "image_size": [
+        1459,
+        1667
+      ]
+    },
+    {
+      "region_id": "VIS:Figure_4_6:p129",
+      "label": "Figure 4.6",
+      "modality": "chart",
+      "pdf_page": 129,
+      "caption_page": 129,
+      "printed_page": "113",
+      "bbox": [
+        45.0,
+        45.0,
+        570.0,
+        495.0
+      ],
+      "section": "Section 4: Near-Term Responses",
+      "crop_relpath": "data/advanced/crops/VIS_Figure_4_6_p129.png",
+      "image_size": [
+        1459,
+        1250
+      ]
+    },
+    {
+      "region_id": "VIS:Table_4_6_Multipliers:p129",
+      "label": "Figure 4.6 Multiplication Factors Table",
+      "modality": "table",
+      "pdf_page": 129,
+      "caption_page": 129,
+      "printed_page": "113",
+      "bbox": [
+        45.0,
+        74.0,
+        575.0,
+        472.0
+      ],
+      "section": "Section 4: Near-Term Responses",
+      "crop_relpath": "data/advanced/crops/VIS_Table_4_6_Multipliers_p129.png",
+      "image_size": [
+        1473,
+        1107
+      ]
+    }
+  ],
+  "ingestion_stats": {
+    "total_indexed_elements": 824,
+    "text_elements": 787,
+    "visual_elements": 37,
+    "vision_extraction": {
+      "vision_calls": 37,
+      "prompt_tokens": 54933,
+      "candidates_tokens": 40484,
+      "total_tokens": 95417
+    },
+    "embeddings": {
+      "text_embed_calls": 52,
+      "image_embed_calls": 37,
+      "total_items_embedded": 861
+    },
+    "elapsed_seconds": 515.65
+  }
+}

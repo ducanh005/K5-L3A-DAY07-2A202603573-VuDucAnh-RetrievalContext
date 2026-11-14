@@ -1,0 +1,102 @@
+[
+  {
+    "query_id": "adv_dev_01",
+    "passed": true,
+    "reason": "Fixed citation parser & inspected VIS:Table_Box_SPM1:p026; exact C3/C6/C8 rows and labels."
+  },
+  {
+    "query_id": "adv_dev_02",
+    "passed": true,
+    "reason": "MEDIA_RESOLUTION_ULTRA_HIGH accurately distinguished Greenland pale cream (medium confidence) from Antarctic unshaded/white cell ('Limited evidence & medium agreement') in VIS:Table_2_1:p063."
+  },
+  {
+    "query_id": "adv_dev_03",
+    "passed": false,
+    "reason": "Got Sustainable urban water & land use right, but misread Green infrastructure Potential feasibility (Medium purple with ••• dots) as 'High feasibility' in VIS:Table_SPM7_Feasibility:p043."
+  },
+  {
+    "query_id": "adv_dev_04",
+    "passed": false,
+    "reason": "Correctly identified Physical water availability and Animal/livestock as striped vs Agriculture/Fisheries as solid red, but precomputed summary poisoning caused it to report 2 dots for all four instead of 1 dot (Low confidence) for Animal and livestock."
+  },
+  {
+    "query_id": "adv_dev_05",
+    "passed": true,
+    "reason": "Exact downstream chain, Mitigation/Adaptation policies, and all 5 SSP curves from VIS:CrossBox2_Diagram:p081."
+  },
+  {
+    "query_id": "adv_dev_06",
+    "passed": true,
+    "reason": "Exact '>3 million years ago' annotation and panel (b) 1-in-6-year drought SD definition in VIS:Figure_3_1:p086."
+  },
+  {
+    "query_id": "adv_dev_07",
+    "passed": true,
+    "reason": "Exact 410 ppm CO2, 1866 ppb CH4, 332 ppb N2O, and 1.1C warming from VIS:Figure_2_1:p059."
+  },
+  {
+    "query_id": "adv_dev_08",
+    "passed": true,
+    "reason": "Exact 1990/2000/2010/2019 totals (38, 42, 53, 59 GtCO2-eq) and Eastern Asia shares (13%, 16%, 24%, 27%) from VIS:Figure_2_2_charts:p061."
+  },
+  {
+    "query_id": "adv_dev_09",
+    "passed": true,
+    "reason": "Exact USD 55-148/MWh fossil range, $2020/MWh vs $2020/kWh, and panel (b) GW/EV scales in VIS:Figure_2_4:p070."
+  },
+  {
+    "query_id": "adv_dev_10",
+    "passed": true,
+    "reason": "Accurate comparison of C1 vs C3 net zero CO2 and net zero GHG medians, percentages, and 2100 callout via VIS:Figure_3_6:p102 and VIS:Table_3_1:p100."
+  },
+  {
+    "query_id": "adv_dev_11",
+    "passed": true,
+    "reason": "Multi-region budget fix packed & inspected BOTH VIS:Figure_2_2_charts:p061 and VIS:Table_Fig2_2d:p061 cleanly (23% vs 4%; 366M vs 1836M; 61 vs 6.2; 19 vs 2.6)."
+  },
+  {
+    "query_id": "adv_dev_12",
+    "passed": true,
+    "reason": "Joined VIS:Table_2_2:p074 and VIS:Figure_2_5:p075 cleanly across all 3 parts including both 19-26 (unconditional) and 16-23 (conditional) gaps."
+  },
+  {
+    "query_id": "adv_dev_13",
+    "passed": true,
+    "reason": "Combined Section 3.3.1 text with inspected VIS:Figure_3_5:p099 (0.27-0.63C / 0.45C, 500 GtCO2, existing > 1.5C, existing+planned ~ 2C 83%)."
+  },
+  {
+    "query_id": "adv_dev_14",
+    "passed": true,
+    "reason": "Exact SPM A.2.1 sea level totals and sub-period rates in [ADV_TXT:p021:c03]."
+  },
+  {
+    "query_id": "adv_dev_15",
+    "passed": true,
+    "reason": "Exact Section 2.2 cost reductions, carbon pricing coverage, and finance growth in [ADV_TXT:p069:c02,c05,c06]."
+  },
+  {
+    "query_id": "adv_dev_16",
+    "passed": true,
+    "reason": "Exact Section 2.2.3 policy count, water share, and avoided emissions in [ADV_TXT:p071:c01,c02]."
+  },
+  {
+    "query_id": "adv_dev_17",
+    "passed": true,
+    "reason": "Exact Footnote 122 SRM approaches and Section 3.1.2 conclusions in [ADV_TXT:p088:c03,c04]."
+  },
+  {
+    "query_id": "adv_dev_18",
+    "passed": true,
+    "reason": "Correctly abstained on 2022/2023 emissions inventory."
+  },
+  {
+    "query_id": "adv_dev_19",
+    "passed": true,
+    "reason": "Inspected VIS:Figure_4_4:p119 and VIS:Figure_SPM7:p043 and correctly set sufficient_evidence=false because cells are explicitly 'not assessed' / 'Cost not allocated'."
+  },
+  {
+    "query_id": "adv_dev_20",
+    "passed": true,
+    "reason": "Correctly abstained on absent COP27 Loss and Damage Fund pledge."
+  }
+]

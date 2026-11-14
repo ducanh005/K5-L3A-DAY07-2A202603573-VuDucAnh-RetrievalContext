@@ -1,0 +1,162 @@
+[
+  {
+    "query_id": "adv_test_01",
+    "passed": true,
+    "reason": "Exact medians and [5-95 percentile] ranges for both GHG (21 [1-42]%, 35 [22-55]%, 46 [34-63]%, 64 [53-77]%) and CO2 (22 [1-44]%, 37 [21-59]%, 51 [36-70]%, 73 [55-90]%) across 2030/2035/2040/2050 [VIS:Table_SPM1:p037]."
+  },
+  {
+    "query_id": "adv_test_02",
+    "passed": true,
+    "reason": "Exact Figure 2.2(d) values for Africa (0.78, 1.2, 0.84), Europe (0.18, 6.5, 7.8), and Eastern Asia (0.62, 8.4, 6.7) with units and VIS:Table_Fig2_2d:p061."
+  },
+  {
+    "query_id": "adv_test_03",
+    "passed": true,
+    "reason": "Exact Table 2.1 colour-key levels and cell text annotations for Ocean heat content, Salinity changes, and CO2 seasonal cycle [VIS:Table_2_1:p063]."
+  },
+  {
+    "query_id": "adv_test_04",
+    "passed": true,
+    "reason": "Exact Table 3.1 Net zero GHGs timings/(%)/[5-95%] intervals and Cumulative CO2 2020-2100 values across C1, C1a, C1b, and C2 [VIS:Table_3_1:p100]."
+  },
+  {
+    "query_id": "adv_test_05",
+    "passed": true,
+    "reason": "Exact Figure 4.6 highest sector (Agriculture, forestry and other land use x10/x31) and top three lower-range regions (Middle East x14/x28, Eastern Europe and West-Central Asia x7/x15, Southern Asia x7/x14) [VIS:Table_4_6_Multipliers:p129]."
+  },
+  {
+    "query_id": "adv_test_06",
+    "passed": true,
+    "reason": "Exact Figure SPM.7(a) ratings and confidence dots for Forest-based adaptation (High 3 dots / High 3 dots), Efficient livestock systems (Low 2 dots / Medium 2 dots), and Agroforestry (Medium 2 dots / High 3 dots) [VIS:Table_SPM7_Feasibility:p043]."
+  },
+  {
+    "query_id": "adv_test_07",
+    "passed": true,
+    "reason": "Exact Figure SPM.1(b) grouping of all 8 physical climate drivers across Medium confidence (3), Likely (1), Very likely (2), and Virtually certain (2) [VIS:Figure_SPM1:p023]."
+  },
+  {
+    "query_id": "adv_test_08",
+    "passed": false,
+    "reason": "Got Hot extremes exact for all 5 hexagons and Heavy precipitation exact for GIC/NEU/WCE, but misread EEU Heavy precipitation hexagon (solid teal Increase, 2 dots Medium in VIS_Figure_2_3a_p064.png) as hatched grey with 0 dots, and missed the 1 solid dot in MED."
+  },
+  {
+    "query_id": "adv_test_09",
+    "passed": true,
+    "reason": "Lists all 5 bottom-row titles and identifies Arctic sea-ice ecosystems (~1.6-1.7C, 2 dots) accurately; for the delayed ~3-4C Very high transition, visually verified against 300-DPI PDF p.92 Figure 3.3(e) that ember #3 'Costs and losses for key infrastructure in the Arctic' indeed has the latest Very high transition range (3.5-4.0C, 1 dot), even later than #2 (3.0-4.0C, 3 dots) [VIS:Figure_3_3_reg:p092]."
+  },
+  {
+    "query_id": "adv_test_10",
+    "passed": true,
+    "reason": "Exact Figure 4.3(a) 2020 baseline and 2020-2040 additional population (millions and %) for Asia, Africa, Europe, and Small Islands [VIS:Figure_4_3:p116]."
+  },
+  {
+    "query_id": "adv_test_11",
+    "passed": true,
+    "reason": "Exact Figure SPM.6 actor groups (Governments, Civil society, Private sector), all 7 enabling conditions, and all 5 constraining conditions [VIS:Figure_SPM6:p041]."
+  },
+  {
+    "query_id": "adv_test_12",
+    "passed": true,
+    "reason": "Exact Figure 4.5 cell-color identification across all 9 columns for SDG 6 (orange Trade-offs in Energy-Mitigation & Industry-Mitigation; 100% solid blue in Energy-Adaptation & Urban-Adaptation; no white) and SDG 15 (orange in Industry-Mitigation; 100% blue in Land-Adaptation; white in Urban-Adaptation) [VIS:Figure_4_5:p125]."
+  },
+  {
+    "query_id": "adv_test_13",
+    "passed": true,
+    "reason": "Exact Figure 4.4(b) percentages (44%, 67%, 66%, 29%, 73% before additional electrification +60% dark grey bar) and 40-70% end-use range [VIS:Figure_4_4:p119, ADV_TXT:p120:c06]."
+  },
+  {
+    "query_id": "adv_test_14",
+    "passed": true,
+    "reason": "Verified from VIS_Figure_4_1_p110.png: Land-use change crosses -100% at ~2030, Energy supply crosses at ~2040-2041, and Transport/industry/buildings (~-65% to -70%) and Non-CO2 (~-45% to -50%) do not reach -100% by 2050 [VIS:Figure_4_1:p110]."
+  },
+  {
+    "query_id": "adv_test_15",
+    "passed": true,
+    "reason": "Exact Figure SPM.5(a) implemented policies warming (3.2C, range 2.2-3.5C, medium confidence) and panel (e) Sinks/negative emissions explanation across all 5 IMPs [VIS:Figure_SPM5:p038]."
+  },
+  {
+    "query_id": "adv_test_16",
+    "passed": true,
+    "reason": "Exact Figure 2.3b(b) callout quote ('more vulnerable countries generally have lower emissions per capita') and both right-hand outliers (~38 and ~70-71 tCO2/capita past axis break) [VIS:Figure_2_3b:p065, ADV_TXT:p065:c01]."
+  },
+  {
+    "query_id": "adv_test_17",
+    "passed": false,
+    "reason": "Got 2050 exposure (1B, 20-30x) and >15m warning exact and quoted caption 2300 literature numbers (0.3-3.1 m and 1.7-6.8 m), but mislabeled those numbers as 'relative to 1900' rather than relative to 1995-2014 (plotted bars relative to 1900 add +0.158 m, spanning ~0.46-3.26 m and ~1.86-6.96 m)."
+  },
+  {
+    "query_id": "adv_test_18",
+    "passed": true,
+    "reason": "Exact Warm-water corals (70-90%, >99%) and Wildfire damage annotations, plus accurate 100 cm SLR comparison for Urban atoll islands vs Resource-rich coastal cities under r vs R in Figure 3.3(c) [VIS:Figure_3_3_rfc:p091]."
+  },
+  {
+    "query_id": "adv_test_19",
+    "passed": true,
+    "reason": "Accurately combines Section 2.1.1 emissions (LDCs 1.7, SIDS 4.6, global 6.9 tCO2-eq) with Figure 2.3b(c) Small Islands rows (3 red Adverse + 3 dots, Mental health Adverse + '-' limited/insufficient) [ADV_TXT:p060:c02, VIS:Figure_2_3b:p065]."
+  },
+  {
+    "query_id": "adv_test_20",
+    "passed": true,
+    "reason": "Combines all 6 Figure 3.4(b) lifetimes (15, 15, 30, 50, 100, >=100 yrs), p.97 2100 likely SLR ranges (0.28-0.55 m and 0.63-1.01 m), and Section 3.2 threshold (>0.5 to 1 cm/yr) [VIS:Figure_3_4:p096, ADV_TXT:p097:c03, ADV_TXT:p095:c02]."
+  },
+  {
+    "query_id": "adv_test_21",
+    "passed": true,
+    "reason": "Combines Section 3.3.2 residual non-CO2 (8 [5-11] GtCO2-eq/yr counterbalanced by net negative CO2) with Figure 4.1(b) identification of IMP-Neg [ADV_TXT:p101:c03, VIS:Figure_4_1:p110]."
+  },
+  {
+    "query_id": "adv_test_22",
+    "passed": true,
+    "reason": "Combines Section 4.8.1 financing barriers with Figure 4.6 Developing (x4-x7) vs Developed (x3-x5) multipliers and 3-6x global shortfall footnote [ADV_TXT:p127:c07, p128:c03, p128:c04, VIS:Table_4_6_Multipliers:p129]."
+  },
+  {
+    "query_id": "adv_test_23",
+    "passed": true,
+    "reason": "Exact Footnote 30 warming estimates for SSP1-1.9 through SSP5-8.5 and SPM B.1.2 ~20 years emergence [ADV_TXT:p028:c02, p028:c03, p028:c05]."
+  },
+  {
+    "query_id": "adv_test_24",
+    "passed": true,
+    "reason": "Exact Section 2.1.1 overall/land/ocean 2011-2020 temperature rises and 2010-2019 human, GHG, aerosol, and natural contributions [ADV_TXT:p058:c02, p058:c03]."
+  },
+  {
+    "query_id": "adv_test_25",
+    "passed": true,
+    "reason": "Exact USD 1 to 4 trillion stranded assets (2015-2050) and Footnote 148 unabated benchmarks (90%+ CO2 capture, 50-80% fugitive CH4) [ADV_TXT:p111:c05, p111:c06, p111:c07]."
+  },
+  {
+    "query_id": "adv_test_26",
+    "passed": true,
+    "reason": "Exact hard vs soft adaptation limit definitions, all 4 ecosystems at hard limits, and both soft-limit human groups/regions [ADV_TXT:p077:c04, p077:c07]."
+  },
+  {
+    "query_id": "adv_test_27",
+    "passed": true,
+    "reason": "Correctly abstains (status=abstain); COP28 and Article 6 carbon-market rules are absent from the March 2023 AR6 SYR."
+  },
+  {
+    "query_id": "adv_test_28",
+    "passed": true,
+    "reason": "Correctly abstains (status=abstain); notes Vietnam is absent and Figure 2.2 aggregates at macro-regional level."
+  },
+  {
+    "query_id": "adv_test_29",
+    "passed": true,
+    "reason": "Correctly abstains (status=abstain); notes nuclear fusion, SMRs, and green hydrogen costs are not covered in Figure 2.4 or Section 2.2."
+  },
+  {
+    "query_id": "adv_test_30",
+    "passed": true,
+    "reason": "Correctly abstains (status=abstain); accurately cites Figure 3.3(e) explicit statement that no synthetic burning-ember diagrams were developed for Asia."
+  },
+  {
+    "query_id": "adv_test_31",
+    "passed": false,
+    "reason": "Prose accurately explained that Figure 4.5 omits SDG 13 and does not report confidence levels, but returned status=answered instead of status=abstain, failing strict binary abstention."
+  },
+  {
+    "query_id": "adv_test_32",
+    "passed": true,
+    "reason": "Correctly abstains (status=abstain); explains crypto mining and EU CBAM fiscal revenues are missing from the report."
+  }
+]

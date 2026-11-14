@@ -1,0 +1,56 @@
+{
+  "total_cases": 32,
+  "total_passed": 29,
+  "pass_rate_pct": 90.62,
+  "meets_90pct_bar": true,
+  "system_errors": 0,
+  "by_category": {
+    "table": {
+      "passed": 6,
+      "total": 6,
+      "rate": 100.0,
+      "failed_ids": []
+    },
+    "diagram_map": {
+      "passed": 5,
+      "total": 6,
+      "rate": 83.33,
+      "failed_ids": [
+        "adv_test_08"
+      ]
+    },
+    "chart": {
+      "passed": 5,
+      "total": 6,
+      "rate": 83.33,
+      "failed_ids": [
+        "adv_test_17"
+      ]
+    },
+    "multi_hop": {
+      "passed": 4,
+      "total": 4,
+      "rate": 100.0,
+      "failed_ids": []
+    },
+    "text": {
+      "passed": 4,
+      "total": 4,
+      "rate": 100.0,
+      "failed_ids": []
+    },
+    "unanswerable": {
+      "passed": 5,
+      "total": 6,
+      "rate": 83.33,
+      "failed_ids": [
+        "adv_test_31"
+      ]
+    }
+  },
+  "avg_search_calls": 2.03,
+  "avg_inspect_calls": 0.88,
+  "total_agent_tokens": 686939,
+  "total_seconds": 978.98,
+  "median_case_ms": 29104.4
+}

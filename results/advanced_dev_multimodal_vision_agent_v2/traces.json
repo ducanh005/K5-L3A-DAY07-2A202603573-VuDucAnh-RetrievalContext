@@ -1,0 +1,5162 @@
+[
+  {
+    "query_id": "adv_dev_01",
+    "split": "dev",
+    "category": "table",
+    "secondary_tags": [
+      "pathway_categories",
+      "rcp_mapping"
+    ],
+    "question": "According to Box SPM.1, Table 1, which WGIII modelled pathway categories have a corresponding RCPy designation listed for WGI and WGII, and what are their respective category descriptions, GHG emissions scenarios (SSPx-y), and RCPy labels?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to Box SPM.1, Table 1, the WGIII modelled pathway categories that have a corresponding RCPy designation listed for WGI and WGII are **C3**, **C6**, and **C8** [VIS:Table_Box_SPM1:p026]. \n\nTheir respective details are as follows [VIS:Table_Box_SPM1:p026]:\n\n1. **Category C3**:\n   - **Category description:** limit warming to 2°C (>67%)\n   - **GHG emissions scenario (SSPx-y):** Low (SSP1-2.6)\n   - **RCPy label:** RCP2.6\n\n2. **Category C6**:\n   - **Category description:** limit warming to 3°C (>50%)\n   - **GHG emissions scenario (SSPx-y):** Intermediate (SSP2-4.5)\n   - **RCPy label:** RCP 4.5\n\n3. **Category C8**:\n   - **Category description:** exceed warming of 4°C (>50%)\n   - **GHG emissions scenario (SSPx-y):** Very high (SSP5-8.5)\n   - **RCPy label:** RCP 8.5",
+    "citations": [
+      "VIS:Table_Box_SPM1:p026"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Table_Box_SPM1:p026",
+        "modality": "table",
+        "label": "Box SPM.1, Table 1",
+        "pdf_page": 26,
+        "printed_page": "10",
+        "bbox": [
+          65.0,
+          48.0,
+          550.0,
+          350.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Table_Box_SPM1_p026.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Table_Box_SPM1:p026"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Box SPM.1 Table 1 WGIII modelled pathway categories RCPy SSPx-y",
+        "modality": "table",
+        "results": [
+          {
+            "id": "VIS:Table_Box_SPM1:p026",
+            "modality": "table",
+            "pdf_page": 26,
+            "printed_page": "10",
+            "score": 0.04918,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Table_CrossBox2_Risk:p081",
+            "modality": "table",
+            "pdf_page": 81,
+            "printed_page": "65",
+            "score": 0.048387,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 2,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Table_3_1:p100",
+            "modality": "table",
+            "pdf_page": 100,
+            "printed_page": "84",
+            "score": 0.047619,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 3,
+              "dense_image": 3
+            }
+          },
+          {
+            "id": "VIS:Table_2_2:p074",
+            "modality": "table",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.046402,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 6,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Table_SPM1:p037",
+            "modality": "table",
+            "pdf_page": 37,
+            "printed_page": "21",
+            "score": 0.046394,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 4,
+              "dense_image": 5
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Table_Box_SPM1:p026",
+          "VIS:Table_CrossBox2_Risk:p081",
+          "VIS:Table_3_1:p100",
+          "VIS:Table_2_2:p074",
+          "VIS:Table_SPM1:p037"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Table_Box_SPM1:p026",
+        "pdf_page": 26,
+        "printed_page": "10",
+        "bbox": [
+          65.0,
+          48.0,
+          550.0,
+          350.0
+        ],
+        "focus_question": "Look at Box SPM.1, Table 1. Which WGIII categories (C1 to C8) have an entry in the 'RCPy in WGI & WGII' column? For each of those categories, what is the exact Category description, GHG emissions scenario (SSPx-y), and RCPy label?"
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Table_Box_SPM1:p026"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "query": "Box SPM.1 Table 1 WGIII modelled pathway categories RCPy SSPx-y",
+          "modality": "table",
+          "reason": "Find Box SPM.1 Table 1 in the Synthesis Report SPM"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3421.08,
+        "prompt_tokens": 997,
+        "candidates_tokens": 58,
+        "thoughts_tokens": 80,
+        "total_tokens": 1135
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Look at Box SPM.1, Table 1. Which WGIII categories (C1 to C8) have an entry in the 'RCPy in WGI & WGII' column? For each of those categories, what is the exact Category description, GHG emissions scenario (SSPx-y), and RCPy label?",
+          "region_id": "VIS:Table_Box_SPM1:p026"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4286.95,
+        "prompt_tokens": 5723,
+        "candidates_tokens": 106,
+        "thoughts_tokens": 80,
+        "total_tokens": 5909
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "citations": [
+            "VIS:Table_Box_SPM1:p026"
+          ],
+          "answer": "According to Box SPM.1, Table 1, the WGIII modelled pathway categories that have a corresponding RCPy designation listed for WGI and WGII are **C3**, **C6**, and **C8** [VIS:Table_Box_SPM1:p026]. \n\nTheir respective details are as follows [VIS:Table_Box_SPM1:p026]:\n\n1. **Category C3**:\n   - **Category description:** limit warming to 2°C (>67%)\n   - **GHG emissions scenario (SSPx-y):** Low (SSP1-2.6)\n   - **RCPy label:** RCP2.6\n\n2. **Category C6**:\n   - **Category description:** limit warming to 3°C (>50%)\n   - **GHG emissions scenario (SSPx-y):** Intermediate (SSP2-4.5)\n   - **RCPy label:** RCP 4.5\n\n3. **Category C8**:\n   - **Category description:** exceed warming of 4°C (>50%)\n   - **GHG emissions scenario (SSPx-y):** Very high (SSP5-8.5)\n   - **RCPy label:** RCP 8.5",
+          "sufficient_evidence": true
+        },
+        "attached_visuals": [
+          "VIS:Table_Box_SPM1:p026"
+        ],
+        "latency_ms": 10315.59,
+        "prompt_tokens": 8052,
+        "candidates_tokens": 314,
+        "thoughts_tokens": 801,
+        "total_tokens": 9167
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 14772,
+      "candidates_tokens": 478,
+      "thoughts_tokens": 961,
+      "total_tokens": 16211
+    },
+    "elapsed_ms": 18485.39,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_02",
+    "split": "dev",
+    "category": "table",
+    "secondary_tags": [
+      "color_coded",
+      "cryosphere",
+      "legend"
+    ],
+    "question": "In Table 2.1, what are the assessed confidence/likelihood levels (from the colour key) and any cell text annotations for both 'Observed change assessment' and 'Human contribution assessment' on 'Greenland ice sheet mass loss since 1990s' and 'Antarctic ice sheet mass loss since 1990s'?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Based on Table 2.1 and its colour key [VIS:Table_2_1:p063]:\n\n### 1. Greenland ice sheet mass loss since 1990s\n* **Observed change assessment:**\n  * **Colour key assessment:** **Virtually certain** (dark brown shading) [VIS:Table_2_1:p063]\n  * **Cell text annotations:** None [VIS:Table_2_1:p063]\n* **Human contribution assessment:**\n  * **Colour key assessment:** **Medium confidence** (pale cream shading) [VIS:Table_2_1:p063]\n  * **Cell text annotations:** None [VIS:Table_2_1:p063]\n\n---\n\n### 2. Antarctic ice sheet mass loss since 1990s\n* **Observed change assessment:**\n  * **Colour key assessment:** **Very likely** (orange shading) [VIS:Table_2_1:p063]\n  * **Cell text annotations:** None [VIS:Table_2_1:p063]\n* **Human contribution assessment:**\n  * **Colour key assessment:** Not colour-coded from the confidence/likelihood key (unshaded/white background) [VIS:Table_2_1:p063]\n  * **Cell text annotations:** *\"Limited evidence & medium agreement\"* [VIS:Table_2_1:p063]",
+    "citations": [
+      "VIS:Table_2_1:p063"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Table_2_1:p063",
+        "modality": "table",
+        "label": "Table 2.1",
+        "pdf_page": 63,
+        "printed_page": "47",
+        "bbox": [
+          40.0,
+          42.0,
+          570.0,
+          610.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Table_2_1_p063.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Table_2_1:p063"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 2.1 Observed change assessment Human contribution assessment Greenland ice sheet mass loss Antarctic ice sheet",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Table_2_1:p063",
+            "modality": "table",
+            "pdf_page": 63,
+            "printed_page": "47",
+            "score": 0.04918,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_3_3_reg:p092",
+            "modality": "diagram_map",
+            "pdf_page": 92,
+            "printed_page": "76",
+            "score": 0.046206,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 6,
+              "dense_image": 7
+            }
+          },
+          {
+            "id": "VIS:Table_2_2:p074",
+            "modality": "table",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.045598,
+            "stream_ranks": {
+              "bm25": 11,
+              "dense_text": 5,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Figure_3_4:p096",
+            "modality": "chart",
+            "pdf_page": 96,
+            "printed_page": "80",
+            "score": 0.044485,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 4,
+              "dense_image": 17
+            }
+          },
+          {
+            "id": "VIS:Table_SPM1:p037",
+            "modality": "table",
+            "pdf_page": 37,
+            "printed_page": "21",
+            "score": 0.044416,
+            "stream_ranks": {
+              "bm25": 16,
+              "dense_text": 3,
+              "dense_image": 5
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Table_2_1:p063",
+          "VIS:Figure_3_3_reg:p092",
+          "VIS:Table_2_2:p074",
+          "VIS:Figure_3_4:p096",
+          "VIS:Table_SPM1:p037"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Table_2_1:p063",
+        "pdf_page": 63,
+        "printed_page": "47",
+        "bbox": [
+          40.0,
+          42.0,
+          570.0,
+          610.0
+        ],
+        "focus_question": "Find the rows for 'Greenland ice sheet mass loss since 1990s' and 'Antarctic ice sheet mass loss since 1990s' under Cryosphere. For both 'Observed change assessment' and 'Human contribution assessment', what are the background colours (and corresponding confidence/likelihood levels from the colour key) and any text annotations inside the cells?"
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Table_2_1:p063"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "query": "Table 2.1 Observed change assessment Human contribution assessment Greenland ice sheet mass loss Antarctic ice sheet",
+          "modality": "visual",
+          "reason": "Locate Table 2.1 and inspect the cells for Greenland and Antarctic ice sheet mass loss."
+        },
+        "attached_visuals": [],
+        "latency_ms": 3653.03,
+        "prompt_tokens": 1016,
+        "candidates_tokens": 66,
+        "thoughts_tokens": 100,
+        "total_tokens": 1182
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "region_id": "VIS:Table_2_1:p063",
+          "focus_question": "Find the rows for 'Greenland ice sheet mass loss since 1990s' and 'Antarctic ice sheet mass loss since 1990s' under Cryosphere. For both 'Observed change assessment' and 'Human contribution assessment', what are the background colours (and corresponding confidence/likelihood levels from the colour key) and any text annotations inside the cells?"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3447.92,
+        "prompt_tokens": 5325,
+        "candidates_tokens": 116,
+        "thoughts_tokens": 104,
+        "total_tokens": 5545
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "answer": "Based on Table 2.1 and its colour key [VIS:Table_2_1:p063]:\n\n### 1. Greenland ice sheet mass loss since 1990s\n* **Observed change assessment:**\n  * **Colour key assessment:** **Virtually certain** (dark brown shading) [VIS:Table_2_1:p063]\n  * **Cell text annotations:** None [VIS:Table_2_1:p063]\n* **Human contribution assessment:**\n  * **Colour key assessment:** **Medium confidence** (pale cream shading) [VIS:Table_2_1:p063]\n  * **Cell text annotations:** None [VIS:Table_2_1:p063]\n\n---\n\n### 2. Antarctic ice sheet mass loss since 1990s\n* **Observed change assessment:**\n  * **Colour key assessment:** **Very likely** (orange shading) [VIS:Table_2_1:p063]\n  * **Cell text annotations:** None [VIS:Table_2_1:p063]\n* **Human contribution assessment:**\n  * **Colour key assessment:** Not colour-coded from the confidence/likelihood key (unshaded/white background) [VIS:Table_2_1:p063]\n  * **Cell text annotations:** *\"Limited evidence & medium agreement\"* [VIS:Table_2_1:p063]",
+          "sufficient_evidence": true,
+          "citations": [
+            "VIS:Table_2_1:p063"
+          ]
+        },
+        "attached_visuals": [
+          "VIS:Table_2_1:p063"
+        ],
+        "latency_ms": 12675.0,
+        "prompt_tokens": 7683,
+        "candidates_tokens": 359,
+        "thoughts_tokens": 1034,
+        "total_tokens": 9076
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 14024,
+      "candidates_tokens": 541,
+      "thoughts_tokens": 1238,
+      "total_tokens": 15803
+    },
+    "elapsed_ms": 20339.61,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_03",
+    "split": "dev",
+    "category": "table",
+    "secondary_tags": [
+      "color_coded",
+      "confidence_dots",
+      "adaptation_matrix"
+    ],
+    "question": "In Figure SPM.7 panel (a) under 'SETTLEMENTS AND INFRASTRUCTURE' in the left-hand 'Climate responses and adaptation options' table, what are the assessed potential feasibility levels (up to 1.5°C), synergies with mitigation, and confidence dot levels for all three listed options?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In **Figure SPM.7 panel (a)**, under the **'SETTLEMENTS AND INFRASTRUCTURE'** category of the left-hand *Climate responses and adaptation options* table, the three listed options and their assessed levels are [VIS:Table_SPM7_Feasibility:p043], [VIS:Figure_SPM7:p043]:\n\n1. **Sustainable urban water management**:\n   - **Potential feasibility up to 1.5°C**: **Medium** feasibility, with **medium confidence** (••) [VIS:Table_SPM7_Feasibility:p043].\n   - **Synergies with mitigation**: **Low** synergy, with **low confidence** (•) [VIS:Table_SPM7_Feasibility:p043].\n\n2. **Sustainable land use and urban planning**:\n   - **Potential feasibility up to 1.5°C**: **Medium** feasibility, with **medium confidence** (••) [VIS:Table_SPM7_Feasibility:p043].\n   - **Synergies with mitigation**: **High** synergy, with **low confidence** (•) [VIS:Table_SPM7_Feasibility:p043].\n\n3. **Green infrastructure and ecosystem services**:\n   - **Potential feasibility up to 1.5°C**: **High** feasibility, with **high confidence** (•••) [VIS:Table_SPM7_Feasibility:p043].\n   - **Synergies with mitigation**: **High** synergy, with **medium confidence** (••) [VIS:Table_SPM7_Feasibility:p043].\n\n*(Legend reference from Figure SPM.7: Dark blue = High; Medium purple = Medium; Light purple = Low; ••• = High confidence; •• = Medium confidence; • = Low confidence) [VIS:Table_SPM7_Feasibility:p043].*",
+    "citations": [
+      "VIS:Table_SPM7_Feasibility:p043",
+      "VIS:Figure_SPM7:p043"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Table_SPM7_Feasibility:p043",
+        "modality": "table",
+        "label": "Figure SPM.7 Adaptation Feasibility Table",
+        "pdf_page": 43,
+        "printed_page": "27",
+        "bbox": [
+          50.0,
+          56.0,
+          412.0,
+          628.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Table_SPM7_Feasibility_p043.png"
+      },
+      {
+        "id": "VIS:Figure_SPM7:p043",
+        "modality": "chart",
+        "label": "Figure SPM.7",
+        "pdf_page": 43,
+        "printed_page": "27",
+        "bbox": [
+          50.0,
+          48.0,
+          565.0,
+          750.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_SPM7_p043.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Table_SPM7_Feasibility:p043"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure SPM.7 Climate responses and adaptation options SETTLEMENTS AND INFRASTRUCTURE",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Figure_SPM7:p043",
+            "modality": "chart",
+            "pdf_page": 43,
+            "printed_page": "27",
+            "score": 0.048652,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 2,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Table_SPM7_Feasibility:p043",
+            "modality": "table",
+            "pdf_page": 43,
+            "printed_page": "27",
+            "score": 0.048412,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_4_4:p119",
+            "modality": "chart",
+            "pdf_page": 119,
+            "printed_page": "103",
+            "score": 0.047627,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 4,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Figure_4_5:p125",
+            "modality": "diagram_map",
+            "pdf_page": 125,
+            "printed_page": "109",
+            "score": 0.046883,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 3,
+              "dense_image": 5
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM6:p041",
+            "modality": "diagram_map",
+            "pdf_page": 41,
+            "printed_page": "25",
+            "score": 0.045964,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 8,
+              "dense_image": 3
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_SPM7:p043",
+          "VIS:Table_SPM7_Feasibility:p043",
+          "VIS:Figure_4_4:p119",
+          "VIS:Figure_4_5:p125",
+          "VIS:Figure_SPM6:p041"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Table_SPM7_Feasibility:p043",
+        "pdf_page": 43,
+        "printed_page": "27",
+        "bbox": [
+          50.0,
+          56.0,
+          412.0,
+          628.0
+        ],
+        "focus_question": "In Figure SPM.7 panel (a) under 'SETTLEMENTS AND INFRASTRUCTURE' in the climate responses and adaptation options table, what are the three listed options and their assessed potential feasibility levels (up to 1.5°C), synergies with mitigation, and confidence dots for each?"
+      },
+      {
+        "event": "search",
+        "query": "\"Sustainable urban water management\" \"Sustainable land use and urban planning\" \"Green infrastructure and ecosystem services\"",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p045:c03",
+            "modality": "text",
+            "pdf_page": 45,
+            "printed_page": "29",
+            "score": 0.031778,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p121:c03",
+            "modality": "text",
+            "pdf_page": 121,
+            "printed_page": "105",
+            "score": 0.031754,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p124:c02",
+            "modality": "text",
+            "pdf_page": 124,
+            "printed_page": "108",
+            "score": 0.030579,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 8
+            }
+          },
+          {
+            "id": "ADV_TXT:p126:c01",
+            "modality": "text",
+            "pdf_page": 126,
+            "printed_page": "110",
+            "score": 0.029236,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 11
+            }
+          },
+          {
+            "id": "ADV_TXT:p045:c02",
+            "modality": "text",
+            "pdf_page": 45,
+            "printed_page": "29",
+            "score": 0.029211,
+            "stream_ranks": {
+              "bm25": 10,
+              "dense_text": 7
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p045:c03",
+          "VIS:Figure_SPM7:p043",
+          "ADV_TXT:p121:c03",
+          "VIS:Table_SPM7_Feasibility:p043",
+          "ADV_TXT:p124:c02",
+          "VIS:Figure_4_4:p119",
+          "ADV_TXT:p126:c01",
+          "VIS:Figure_4_5:p125",
+          "ADV_TXT:p045:c02"
+        ]
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Table_SPM7_Feasibility:p043",
+          "VIS:Figure_SPM7:p043"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "query": "Figure SPM.7 Climate responses and adaptation options SETTLEMENTS AND INFRASTRUCTURE",
+          "modality": "visual",
+          "reason": "Find Figure SPM.7 panel (a) and its visual cards"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3167.36,
+        "prompt_tokens": 1009,
+        "candidates_tokens": 57,
+        "thoughts_tokens": 82,
+        "total_tokens": 1148
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "In Figure SPM.7 panel (a) under 'SETTLEMENTS AND INFRASTRUCTURE' in the climate responses and adaptation options table, what are the three listed options and their assessed potential feasibility levels (up to 1.5°C), synergies with mitigation, and confidence dots for each?",
+          "region_id": "VIS:Table_SPM7_Feasibility:p043"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3570.97,
+        "prompt_tokens": 4402,
+        "candidates_tokens": 102,
+        "thoughts_tokens": 124,
+        "total_tokens": 4628
+      },
+      {
+        "turn": 3,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Cross-check the table values for settlements and infrastructure in Figure SPM.7 / Figure 4.4.",
+          "query": "\"Sustainable urban water management\" \"Sustainable land use and urban planning\" \"Green infrastructure and ecosystem services\"",
+          "modality": "text"
+        },
+        "attached_visuals": [
+          "VIS:Table_SPM7_Feasibility:p043"
+        ],
+        "latency_ms": 10284.67,
+        "prompt_tokens": 6727,
+        "candidates_tokens": 70,
+        "thoughts_tokens": 901,
+        "total_tokens": 7698
+      },
+      {
+        "turn": 4,
+        "function_name": "submit_answer",
+        "args": {
+          "citations": [
+            "VIS:Table_SPM7_Feasibility:p043",
+            "VIS:Figure_SPM7:p043"
+          ],
+          "answer": "In **Figure SPM.7 panel (a)**, under the **'SETTLEMENTS AND INFRASTRUCTURE'** category of the left-hand *Climate responses and adaptation options* table, the three listed options and their assessed levels are [VIS:Table_SPM7_Feasibility:p043], [VIS:Figure_SPM7:p043]:\n\n1. **Sustainable urban water management**:\n   - **Potential feasibility up to 1.5°C**: **Medium** feasibility, with **medium confidence** (••) [VIS:Table_SPM7_Feasibility:p043].\n   - **Synergies with mitigation**: **Low** synergy, with **low confidence** (•) [VIS:Table_SPM7_Feasibility:p043].\n\n2. **Sustainable land use and urban planning**:\n   - **Potential feasibility up to 1.5°C**: **Medium** feasibility, with **medium confidence** (••) [VIS:Table_SPM7_Feasibility:p043].\n   - **Synergies with mitigation**: **High** synergy, with **low confidence** (•) [VIS:Table_SPM7_Feasibility:p043].\n\n3. **Green infrastructure and ecosystem services**:\n   - **Potential feasibility up to 1.5°C**: **High** feasibility, with **high confidence** (•••) [VIS:Table_SPM7_Feasibility:p043].\n   - **Synergies with mitigation**: **High** synergy, with **medium confidence** (••) [VIS:Table_SPM7_Feasibility:p043].\n\n*(Legend reference from Figure SPM.7: Dark blue = High; Medium purple = Medium; Light purple = Low; ••• = High confidence; •• = Medium confidence; • = Low confidence) [VIS:Table_SPM7_Feasibility:p043].*",
+          "sufficient_evidence": true
+        },
+        "attached_visuals": [
+          "VIS:Table_SPM7_Feasibility:p043"
+        ],
+        "latency_ms": 13639.99,
+        "prompt_tokens": 7635,
+        "candidates_tokens": 482,
+        "thoughts_tokens": 1032,
+        "total_tokens": 9149
+      }
+    ],
+    "search_calls": 2,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 19773,
+      "candidates_tokens": 711,
+      "thoughts_tokens": 2139,
+      "total_tokens": 22623
+    },
+    "elapsed_ms": 31614.9,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_04",
+    "split": "dev",
+    "category": "diagram_map",
+    "secondary_tags": [
+      "icons",
+      "stripes",
+      "confidence_dots"
+    ],
+    "question": "In Figure SPM.1 panel (a) under 'Water availability and food production', which specific indicators show both 'Adverse and positive impacts' (striped red-and-green circles) at the global level, which show solely 'Adverse impacts' (solid red circles), and what is the attribution confidence level for all four indicators?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In **Figure SPM.1 panel (a)**, under the category **'Water availability and food production'**, the four indicators are assessed at the global level as follows [VIS:Figure_SPM1:p023]:\n\n1. **Indicators showing both 'Adverse and positive impacts' (striped red-and-green circles)**:\n   - **Physical water availability** [VIS:Figure_SPM1:p023]\n   - **Animal and livestock health and productivity** [VIS:Figure_SPM1:p023]\n\n2. **Indicators showing solely 'Adverse impacts' (solid red circles)**:\n   - **Agriculture/crop production** [VIS:Figure_SPM1:p023]\n   - **Fisheries yields and aquaculture production** [VIS:Figure_SPM1:p023]\n\n3. **Attribution confidence level**:\n   - All four indicators display two dots (`••`), which corresponds to **Medium confidence** in the attribution of the observed impact to climate change [VIS:Figure_SPM1:p023].",
+    "citations": [
+      "VIS:Figure_SPM1:p023"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Figure_SPM1:p023",
+        "modality": "diagram_map",
+        "label": "Figure SPM.1",
+        "pdf_page": 23,
+        "printed_page": "7",
+        "bbox": [
+          45.0,
+          48.0,
+          565.0,
+          745.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_SPM1_p023.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_SPM1:p023"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure SPM.1 Water availability and food production panel a",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Figure_SPM3:p032",
+            "modality": "diagram_map",
+            "pdf_page": 32,
+            "printed_page": "16",
+            "score": 0.048147,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 2,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_4_3:p116",
+            "modality": "diagram_map",
+            "pdf_page": 116,
+            "printed_page": "100",
+            "score": 0.045629,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 1,
+              "dense_image": 11
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM1:p023",
+            "modality": "diagram_map",
+            "pdf_page": 23,
+            "printed_page": "7",
+            "score": 0.045477,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 5,
+              "dense_image": 13
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM7:p043",
+            "modality": "chart",
+            "pdf_page": 43,
+            "printed_page": "27",
+            "score": 0.045476,
+            "stream_ranks": {
+              "bm25": 7,
+              "dense_text": 7,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_3_2:p089",
+            "modality": "diagram_map",
+            "pdf_page": 89,
+            "printed_page": "73",
+            "score": 0.045291,
+            "stream_ranks": {
+              "bm25": 9,
+              "dense_text": 3,
+              "dense_image": 7
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_SPM3:p032",
+          "VIS:Figure_4_3:p116",
+          "VIS:Figure_SPM1:p023",
+          "VIS:Figure_SPM7:p043",
+          "VIS:Figure_3_2:p089"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_SPM1:p023",
+        "pdf_page": 23,
+        "printed_page": "7",
+        "bbox": [
+          45.0,
+          48.0,
+          565.0,
+          745.0
+        ],
+        "focus_question": "Under 'Water availability and food production' in panel (a), look at each of the four indicators: what are their names, what impact symbols are shown at the global level (striped red/green vs solid red/brown), and how many dots / what attribution confidence level is indicated for each? Also check the legend for confidence levels (dots)."
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Figure_SPM1:p023"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "modality": "visual",
+          "reason": "Find Figure SPM.1 panel (a) in SPM",
+          "query": "Figure SPM.1 Water availability and food production panel a"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3207.45,
+        "prompt_tokens": 1012,
+        "candidates_tokens": 49,
+        "thoughts_tokens": 95,
+        "total_tokens": 1156
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "region_id": "VIS:Figure_SPM1:p023",
+          "focus_question": "Under 'Water availability and food production' in panel (a), look at each of the four indicators: what are their names, what impact symbols are shown at the global level (striped red/green vs solid red/brown), and how many dots / what attribution confidence level is indicated for each? Also check the legend for confidence levels (dots)."
+        },
+        "attached_visuals": [],
+        "latency_ms": 3418.68,
+        "prompt_tokens": 4809,
+        "candidates_tokens": 108,
+        "thoughts_tokens": 93,
+        "total_tokens": 5010
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "citations": [
+            "VIS:Figure_SPM1:p023"
+          ],
+          "sufficient_evidence": true,
+          "answer": "In **Figure SPM.1 panel (a)**, under the category **'Water availability and food production'**, the four indicators are assessed at the global level as follows [VIS:Figure_SPM1:p023]:\n\n1. **Indicators showing both 'Adverse and positive impacts' (striped red-and-green circles)**:\n   - **Physical water availability** [VIS:Figure_SPM1:p023]\n   - **Animal and livestock health and productivity** [VIS:Figure_SPM1:p023]\n\n2. **Indicators showing solely 'Adverse impacts' (solid red circles)**:\n   - **Agriculture/crop production** [VIS:Figure_SPM1:p023]\n   - **Fisheries yields and aquaculture production** [VIS:Figure_SPM1:p023]\n\n3. **Attribution confidence level**:\n   - All four indicators display two dots (`••`), which corresponds to **Medium confidence** in the attribution of the observed impact to climate change [VIS:Figure_SPM1:p023]."
+        },
+        "attached_visuals": [
+          "VIS:Figure_SPM1:p023"
+        ],
+        "latency_ms": 14246.44,
+        "prompt_tokens": 7112,
+        "candidates_tokens": 275,
+        "thoughts_tokens": 1126,
+        "total_tokens": 8513
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 12933,
+      "candidates_tokens": 432,
+      "thoughts_tokens": 1314,
+      "total_tokens": 14679
+    },
+    "elapsed_ms": 21294.29,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_05",
+    "split": "dev",
+    "category": "diagram_map",
+    "secondary_tags": [
+      "framework_schematic",
+      "causes_risks"
+    ],
+    "question": "In Cross-Section Box.2 Figure 1 panel (a) (p.81 / printed p.65), list the three horizontal chain blocks downstream of 'Socio-economic changes', identify the two policy boxes linked underneath them, and list all five SSP scenarios plotted in the central 21st-century temperature graph.",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Based on Cross-Section Box.2 Figure 1 panel (a) (p. 81 / printed p. 65) [VIS:CrossBox2_Diagram:p081]:\n\n1. **Three horizontal chain blocks downstream of 'Socio-economic changes':**\n   - **Emissions** [VIS:CrossBox2_Diagram:p081]\n   - **Climate** [VIS:CrossBox2_Diagram:p081]\n   - **Impacts / Risks** [VIS:CrossBox2_Diagram:p081]\n\n2. **Two policy boxes linked underneath them:**\n   - **Mitigation Policy** (linked beneath *Emissions*) [VIS:CrossBox2_Diagram:p081]\n   - **Adaptation Policy** (linked beneath *Impacts / Risks*) [VIS:CrossBox2_Diagram:p081]\n\n3. **Five SSP scenarios plotted in the central 21st-century temperature graph:**\n   - **SSP1-1.9** [VIS:CrossBox2_Diagram:p081]\n   - **SSP1-2.6** [VIS:CrossBox2_Diagram:p081]\n   - **SSP2-4.5** [VIS:CrossBox2_Diagram:p081]\n   - **SSP3-7.0** [VIS:CrossBox2_Diagram:p081]\n   - **SSP5-8.5** [VIS:CrossBox2_Diagram:p081]",
+    "citations": [
+      "VIS:CrossBox2_Diagram:p081"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:CrossBox2_Diagram:p081",
+        "modality": "diagram_map",
+        "label": "Cross-Section Box.2 Figure 1",
+        "pdf_page": 81,
+        "printed_page": "65",
+        "bbox": [
+          45.0,
+          42.0,
+          575.0,
+          425.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_CrossBox2_Diagram_p081.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:CrossBox2_Diagram:p081"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Cross-Section Box.2 Figure 1",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:CrossBox2_Diagram:p081",
+            "modality": "diagram_map",
+            "pdf_page": 81,
+            "printed_page": "65",
+            "score": 0.046183,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 7,
+              "dense_image": 5
+            }
+          },
+          {
+            "id": "VIS:Table_Box_SPM1:p026",
+            "modality": "table",
+            "pdf_page": 26,
+            "printed_page": "10",
+            "score": 0.045022,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 20,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_1_1:p055",
+            "modality": "diagram_map",
+            "pdf_page": 55,
+            "printed_page": "39",
+            "score": 0.044617,
+            "stream_ranks": {
+              "bm25": 10,
+              "dense_text": 8,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_3_3_rfc:p091",
+            "modality": "diagram_map",
+            "pdf_page": 91,
+            "printed_page": "75",
+            "score": 0.044012,
+            "stream_ranks": {
+              "bm25": 17,
+              "dense_text": 3,
+              "dense_image": 6
+            }
+          },
+          {
+            "id": "VIS:Figure_3_4:p096",
+            "modality": "chart",
+            "pdf_page": 96,
+            "printed_page": "80",
+            "score": 0.043073,
+            "stream_ranks": {
+              "bm25": 19,
+              "dense_text": 2,
+              "dense_image": 10
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:CrossBox2_Diagram:p081",
+          "VIS:Table_Box_SPM1:p026",
+          "VIS:Figure_1_1:p055",
+          "VIS:Figure_3_3_rfc:p091",
+          "VIS:Figure_3_4:p096"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:CrossBox2_Diagram:p081",
+        "pdf_page": 81,
+        "printed_page": "65",
+        "bbox": [
+          45.0,
+          42.0,
+          575.0,
+          425.0
+        ],
+        "focus_question": "Look at panel (a): 1) What are the three horizontal chain blocks downstream of 'Socio-economic changes'? 2) What are the two policy boxes linked underneath them? 3) What are the five SSP scenarios plotted in the central 21st-century temperature graph?"
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:CrossBox2_Diagram:p081"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Find visual region for Cross-Section Box.2 Figure 1",
+          "modality": "visual",
+          "query": "Cross-Section Box.2 Figure 1"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3366.67,
+        "prompt_tokens": 1013,
+        "candidates_tokens": 49,
+        "thoughts_tokens": 119,
+        "total_tokens": 1181
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Look at panel (a): 1) What are the three horizontal chain blocks downstream of 'Socio-economic changes'? 2) What are the two policy boxes linked underneath them? 3) What are the five SSP scenarios plotted in the central 21st-century temperature graph?",
+          "region_id": "VIS:CrossBox2_Diagram:p081"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3727.98,
+        "prompt_tokens": 4797,
+        "candidates_tokens": 98,
+        "thoughts_tokens": 94,
+        "total_tokens": 4989
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "answer": "Based on Cross-Section Box.2 Figure 1 panel (a) (p. 81 / printed p. 65) [VIS:CrossBox2_Diagram:p081]:\n\n1. **Three horizontal chain blocks downstream of 'Socio-economic changes':**\n   - **Emissions** [VIS:CrossBox2_Diagram:p081]\n   - **Climate** [VIS:CrossBox2_Diagram:p081]\n   - **Impacts / Risks** [VIS:CrossBox2_Diagram:p081]\n\n2. **Two policy boxes linked underneath them:**\n   - **Mitigation Policy** (linked beneath *Emissions*) [VIS:CrossBox2_Diagram:p081]\n   - **Adaptation Policy** (linked beneath *Impacts / Risks*) [VIS:CrossBox2_Diagram:p081]\n\n3. **Five SSP scenarios plotted in the central 21st-century temperature graph:**\n   - **SSP1-1.9** [VIS:CrossBox2_Diagram:p081]\n   - **SSP1-2.6** [VIS:CrossBox2_Diagram:p081]\n   - **SSP2-4.5** [VIS:CrossBox2_Diagram:p081]\n   - **SSP3-7.0** [VIS:CrossBox2_Diagram:p081]\n   - **SSP5-8.5** [VIS:CrossBox2_Diagram:p081]",
+          "citations": [
+            "VIS:CrossBox2_Diagram:p081"
+          ],
+          "sufficient_evidence": true
+        },
+        "attached_visuals": [
+          "VIS:CrossBox2_Diagram:p081"
+        ],
+        "latency_ms": 9547.33,
+        "prompt_tokens": 7136,
+        "candidates_tokens": 379,
+        "thoughts_tokens": 555,
+        "total_tokens": 8070
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 12946,
+      "candidates_tokens": 526,
+      "thoughts_tokens": 768,
+      "total_tokens": 14240
+    },
+    "elapsed_ms": 17097.48,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_06",
+    "split": "dev",
+    "category": "diagram_map",
+    "secondary_tags": [
+      "annotations",
+      "soil_moisture",
+      "paleoclimate"
+    ],
+    "question": "In Figure 3.1 (p.86 / printed p.70), when was global surface temperature last sustained at or above 2.5°C according to the annotation on the Global warming level (GWL) scale, and how does panel (b) define the '1 standard deviation' unit for annual mean total column soil moisture change?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to **Figure 3.1** (p. 86 / printed p. 70):\n\n1. **Last time sustained at or above 2.5°C:** \n   The annotation above the Global warming level (GWL) scale specifies that *\"the last time global surface temperature was sustained at or above 2.5°C was over 3 million years ago\"* [VIS:Figure_3_1:p086].\n\n2. **Definition of the standard deviation unit in panel (b):**\n   The caption defines the unit as the **standard deviation of interannual variability in soil moisture during 1850–1900** [VIS:Figure_3_1:p086]. The caption further elaborates that a projected reduction in mean soil moisture by one standard deviation corresponds to soil moisture conditions typical of droughts that occurred about once every six years during 1850–1900 [VIS:Figure_3_1:p086].",
+    "citations": [
+      "VIS:Figure_3_1:p086"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Figure_3_1:p086",
+        "modality": "diagram_map",
+        "label": "Figure 3.1",
+        "pdf_page": 86,
+        "printed_page": "70",
+        "bbox": [
+          35.0,
+          45.0,
+          565.0,
+          745.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_3_1_p086.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_3_1:p086"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 3.1 Global warming level scale annual mean total column soil moisture change",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Figure_3_1:p086",
+            "modality": "diagram_map",
+            "pdf_page": 86,
+            "printed_page": "70",
+            "score": 0.04918,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM2:p030",
+            "modality": "diagram_map",
+            "pdf_page": 30,
+            "printed_page": "14",
+            "score": 0.048387,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 2,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM3:p032",
+            "modality": "diagram_map",
+            "pdf_page": 32,
+            "printed_page": "16",
+            "score": 0.04665,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 4,
+              "dense_image": 3
+            }
+          },
+          {
+            "id": "VIS:Figure_3_2:p089",
+            "modality": "diagram_map",
+            "pdf_page": 89,
+            "printed_page": "73",
+            "score": 0.045991,
+            "stream_ranks": {
+              "bm25": 9,
+              "dense_text": 3,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM4:p033",
+            "modality": "chart",
+            "pdf_page": 33,
+            "printed_page": "17",
+            "score": 0.04435,
+            "stream_ranks": {
+              "bm25": 8,
+              "dense_text": 9,
+              "dense_image": 6
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_3_1:p086",
+          "VIS:Figure_SPM2:p030",
+          "VIS:Figure_SPM3:p032",
+          "VIS:Figure_3_2:p089",
+          "VIS:Figure_SPM4:p033"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_3_1:p086",
+        "pdf_page": 86,
+        "printed_page": "70",
+        "bbox": [
+          35.0,
+          45.0,
+          565.0,
+          745.0
+        ],
+        "focus_question": "Check the annotation on the Global warming level scale at top regarding 2.5°C, and read the text/caption describing panel (b) and defining the '1 standard deviation' unit for soil moisture change."
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Figure_3_1:p086"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "query": "Figure 3.1 Global warming level scale annual mean total column soil moisture change",
+          "reason": "Locate Figure 3.1 on page 86 / printed page 70.",
+          "modality": "visual"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3303.05,
+        "prompt_tokens": 1017,
+        "candidates_tokens": 62,
+        "thoughts_tokens": 94,
+        "total_tokens": 1173
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "region_id": "VIS:Figure_3_1:p086",
+          "focus_question": "Check the annotation on the Global warming level scale at top regarding 2.5°C, and read the text/caption describing panel (b) and defining the '1 standard deviation' unit for soil moisture change."
+        },
+        "attached_visuals": [],
+        "latency_ms": 3694.79,
+        "prompt_tokens": 4877,
+        "candidates_tokens": 82,
+        "thoughts_tokens": 189,
+        "total_tokens": 5148
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "citations": [
+            "VIS:Figure_3_1:p086"
+          ],
+          "sufficient_evidence": true,
+          "answer": "According to **Figure 3.1** (p. 86 / printed p. 70):\n\n1. **Last time sustained at or above 2.5°C:** \n   The annotation above the Global warming level (GWL) scale specifies that *\"the last time global surface temperature was sustained at or above 2.5°C was over 3 million years ago\"* [VIS:Figure_3_1:p086].\n\n2. **Definition of the standard deviation unit in panel (b):**\n   The caption defines the unit as the **standard deviation of interannual variability in soil moisture during 1850–1900** [VIS:Figure_3_1:p086]. The caption further elaborates that a projected reduction in mean soil moisture by one standard deviation corresponds to soil moisture conditions typical of droughts that occurred about once every six years during 1850–1900 [VIS:Figure_3_1:p086]."
+        },
+        "attached_visuals": [
+          "VIS:Figure_3_1:p086"
+        ],
+        "latency_ms": 25193.98,
+        "prompt_tokens": 7210,
+        "candidates_tokens": 253,
+        "thoughts_tokens": 611,
+        "total_tokens": 8074
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 13104,
+      "candidates_tokens": 397,
+      "thoughts_tokens": 894,
+      "total_tokens": 14395
+    },
+    "elapsed_ms": 32651.7,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_07",
+    "split": "dev",
+    "category": "chart",
+    "secondary_tags": [
+      "time_series",
+      "concentrations",
+      "temperature"
+    ],
+    "question": "According to Figure 2.1 panels (b) and (c) (p.59 / printed p.43), what were the annotated 2019 atmospheric concentrations (value and unit) of CO2, CH4, and N2O, and by how much had global surface temperature increased by 2011–2020 compared to 1850–1900?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to **Figure 2.1** (p. 59 / printed p. 43) [VIS:Figure_2_1:p059]:\n\n### 1. Annotated 2019 Atmospheric Concentrations (Panel b)\n* **Carbon dioxide ($\\text{CO}_2$):** **410 ppm** (parts per million)\n* **Methane ($\\text{CH}_4$):** **1866 ppb** (parts per billion)\n* **Nitrous oxide ($\\text{N}_2\\text{O}$):** **332 ppb** (parts per billion)\n\n### 2. Global Surface Temperature Increase (Panel c)\n* Global surface temperature had increased by **1.1°C** by 2011–2020 compared to 1850–1900 [VIS:Figure_2_1:p059].",
+    "citations": [
+      "VIS:Figure_2_1:p059"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Figure_2_1:p059",
+        "modality": "chart",
+        "label": "Figure 2.1",
+        "pdf_page": 59,
+        "printed_page": "43",
+        "bbox": [
+          45.0,
+          45.0,
+          570.0,
+          735.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_2_1_p059.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_2_1:p059"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 2.1 atmospheric concentrations CO2 CH4 N2O global surface temperature 2011-2020",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Figure_2_1:p059",
+            "modality": "chart",
+            "pdf_page": 59,
+            "printed_page": "43",
+            "score": 0.04918,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_3_6:p102",
+            "modality": "chart",
+            "pdf_page": 102,
+            "printed_page": "86",
+            "score": 0.046665,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 5,
+              "dense_image": 6
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM5:p038",
+            "modality": "chart",
+            "pdf_page": 38,
+            "printed_page": "22",
+            "score": 0.046544,
+            "stream_ranks": {
+              "bm25": 10,
+              "dense_text": 2,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Figure_2_2_charts:p061",
+            "modality": "chart",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.045462,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 7,
+              "dense_image": 5
+            }
+          },
+          {
+            "id": "VIS:Figure_3_5:p099",
+            "modality": "chart",
+            "pdf_page": 99,
+            "printed_page": "83",
+            "score": 0.044243,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 11,
+              "dense_image": 10
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_2_1:p059",
+          "VIS:Figure_3_6:p102",
+          "VIS:Figure_SPM5:p038",
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Figure_3_5:p099"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_2_1:p059",
+        "pdf_page": 59,
+        "printed_page": "43",
+        "bbox": [
+          45.0,
+          45.0,
+          570.0,
+          735.0
+        ],
+        "focus_question": "Read the annotated 2019 atmospheric concentrations (values and units) for CO2, CH4, and N2O in panel (b), and the increase in global surface temperature by 2011-2020 compared to 1850-1900 in panel (c)."
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Figure_2_1:p059"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "modality": "visual",
+          "query": "Figure 2.1 atmospheric concentrations CO2 CH4 N2O global surface temperature 2011-2020",
+          "reason": "Find Figure 2.1 panels b and c to inspect the 2019 atmospheric concentrations of CO2, CH4, N2O and global surface temperature increase 2011-2020."
+        },
+        "attached_visuals": [],
+        "latency_ms": 2707.34,
+        "prompt_tokens": 1032,
+        "candidates_tokens": 100,
+        "thoughts_tokens": 106,
+        "total_tokens": 1238
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Read the annotated 2019 atmospheric concentrations (values and units) for CO2, CH4, and N2O in panel (b), and the increase in global surface temperature by 2011-2020 compared to 1850-1900 in panel (c).",
+          "region_id": "VIS:Figure_2_1:p059"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3846.19,
+        "prompt_tokens": 5087,
+        "candidates_tokens": 104,
+        "thoughts_tokens": 123,
+        "total_tokens": 5314
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "citations": [
+            "VIS:Figure_2_1:p059"
+          ],
+          "answer": "According to **Figure 2.1** (p. 59 / printed p. 43) [VIS:Figure_2_1:p059]:\n\n### 1. Annotated 2019 Atmospheric Concentrations (Panel b)\n* **Carbon dioxide ($\\text{CO}_2$):** **410 ppm** (parts per million)\n* **Methane ($\\text{CH}_4$):** **1866 ppb** (parts per billion)\n* **Nitrous oxide ($\\text{N}_2\\text{O}$):** **332 ppb** (parts per billion)\n\n### 2. Global Surface Temperature Increase (Panel c)\n* Global surface temperature had increased by **1.1°C** by 2011–2020 compared to 1850–1900 [VIS:Figure_2_1:p059].",
+          "sufficient_evidence": true
+        },
+        "attached_visuals": [
+          "VIS:Figure_2_1:p059"
+        ],
+        "latency_ms": 8701.65,
+        "prompt_tokens": 7442,
+        "candidates_tokens": 238,
+        "thoughts_tokens": 563,
+        "total_tokens": 8243
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 13561,
+      "candidates_tokens": 442,
+      "thoughts_tokens": 792,
+      "total_tokens": 14795
+    },
+    "elapsed_ms": 15719.21,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_08",
+    "split": "dev",
+    "category": "chart",
+    "secondary_tags": [
+      "stacked_area",
+      "regional_shares"
+    ],
+    "question": "In Figure 2.2 panel (c) ('Global net anthropogenic GHG emissions by region 1990–2019', p.61 / printed p.45), what were the total global net anthropogenic GHG emissions (GtCO2-eq) and Eastern Asia's percentage share in 1990, 2000, 2010, and 2019?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to Figure 2.2 panel (c) (*Global net anthropogenic GHG emissions by region (1990–2019)*, p. 61 / printed p. 45) [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]:\n\n- **1990:**\n  - Total global net anthropogenic GHG emissions: **38 GtCO2-eq** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n  - Eastern Asia's percentage share: **13%** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n\n- **2000:**\n  - Total global net anthropogenic GHG emissions: **42 GtCO2-eq** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n  - Eastern Asia's percentage share: **16%** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n\n- **2010:**\n  - Total global net anthropogenic GHG emissions: **53 GtCO2-eq** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n  - Eastern Asia's percentage share: **24%** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n\n- **2019:**\n  - Total global net anthropogenic GHG emissions: **59 GtCO2-eq** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n  - Eastern Asia's percentage share: **27%** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]",
+    "citations": [
+      "VIS:Figure_2_2_charts:p061",
+      "ADV_TXT:p061:c03"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Figure_2_2_charts:p061",
+        "modality": "chart",
+        "label": "Figure 2.2 Panels (a)-(c)",
+        "pdf_page": 61,
+        "printed_page": "45",
+        "bbox": [
+          42.0,
+          45.0,
+          575.0,
+          582.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_2_2_charts_p061.png"
+      },
+      {
+        "id": "ADV_TXT:p061:c03",
+        "modality": "text",
+        "label": "Section 2: Current Status and Trends (p.45)",
+        "pdf_page": 61,
+        "printed_page": "45",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_2_2_charts:p061"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 2.2 Global net anthropogenic GHG emissions by region 1990-2019",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Figure_2_2_charts:p061",
+            "modality": "chart",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.04918,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM5:p038",
+            "modality": "chart",
+            "pdf_page": 38,
+            "printed_page": "22",
+            "score": 0.048131,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 2,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Table_Fig2_2d:p061",
+            "modality": "table",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.047139,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 5,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_2_1:p059",
+            "modality": "chart",
+            "pdf_page": 59,
+            "printed_page": "43",
+            "score": 0.046402,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 4,
+              "dense_image": 6
+            }
+          },
+          {
+            "id": "VIS:Figure_2_5:p075",
+            "modality": "chart",
+            "pdf_page": 75,
+            "printed_page": "59",
+            "score": 0.045724,
+            "stream_ranks": {
+              "bm25": 7,
+              "dense_text": 3,
+              "dense_image": 7
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Figure_SPM5:p038",
+          "VIS:Table_Fig2_2d:p061",
+          "VIS:Figure_2_1:p059",
+          "VIS:Figure_2_5:p075"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_2_2_charts:p061",
+        "pdf_page": 61,
+        "printed_page": "45",
+        "bbox": [
+          42.0,
+          45.0,
+          575.0,
+          582.0
+        ],
+        "focus_question": "Look closely at Panel (c) titled 'Global net anthropogenic GHG emissions by region 1990–2019'. What are the total global net anthropogenic GHG emissions (in GtCO2-eq) and Eastern Asia's percentage share (or emissions/percentage) indicated for the years 1990, 2000, 2010, and 2019? Check labels, numbers above the bars or on the x-axis, and Eastern Asia's specific percentage share or value."
+      },
+      {
+        "event": "search",
+        "query": "Figure 2.2 Global net anthropogenic GHG emissions Eastern Asia 13% 16% 24% 27%",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p061:c03",
+            "modality": "text",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.032787,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p061:c02",
+            "modality": "text",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.032258,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p061:c01",
+            "modality": "text",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.029762,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 12
+            }
+          },
+          {
+            "id": "ADV_TXT:p060:c03",
+            "modality": "text",
+            "pdf_page": 60,
+            "printed_page": "44",
+            "score": 0.028405,
+            "stream_ranks": {
+              "bm25": 13,
+              "dense_text": 8
+            }
+          },
+          {
+            "id": "ADV_TXT:p060:c02",
+            "modality": "text",
+            "pdf_page": 60,
+            "printed_page": "44",
+            "score": 0.028259,
+            "stream_ranks": {
+              "bm25": 15,
+              "dense_text": 7
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p061:c03",
+          "VIS:Figure_2_2_charts:p061",
+          "ADV_TXT:p061:c02",
+          "VIS:Figure_SPM5:p038",
+          "ADV_TXT:p061:c01",
+          "VIS:Table_Fig2_2d:p061",
+          "ADV_TXT:p060:c03",
+          "VIS:Figure_2_1:p059",
+          "ADV_TXT:p060:c02"
+        ]
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Figure_2_2_charts:p061",
+          "ADV_TXT:p061:c03"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "modality": "visual",
+          "query": "Figure 2.2 Global net anthropogenic GHG emissions by region 1990-2019",
+          "reason": "Locate Figure 2.2 panel (c) on page 61 / printed p.45"
+        },
+        "attached_visuals": [],
+        "latency_ms": 2881.5,
+        "prompt_tokens": 1033,
+        "candidates_tokens": 71,
+        "thoughts_tokens": 111,
+        "total_tokens": 1215
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "region_id": "VIS:Figure_2_2_charts:p061",
+          "focus_question": "Look closely at Panel (c) titled 'Global net anthropogenic GHG emissions by region 1990–2019'. What are the total global net anthropogenic GHG emissions (in GtCO2-eq) and Eastern Asia's percentage share (or emissions/percentage) indicated for the years 1990, 2000, 2010, and 2019? Check labels, numbers above the bars or on the x-axis, and Eastern Asia's specific percentage share or value."
+        },
+        "attached_visuals": [],
+        "latency_ms": 4258.93,
+        "prompt_tokens": 5402,
+        "candidates_tokens": 152,
+        "thoughts_tokens": 117,
+        "total_tokens": 5671
+      },
+      {
+        "turn": 3,
+        "function_name": "search_report",
+        "args": {
+          "query": "Figure 2.2 Global net anthropogenic GHG emissions Eastern Asia 13% 16% 24% 27%",
+          "modality": "text",
+          "reason": "Verify text mentions of Figure 2.2 panel c values"
+        },
+        "attached_visuals": [
+          "VIS:Figure_2_2_charts:p061"
+        ],
+        "latency_ms": 17018.73,
+        "prompt_tokens": 7805,
+        "candidates_tokens": 67,
+        "thoughts_tokens": 1226,
+        "total_tokens": 9098
+      },
+      {
+        "turn": 4,
+        "function_name": "submit_answer",
+        "args": {
+          "answer": "According to Figure 2.2 panel (c) (*Global net anthropogenic GHG emissions by region (1990–2019)*, p. 61 / printed p. 45) [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]:\n\n- **1990:**\n  - Total global net anthropogenic GHG emissions: **38 GtCO2-eq** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n  - Eastern Asia's percentage share: **13%** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n\n- **2000:**\n  - Total global net anthropogenic GHG emissions: **42 GtCO2-eq** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n  - Eastern Asia's percentage share: **16%** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n\n- **2010:**\n  - Total global net anthropogenic GHG emissions: **53 GtCO2-eq** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n  - Eastern Asia's percentage share: **24%** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n\n- **2019:**\n  - Total global net anthropogenic GHG emissions: **59 GtCO2-eq** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]\n  - Eastern Asia's percentage share: **27%** [VIS:Figure_2_2_charts:p061] [ADV_TXT:p061:c03]",
+          "sufficient_evidence": true,
+          "citations": [
+            "VIS:Figure_2_2_charts:p061",
+            "ADV_TXT:p061:c03"
+          ]
+        },
+        "attached_visuals": [
+          "VIS:Figure_2_2_charts:p061"
+        ],
+        "latency_ms": 10321.06,
+        "prompt_tokens": 9298,
+        "candidates_tokens": 541,
+        "thoughts_tokens": 615,
+        "total_tokens": 10454
+      }
+    ],
+    "search_calls": 2,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 23538,
+      "candidates_tokens": 831,
+      "thoughts_tokens": 2069,
+      "total_tokens": 26438
+    },
+    "elapsed_ms": 35356.86,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_09",
+    "split": "dev",
+    "category": "chart",
+    "secondary_tags": [
+      "small_multiples",
+      "axes_units",
+      "costs"
+    ],
+    "question": "In Figure 2.4 (p.70 / printed p.54), what cost range defines the yellow 'Fossil fuel cost (2020)' reference band in USD per MWh, how does the panel (a) y-axis unit for Passenger EV Li-ion battery packs differ from the renewables panels, and what are the different y-axis units and scales in panel (b) ('Market Adoption')?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Based on Figure 2.4 (printed p. 54 / pdf p. 70) and its caption [VIS:Figure_2_4:p070]:\n\n1. **Fossil Fuel Cost (2020) Reference Band:**\n   * The yellow shaded reference band corresponds to a unit cost range of **USD 55 to 148 per MWh** for new fossil fuel (coal and gas) power in 2020 [VIS:Figure_2_4:p070].\n\n2. **Panel (a) Y-Axis Unit Difference for Passenger EV Battery Packs:**\n   * The three renewable energy technologies (Photovoltaics, Onshore wind, Offshore wind) are measured in **Cost ($2020/MWh)** (levelised cost of energy, LCOE, per MWh of electricity produced), spanning a scale of **0 to 600 USD/MWh** in increments of 150 [VIS:Figure_2_4:p070].\n   * In contrast, the Passenger EV Li-ion battery packs panel is measured in **Cost ($2020/kWh)** (costs per 1 kWh of battery storage capacity), spanning a scale of **0 to 1600 USD/kWh** in increments of 400 [VIS:Figure_2_4:p070].\n\n3. **Panel (b) ('Market Adoption') Y-Axis Units and Scales:**\n   * **Renewables (Photovoltaics and Onshore wind):** Measured in installed capacity in gigawatts (**GW**), labeled *\"Adoption (GW) -note differnt scales\"*, with a scale ranging from **0 to 800 GW** (ticks at 0, 200, 400, 600, and 800) [VIS:Figure_2_4:p070].\n   * **Offshore wind:** Also measured in gigawatts (**GW**), but on a smaller scale ranging from **0 to 40 GW** (ticks at 0, 10, 20, 30, and 40) [VIS:Figure_2_4:p070].\n   * **Passenger Electric Vehicles:** Measured in vehicle volume, labeled *\"Adoption (millions of EVs)\"*, with a scale ranging from **0 to 8 million EVs** (ticks at 0, 2, 4, 6, and 8) [VIS:Figure_2_4:p070].",
+    "citations": [
+      "VIS:Figure_2_4:p070"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Figure_2_4:p070",
+        "modality": "chart",
+        "label": "Figure 2.4",
+        "pdf_page": 70,
+        "printed_page": "54",
+        "bbox": [
+          35.0,
+          50.0,
+          565.0,
+          645.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_2_4_p070.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_2_4:p070"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 2.4 Unit cost reductions and adoption of technologies",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Figure_2_4:p070",
+            "modality": "chart",
+            "pdf_page": 70,
+            "printed_page": "54",
+            "score": 0.04918,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_4_4:p119",
+            "modality": "chart",
+            "pdf_page": 119,
+            "printed_page": "103",
+            "score": 0.047883,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 2,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM7:p043",
+            "modality": "chart",
+            "pdf_page": 43,
+            "printed_page": "27",
+            "score": 0.046883,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 4,
+              "dense_image": 3
+            }
+          },
+          {
+            "id": "VIS:Table_4_6_Multipliers:p129",
+            "modality": "table",
+            "pdf_page": 129,
+            "printed_page": "113",
+            "score": 0.044865,
+            "stream_ranks": {
+              "bm25": 8,
+              "dense_text": 3,
+              "dense_image": 10
+            }
+          },
+          {
+            "id": "VIS:Figure_3_6:p102",
+            "modality": "chart",
+            "pdf_page": 102,
+            "printed_page": "86",
+            "score": 0.043283,
+            "stream_ranks": {
+              "bm25": 9,
+              "dense_text": 11,
+              "dense_image": 8
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_2_4:p070",
+          "VIS:Figure_4_4:p119",
+          "VIS:Figure_SPM7:p043",
+          "VIS:Table_4_6_Multipliers:p129",
+          "VIS:Figure_3_6:p102"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_2_4:p070",
+        "pdf_page": 70,
+        "printed_page": "54",
+        "bbox": [
+          35.0,
+          50.0,
+          565.0,
+          645.0
+        ],
+        "focus_question": "Check the yellow Fossil fuel cost (2020) reference band value range in USD/MWh. Check the y-axis unit and scale of Passenger EV Li-ion battery packs in panel (a) compared to the renewable panels. Check all y-axis units, labels, and numerical scales (min, max, increments) across all 4 sub-panels in panel (b) 'Market Adoption'."
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Figure_2_4:p070"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Find Figure 2.4 in the synthesis report.",
+          "modality": "visual",
+          "query": "Figure 2.4 Unit cost reductions and adoption of technologies"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3269.53,
+        "prompt_tokens": 1033,
+        "candidates_tokens": 50,
+        "thoughts_tokens": 112,
+        "total_tokens": 1195
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "region_id": "VIS:Figure_2_4:p070",
+          "focus_question": "Check the yellow Fossil fuel cost (2020) reference band value range in USD/MWh. Check the y-axis unit and scale of Passenger EV Li-ion battery packs in panel (a) compared to the renewable panels. Check all y-axis units, labels, and numerical scales (min, max, increments) across all 4 sub-panels in panel (b) 'Market Adoption'."
+        },
+        "attached_visuals": [],
+        "latency_ms": 3617.18,
+        "prompt_tokens": 4928,
+        "candidates_tokens": 122,
+        "thoughts_tokens": 114,
+        "total_tokens": 5164
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "sufficient_evidence": true,
+          "citations": [
+            "VIS:Figure_2_4:p070"
+          ],
+          "answer": "Based on Figure 2.4 (printed p. 54 / pdf p. 70) and its caption [VIS:Figure_2_4:p070]:\n\n1. **Fossil Fuel Cost (2020) Reference Band:**\n   * The yellow shaded reference band corresponds to a unit cost range of **USD 55 to 148 per MWh** for new fossil fuel (coal and gas) power in 2020 [VIS:Figure_2_4:p070].\n\n2. **Panel (a) Y-Axis Unit Difference for Passenger EV Battery Packs:**\n   * The three renewable energy technologies (Photovoltaics, Onshore wind, Offshore wind) are measured in **Cost ($2020/MWh)** (levelised cost of energy, LCOE, per MWh of electricity produced), spanning a scale of **0 to 600 USD/MWh** in increments of 150 [VIS:Figure_2_4:p070].\n   * In contrast, the Passenger EV Li-ion battery packs panel is measured in **Cost ($2020/kWh)** (costs per 1 kWh of battery storage capacity), spanning a scale of **0 to 1600 USD/kWh** in increments of 400 [VIS:Figure_2_4:p070].\n\n3. **Panel (b) ('Market Adoption') Y-Axis Units and Scales:**\n   * **Renewables (Photovoltaics and Onshore wind):** Measured in installed capacity in gigawatts (**GW**), labeled *\"Adoption (GW) -note differnt scales\"*, with a scale ranging from **0 to 800 GW** (ticks at 0, 200, 400, 600, and 800) [VIS:Figure_2_4:p070].\n   * **Offshore wind:** Also measured in gigawatts (**GW**), but on a smaller scale ranging from **0 to 40 GW** (ticks at 0, 10, 20, 30, and 40) [VIS:Figure_2_4:p070].\n   * **Passenger Electric Vehicles:** Measured in vehicle volume, labeled *\"Adoption (millions of EVs)\"*, with a scale ranging from **0 to 8 million EVs** (ticks at 0, 2, 4, 6, and 8) [VIS:Figure_2_4:p070]."
+        },
+        "attached_visuals": [
+          "VIS:Figure_2_4:p070"
+        ],
+        "latency_ms": 20106.34,
+        "prompt_tokens": 7287,
+        "candidates_tokens": 591,
+        "thoughts_tokens": 1684,
+        "total_tokens": 9562
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 13248,
+      "candidates_tokens": 763,
+      "thoughts_tokens": 1910,
+      "total_tokens": 15921
+    },
+    "elapsed_ms": 27483.96,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_10",
+    "split": "dev",
+    "category": "chart",
+    "secondary_tags": [
+      "trajectories",
+      "net_zero_timing"
+    ],
+    "question": "In Figure 3.6 panel (c) ('Timing for net zero', p.102 / printed p.86), compare when global modelled pathways reach net zero CO2 versus net zero GHG under Category C1 (1.5°C >50%, no or limited overshoot) vs Category C3 (2°C >67%).",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "In **Figure 3.6 panel (c)** (*Timing for net zero*, p.102 / printed p.86), the timing of reaching net zero $\\text{CO}_2$ versus net zero greenhouse gas (GHG) emissions is compared across Category C1 and Category C3 global modelled pathways [VIS:Figure_3_6:p102][ADV_TXT:p102:c01]:\n\n### 1. General Comparison: $\\text{CO}_2$ vs. GHG Timing\n* Across both categories, **net zero $\\text{CO}_2$ is reached decades earlier than net zero GHGs** [VIS:Figure_3_6:p102][ADV_TXT:p101:c03]. This delay occurs because residual non-$\\text{CO}_2$ emissions (such as $\\text{CH}_4$ and $\\text{N}_2\\text{O}$) remain difficult to abate and must eventually be counterbalanced by net negative $\\text{CO}_2$ emissions [ADV_TXT:p101:c03].\n* Furthermore, **not all scenarios reach net zero GHG emissions by 2100**, as highlighted by the panel annotation [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n\n---\n\n### 2. Category C1 (limiting warming to 1.5°C (>50%) with no or limited overshoot)\n* **Net zero $\\text{CO}_2$**:\n  * **Median**: Reached around **2050** (specifically **2050–2055**, marked by the dark purple vertical line) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100]. 100% of pathways reach net zero $\\text{CO}_2$ [VIS:Table_3_1:p100].\n  * **Likely range** (thick bar): Spans approximately **2045/2050 to late 2050s** [VIS:Figure_3_6:p102].\n  * **Very likely range** (thin line): Spans **2035 to 2070** [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n* **Net zero GHG**:\n  * **Median**: Reached much later, around **2095–2100** (vertical blue line near 2100) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n  * **Likely range** (thick bar): Spans from approximately **2070 to 2100** [VIS:Figure_3_6:p102].\n  * **Very likely range** (thin line): Begins around **2050–2055** and extends to 2100 [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n  * Only **52%** of C1 pathways achieve net zero GHGs by 2100 [VIS:Table_3_1:p100].\n\n---\n\n### 3. Category C3 (limiting warming to 2°C (>67%))\n* **Net zero $\\text{CO}_2$**:\n  * **Median**: Reached around the early **2070s** (specifically **2070–2075**, marked by the dark purple vertical line), roughly 20 years later than in C1 [VIS:Figure_3_6:p102][ADV_TXT:p101:c03][VIS:Table_3_1:p100].\n  * **Likely range** (thick bar): Spans approximately **2065 to 2078** [VIS:Figure_3_6:p102].\n  * **Very likely range** (thin line): Spans **2055 to after 2085/2090** (5th percentile is 2055) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n  * 93% of C3 pathways reach net zero $\\text{CO}_2$ [VIS:Table_3_1:p100].\n* **Net zero GHG**:\n  * **Median**: **Not reached before 2100** (no median vertical line is displayed) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n  * Only a minority of pathways achieve net zero GHGs within the 21st century (**30%** of C3 pathways, with the 5th percentile starting around **2075–2085** and the likely range bar only appearing after ~2090 to 2100) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].",
+    "citations": [
+      "VIS:Figure_3_6:p102",
+      "ADV_TXT:p102:c01",
+      "ADV_TXT:p101:c03",
+      "VIS:Table_3_1:p100"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Figure_3_6:p102",
+        "modality": "chart",
+        "label": "Figure 3.6",
+        "pdf_page": 102,
+        "printed_page": "86",
+        "bbox": [
+          35.0,
+          45.0,
+          565.0,
+          510.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_3_6_p102.png"
+      },
+      {
+        "id": "ADV_TXT:p102:c01",
+        "modality": "text",
+        "label": "Section 3: Long-Term Futures (p.86)",
+        "pdf_page": 102,
+        "printed_page": "86",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "ADV_TXT:p101:c03",
+        "modality": "text",
+        "label": "Section 3: Long-Term Futures (p.85)",
+        "pdf_page": 101,
+        "printed_page": "85",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "VIS:Table_3_1:p100",
+        "modality": "table",
+        "label": "Table 3.1",
+        "pdf_page": 100,
+        "printed_page": "84",
+        "bbox": [
+          35.0,
+          40.0,
+          568.0,
+          675.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Table_3_1_p100.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_3_6:p102",
+      "VIS:Table_3_1:p100"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 3.6 Timing for net zero Category C1 C3",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Figure_3_6:p102",
+            "modality": "chart",
+            "pdf_page": 102,
+            "printed_page": "86",
+            "score": 0.048916,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 2,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Table_3_1:p100",
+            "modality": "table",
+            "pdf_page": 100,
+            "printed_page": "84",
+            "score": 0.047891,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 1,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM5:p038",
+            "modality": "chart",
+            "pdf_page": 38,
+            "printed_page": "22",
+            "score": 0.046708,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 3,
+              "dense_image": 8
+            }
+          },
+          {
+            "id": "VIS:Table_Box_SPM1:p026",
+            "modality": "table",
+            "pdf_page": 26,
+            "printed_page": "10",
+            "score": 0.046409,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 5,
+              "dense_image": 3
+            }
+          },
+          {
+            "id": "VIS:Table_CrossBox2_Risk:p081",
+            "modality": "table",
+            "pdf_page": 81,
+            "printed_page": "65",
+            "score": 0.046402,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 4,
+              "dense_image": 6
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_3_6:p102",
+          "VIS:Table_3_1:p100",
+          "VIS:Figure_SPM5:p038",
+          "VIS:Table_Box_SPM1:p026",
+          "VIS:Table_CrossBox2_Risk:p081"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_3_6:p102",
+        "pdf_page": 102,
+        "printed_page": "86",
+        "bbox": [
+          35.0,
+          45.0,
+          565.0,
+          510.0
+        ],
+        "focus_question": "Examine panel (c) 'Timing of reaching net zero' (bottom of Figure 3.6). What are the exact values/labels, medians, likely ranges (bars), and very likely ranges (lines) or annotations for Category C1 (limit warming to 1.5°C (>50%) with no or limited overshoot) and Category C3 (limit warming to 2°C (>67%)) for net zero CO2 and net zero GHG? Does it state whether net zero GHG is reached or when?"
+      },
+      {
+        "event": "search",
+        "query": "\"Figure 3.6\" \"net zero\" 2050 2070",
+        "modality": "all",
+        "results": [
+          {
+            "id": "VIS:Figure_3_6:p102",
+            "modality": "chart",
+            "pdf_page": 102,
+            "printed_page": "86",
+            "score": 0.04717,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 6,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p100:c01",
+            "modality": "text",
+            "pdf_page": 100,
+            "printed_page": "84",
+            "score": 0.032522,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM5:p038",
+            "modality": "chart",
+            "pdf_page": 38,
+            "printed_page": "22",
+            "score": 0.031746,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_image": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p102:c01",
+            "modality": "text",
+            "pdf_page": 102,
+            "printed_page": "86",
+            "score": 0.031025,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p101:c03",
+            "modality": "text",
+            "pdf_page": 101,
+            "printed_page": "85",
+            "score": 0.030478,
+            "stream_ranks": {
+              "bm25": 11,
+              "dense_text": 1
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_3_6:p102",
+          "ADV_TXT:p100:c01",
+          "VIS:Table_3_1:p100",
+          "VIS:Figure_SPM5:p038",
+          "ADV_TXT:p102:c01",
+          "VIS:Table_Box_SPM1:p026",
+          "ADV_TXT:p101:c03",
+          "VIS:Table_CrossBox2_Risk:p081"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Table_3_1:p100",
+        "pdf_page": 100,
+        "printed_page": "84",
+        "bbox": [
+          35.0,
+          40.0,
+          568.0,
+          675.0
+        ],
+        "focus_question": "Check the values for Net zero CO2 and Net zero GHG for Category C1 and Category C3."
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Figure_3_6:p102",
+          "ADV_TXT:p102:c01",
+          "ADV_TXT:p101:c03",
+          "VIS:Table_3_1:p100"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "modality": "visual",
+          "reason": "Find visual region for Figure 3.6 panel c",
+          "query": "Figure 3.6 Timing for net zero Category C1 C3"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3688.47,
+        "prompt_tokens": 1017,
+        "candidates_tokens": 52,
+        "thoughts_tokens": 108,
+        "total_tokens": 1177
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Examine panel (c) 'Timing of reaching net zero' (bottom of Figure 3.6). What are the exact values/labels, medians, likely ranges (bars), and very likely ranges (lines) or annotations for Category C1 (limit warming to 1.5°C (>50%) with no or limited overshoot) and Category C3 (limit warming to 2°C (>67%)) for net zero CO2 and net zero GHG? Does it state whether net zero GHG is reached or when?",
+          "region_id": "VIS:Figure_3_6:p102"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4020.3,
+        "prompt_tokens": 5400,
+        "candidates_tokens": 148,
+        "thoughts_tokens": 122,
+        "total_tokens": 5670
+      },
+      {
+        "turn": 3,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Find text discussion or numbers related to Figure 3.6 and net zero CO2 and GHG timings for C1 and C3.",
+          "query": "\"Figure 3.6\" \"net zero\" 2050 2070"
+        },
+        "attached_visuals": [
+          "VIS:Figure_3_6:p102"
+        ],
+        "latency_ms": 9892.75,
+        "prompt_tokens": 7785,
+        "candidates_tokens": 68,
+        "thoughts_tokens": 672,
+        "total_tokens": 8525
+      },
+      {
+        "turn": 4,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Check the values for Net zero CO2 and Net zero GHG for Category C1 and Category C3.",
+          "region_id": "VIS:Table_3_1:p100"
+        },
+        "attached_visuals": [
+          "VIS:Figure_3_6:p102"
+        ],
+        "latency_ms": 15942.49,
+        "prompt_tokens": 9659,
+        "candidates_tokens": 59,
+        "thoughts_tokens": 1646,
+        "total_tokens": 11364
+      },
+      {
+        "turn": 5,
+        "function_name": "submit_answer",
+        "args": {
+          "sufficient_evidence": true,
+          "answer": "In **Figure 3.6 panel (c)** (*Timing for net zero*, p.102 / printed p.86), the timing of reaching net zero $\\text{CO}_2$ versus net zero greenhouse gas (GHG) emissions is compared across Category C1 and Category C3 global modelled pathways [VIS:Figure_3_6:p102][ADV_TXT:p102:c01]:\n\n### 1. General Comparison: $\\text{CO}_2$ vs. GHG Timing\n* Across both categories, **net zero $\\text{CO}_2$ is reached decades earlier than net zero GHGs** [VIS:Figure_3_6:p102][ADV_TXT:p101:c03]. This delay occurs because residual non-$\\text{CO}_2$ emissions (such as $\\text{CH}_4$ and $\\text{N}_2\\text{O}$) remain difficult to abate and must eventually be counterbalanced by net negative $\\text{CO}_2$ emissions [ADV_TXT:p101:c03].\n* Furthermore, **not all scenarios reach net zero GHG emissions by 2100**, as highlighted by the panel annotation [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n\n---\n\n### 2. Category C1 (limiting warming to 1.5°C (>50%) with no or limited overshoot)\n* **Net zero $\\text{CO}_2$**:\n  * **Median**: Reached around **2050** (specifically **2050–2055**, marked by the dark purple vertical line) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100]. 100% of pathways reach net zero $\\text{CO}_2$ [VIS:Table_3_1:p100].\n  * **Likely range** (thick bar): Spans approximately **2045/2050 to late 2050s** [VIS:Figure_3_6:p102].\n  * **Very likely range** (thin line): Spans **2035 to 2070** [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n* **Net zero GHG**:\n  * **Median**: Reached much later, around **2095–2100** (vertical blue line near 2100) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n  * **Likely range** (thick bar): Spans from approximately **2070 to 2100** [VIS:Figure_3_6:p102].\n  * **Very likely range** (thin line): Begins around **2050–2055** and extends to 2100 [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n  * Only **52%** of C1 pathways achieve net zero GHGs by 2100 [VIS:Table_3_1:p100].\n\n---\n\n### 3. Category C3 (limiting warming to 2°C (>67%))\n* **Net zero $\\text{CO}_2$**:\n  * **Median**: Reached around the early **2070s** (specifically **2070–2075**, marked by the dark purple vertical line), roughly 20 years later than in C1 [VIS:Figure_3_6:p102][ADV_TXT:p101:c03][VIS:Table_3_1:p100].\n  * **Likely range** (thick bar): Spans approximately **2065 to 2078** [VIS:Figure_3_6:p102].\n  * **Very likely range** (thin line): Spans **2055 to after 2085/2090** (5th percentile is 2055) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n  * 93% of C3 pathways reach net zero $\\text{CO}_2$ [VIS:Table_3_1:p100].\n* **Net zero GHG**:\n  * **Median**: **Not reached before 2100** (no median vertical line is displayed) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].\n  * Only a minority of pathways achieve net zero GHGs within the 21st century (**30%** of C3 pathways, with the 5th percentile starting around **2075–2085** and the likely range bar only appearing after ~2090 to 2100) [VIS:Figure_3_6:p102][VIS:Table_3_1:p100].",
+          "citations": [
+            "VIS:Figure_3_6:p102",
+            "ADV_TXT:p102:c01",
+            "ADV_TXT:p101:c03",
+            "VIS:Table_3_1:p100"
+          ]
+        },
+        "attached_visuals": [
+          "VIS:Figure_3_6:p102",
+          "VIS:Table_3_1:p100"
+        ],
+        "latency_ms": 29931.84,
+        "prompt_tokens": 11950,
+        "candidates_tokens": 1242,
+        "thoughts_tokens": 2058,
+        "total_tokens": 15250
+      }
+    ],
+    "search_calls": 2,
+    "inspect_calls": 2,
+    "usage": {
+      "prompt_tokens": 35811,
+      "candidates_tokens": 1569,
+      "thoughts_tokens": 4606,
+      "total_tokens": 41986
+    },
+    "elapsed_ms": 64308.87,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_11",
+    "split": "dev",
+    "category": "multi_hop",
+    "secondary_tags": [
+      "chart_plus_table",
+      "regional_comparison"
+    ],
+    "question": "Using Figure 2.2 panel (a) and panel (d) on p.61 (printed p.45), compare 'North America' and 'Southern Asia': state each region's share (%) of historical cumulative net CO2 emissions (1850–2019), 2019 population (million persons), 2019 GDP per capita (USD1000_PPP 2017), and 2019 net GHG per capita (tCO2-eq/person).",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Based on Figure 2.2 panel (a) and panel (d) on page 61 (printed page 45), the comparison between **North America** and **Southern Asia** is as follows:\n\n* **Share (%) of historical cumulative net $\\text{CO}_2$ emissions (1850–2019)** [VIS:Figure_2_2_charts:p061]:\n  * **North America:** 23%\n  * **Southern Asia:** 4%\n\n* **2019 Population (million persons)** [VIS:Table_Fig2_2d:p061]:\n  * **North America:** 366 million persons\n  * **Southern Asia:** 1836 million persons\n\n* **2019 GDP per capita ($\\text{USD1000}_{\\text{PPP}}\\text{ 2017}$ per person)** [VIS:Table_Fig2_2d:p061]:\n  * **North America:** 61\n  * **Southern Asia:** 6.2\n\n* **2019 Net GHG per capita ($\\text{tCO}_2\\text{-eq/person}$, production basis)** [VIS:Table_Fig2_2d:p061]:\n  * **North America:** 19 $\\text{tCO}_2\\text{-eq per person}$\n  * **Southern Asia:** 2.6 $\\text{tCO}_2\\text{-eq per person}$",
+    "citations": [
+      "VIS:Figure_2_2_charts:p061",
+      "VIS:Table_Fig2_2d:p061"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Figure_2_2_charts:p061",
+        "modality": "chart",
+        "label": "Figure 2.2 Panels (a)-(c)",
+        "pdf_page": 61,
+        "printed_page": "45",
+        "bbox": [
+          42.0,
+          45.0,
+          575.0,
+          582.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_2_2_charts_p061.png"
+      },
+      {
+        "id": "VIS:Table_Fig2_2d:p061",
+        "modality": "table",
+        "label": "Figure 2.2 Panel (d) Table",
+        "pdf_page": 61,
+        "printed_page": "45",
+        "bbox": [
+          42.0,
+          565.0,
+          575.0,
+          750.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Table_Fig2_2d_p061.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_2_2_charts:p061",
+      "VIS:Table_Fig2_2d:p061"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure 2.2 historical cumulative net CO2 emissions regional population GDP per capita",
+        "modality": "visual",
+        "results": [
+          {
+            "id": "VIS:Figure_2_2_charts:p061",
+            "modality": "chart",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.048916,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 1,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Table_Fig2_2d:p061",
+            "modality": "table",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.048652,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 2,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Figure_3_5:p099",
+            "modality": "chart",
+            "pdf_page": 99,
+            "printed_page": "83",
+            "score": 0.047123,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 3,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_2_3b:p065",
+            "modality": "diagram_map",
+            "pdf_page": 65,
+            "printed_page": "49",
+            "score": 0.045831,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 11,
+              "dense_image": 3
+            }
+          },
+          {
+            "id": "VIS:Figure_2_1:p059",
+            "modality": "chart",
+            "pdf_page": 59,
+            "printed_page": "43",
+            "score": 0.045462,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 7,
+              "dense_image": 5
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Table_Fig2_2d:p061",
+          "VIS:Figure_3_5:p099",
+          "VIS:Figure_2_3b:p065",
+          "VIS:Figure_2_1:p059"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_2_2_charts:p061",
+        "pdf_page": 61,
+        "printed_page": "45",
+        "bbox": [
+          42.0,
+          45.0,
+          575.0,
+          582.0
+        ],
+        "focus_question": "Check panel (a) for North America and Southern Asia: what are their exact shares (%) of historical cumulative net CO2 emissions (1850-2019)?"
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Table_Fig2_2d:p061",
+        "pdf_page": 61,
+        "printed_page": "45",
+        "bbox": [
+          42.0,
+          565.0,
+          575.0,
+          750.0
+        ],
+        "focus_question": "Read values for North America and Southern Asia: Population (million persons, 2019), GDP per capita (USD1000_PPP 2017 per person), Net GHG 2019 GHG per capita (tCO2-eq per person)."
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Table_Fig2_2d:p061"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "modality": "visual",
+          "reason": "Find Figure 2.2 on page 61 / printed page 45",
+          "query": "Figure 2.2 historical cumulative net CO2 emissions regional population GDP per capita"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4274.44,
+        "prompt_tokens": 1057,
+        "candidates_tokens": 60,
+        "thoughts_tokens": 134,
+        "total_tokens": 1251
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "region_id": "VIS:Figure_2_2_charts:p061",
+          "focus_question": "Check panel (a) for North America and Southern Asia: what are their exact shares (%) of historical cumulative net CO2 emissions (1850-2019)?"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3617.81,
+        "prompt_tokens": 5237,
+        "candidates_tokens": 76,
+        "thoughts_tokens": 189,
+        "total_tokens": 5502
+      },
+      {
+        "turn": 3,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Read values for North America and Southern Asia: Population (million persons, 2019), GDP per capita (USD1000_PPP 2017 per person), Net GHG 2019 GHG per capita (tCO2-eq per person).",
+          "region_id": "VIS:Table_Fig2_2d:p061"
+        },
+        "attached_visuals": [
+          "VIS:Figure_2_2_charts:p061"
+        ],
+        "latency_ms": 4378.25,
+        "prompt_tokens": 7564,
+        "candidates_tokens": 98,
+        "thoughts_tokens": 252,
+        "total_tokens": 7914
+      },
+      {
+        "turn": 4,
+        "function_name": "submit_answer",
+        "args": {
+          "sufficient_evidence": true,
+          "citations": [
+            "VIS:Figure_2_2_charts:p061",
+            "VIS:Table_Fig2_2d:p061"
+          ],
+          "answer": "Based on Figure 2.2 panel (a) and panel (d) on page 61 (printed page 45), the comparison between **North America** and **Southern Asia** is as follows:\n\n* **Share (%) of historical cumulative net $\\text{CO}_2$ emissions (1850–2019)** [VIS:Figure_2_2_charts:p061]:\n  * **North America:** 23%\n  * **Southern Asia:** 4%\n\n* **2019 Population (million persons)** [VIS:Table_Fig2_2d:p061]:\n  * **North America:** 366 million persons\n  * **Southern Asia:** 1836 million persons\n\n* **2019 GDP per capita ($\\text{USD1000}_{\\text{PPP}}\\text{ 2017}$ per person)** [VIS:Table_Fig2_2d:p061]:\n  * **North America:** 61\n  * **Southern Asia:** 6.2\n\n* **2019 Net GHG per capita ($\\text{tCO}_2\\text{-eq/person}$, production basis)** [VIS:Table_Fig2_2d:p061]:\n  * **North America:** 19 $\\text{tCO}_2\\text{-eq per person}$\n  * **Southern Asia:** 2.6 $\\text{tCO}_2\\text{-eq per person}$"
+        },
+        "attached_visuals": [
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Table_Fig2_2d:p061"
+        ],
+        "latency_ms": 11821.39,
+        "prompt_tokens": 9866,
+        "candidates_tokens": 385,
+        "thoughts_tokens": 666,
+        "total_tokens": 10917
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 2,
+    "usage": {
+      "prompt_tokens": 23724,
+      "candidates_tokens": 619,
+      "thoughts_tokens": 1241,
+      "total_tokens": 25584
+    },
+    "elapsed_ms": 24572.33,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_12",
+    "split": "dev",
+    "category": "multi_hop",
+    "secondary_tags": [
+      "table_plus_chart",
+      "facing_pages",
+      "emissions_gap"
+    ],
+    "question": "Combining Table 2.2 (p.74) and Figure 2.5 (p.75), state for 2030: (1) median projected emissions and [min–max] (GtCO2-eq/yr) for 'policies implemented by end of 2020' vs COP26 NDCs (unconditional and conditional), (2) percentage change from 2019 shown in Figure 2.5 panel (b) for implemented policies, NDCs, 2°C (>67%), and 1.5°C (>50%), and (3) the 2030 emissions gap between NDCs and 1.5°C pathways.",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Based on Table 2.2 and Figure 2.5 of the IPCC AR6 Synthesis Report:\n\n### 1. Projected Global Emissions in 2030 (Table 2.2)\nMedian projected global greenhouse gas emissions and their [min–max] ranges in 2030 are:\n- **Policies implemented by the end of 2020**: **57 [52–60] GtCO2-eq/yr** [VIS:Table_2_2:p074]\n- **NDCs announced prior to COP26 (unconditional elements)**: **53 [50–57] GtCO2-eq/yr** [VIS:Table_2_2:p074]\n- **NDCs announced prior to COP26 (including conditional elements)**: **50 [47–55] GtCO2-eq/yr** [VIS:Table_2_2:p074]\n\n---\n\n### 2. Percentage Change from 2019 in 2030 (Figure 2.5b)\nAs shown in Figure 2.5 panel (b), the projected percentage changes in global GHG emissions by 2030 relative to 2019 levels are:\n- **Implemented policies**: **+5%** [VIS:Figure_2_5:p075]\n- **NDCs**: **–4%** [VIS:Figure_2_5:p075]\n- **Limit warming to 2°C (>67%)**: **–26%** [VIS:Figure_2_5:p075]\n- **Limit warming to 1.5°C (>50%)** (with no or limited overshoot): **–43%** [VIS:Figure_2_5:p075]\n\n---\n\n### 3. Emissions Gap in 2030 Between NDCs and 1.5°C Pathways (Table 2.2)\nThe emissions gap between NDCs announced prior to COP26 and pathways that limit warming to 1.5°C (>50%) with no or limited overshoot (with immediate action) in 2030 is:\n- **Unconditional NDC elements**: **19–26 GtCO2-eq/yr** [VIS:Table_2_2:p074]\n- **Including conditional NDC elements**: **16–23 GtCO2-eq/yr** [VIS:Table_2_2:p074]",
+    "citations": [
+      "VIS:Table_2_2:p074",
+      "VIS:Figure_2_5:p075"
+    ],
+    "citation_details": [
+      {
+        "id": "VIS:Table_2_2:p074",
+        "modality": "table",
+        "label": "Table 2.2",
+        "pdf_page": 74,
+        "printed_page": "58",
+        "bbox": [
+          35.0,
+          240.0,
+          560.0,
+          610.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Table_2_2_p074.png"
+      },
+      {
+        "id": "VIS:Figure_2_5:p075",
+        "modality": "chart",
+        "label": "Figure 2.5",
+        "pdf_page": 75,
+        "printed_page": "59",
+        "bbox": [
+          45.0,
+          45.0,
+          575.0,
+          480.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_2_5_p075.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_2_5:p075",
+      "VIS:Table_2_2:p074"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Table 2.2 Figure 2.5 emissions 2030 policies implemented NDCs 2019 gap",
+        "modality": "all",
+        "results": [
+          {
+            "id": "VIS:Table_2_2:p074",
+            "modality": "table",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.04918,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_2_5:p075",
+            "modality": "chart",
+            "pdf_page": 75,
+            "printed_page": "59",
+            "score": 0.04604,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 10,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p073:c06",
+            "modality": "text",
+            "pdf_page": 73,
+            "printed_page": "57",
+            "score": 0.032002,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p074:c03",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.032002,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p027:c03",
+            "modality": "text",
+            "pdf_page": 27,
+            "printed_page": "11",
+            "score": 0.03031,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 7
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Table_2_2:p074",
+          "VIS:Figure_2_5:p075",
+          "ADV_TXT:p073:c06",
+          "ADV_TXT:p074:c03",
+          "ADV_TXT:p027:c03"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Table_2_2:p074",
+        "pdf_page": 74,
+        "printed_page": "58",
+        "bbox": [
+          35.0,
+          240.0,
+          560.0,
+          610.0
+        ],
+        "focus_question": "Read all values in Table 2.2, specifically: median projected emissions (min-max) for implemented policies, unconditional NDCs, and conditional NDCs; and the emissions gap between NDCs and pathways that limit warming to 1.5°C (>50%)."
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_2_5:p075",
+        "pdf_page": 75,
+        "printed_page": "59",
+        "bbox": [
+          45.0,
+          45.0,
+          575.0,
+          480.0
+        ],
+        "focus_question": "Look at panel (b) of Figure 2.5: what are the percentage changes from 2019 in 2030 shown for implemented policies, NDCs (unconditional/conditional if specified, or overall), 2°C (>67%), and 1.5°C (>50%)? Read all exact numbers/ranges and labels in panel (b)."
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "VIS:Table_2_2:p074",
+          "VIS:Figure_2_5:p075"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "modality": "all",
+          "reason": "Search for Table 2.2 and Figure 2.5 on pages 74 and 75",
+          "query": "Table 2.2 Figure 2.5 emissions 2030 policies implemented NDCs 2019 gap"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3634.75,
+        "prompt_tokens": 1094,
+        "candidates_tokens": 75,
+        "thoughts_tokens": 176,
+        "total_tokens": 1345
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Read all values in Table 2.2, specifically: median projected emissions (min-max) for implemented policies, unconditional NDCs, and conditional NDCs; and the emissions gap between NDCs and pathways that limit warming to 1.5°C (>50%).",
+          "region_id": "VIS:Table_2_2:p074"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4506.96,
+        "prompt_tokens": 4232,
+        "candidates_tokens": 94,
+        "thoughts_tokens": 188,
+        "total_tokens": 4514
+      },
+      {
+        "turn": 3,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Look at panel (b) of Figure 2.5: what are the percentage changes from 2019 in 2030 shown for implemented policies, NDCs (unconditional/conditional if specified, or overall), 2°C (>67%), and 1.5°C (>50%)? Read all exact numbers/ranges and labels in panel (b).",
+          "region_id": "VIS:Figure_2_5:p075"
+        },
+        "attached_visuals": [
+          "VIS:Table_2_2:p074"
+        ],
+        "latency_ms": 5584.52,
+        "prompt_tokens": 6548,
+        "candidates_tokens": 119,
+        "thoughts_tokens": 177,
+        "total_tokens": 6844
+      },
+      {
+        "turn": 4,
+        "function_name": "submit_answer",
+        "args": {
+          "citations": [
+            "VIS:Table_2_2:p074",
+            "VIS:Figure_2_5:p075"
+          ],
+          "answer": "Based on Table 2.2 and Figure 2.5 of the IPCC AR6 Synthesis Report:\n\n### 1. Projected Global Emissions in 2030 (Table 2.2)\nMedian projected global greenhouse gas emissions and their [min–max] ranges in 2030 are:\n- **Policies implemented by the end of 2020**: **57 [52–60] GtCO2-eq/yr** [VIS:Table_2_2:p074]\n- **NDCs announced prior to COP26 (unconditional elements)**: **53 [50–57] GtCO2-eq/yr** [VIS:Table_2_2:p074]\n- **NDCs announced prior to COP26 (including conditional elements)**: **50 [47–55] GtCO2-eq/yr** [VIS:Table_2_2:p074]\n\n---\n\n### 2. Percentage Change from 2019 in 2030 (Figure 2.5b)\nAs shown in Figure 2.5 panel (b), the projected percentage changes in global GHG emissions by 2030 relative to 2019 levels are:\n- **Implemented policies**: **+5%** [VIS:Figure_2_5:p075]\n- **NDCs**: **–4%** [VIS:Figure_2_5:p075]\n- **Limit warming to 2°C (>67%)**: **–26%** [VIS:Figure_2_5:p075]\n- **Limit warming to 1.5°C (>50%)** (with no or limited overshoot): **–43%** [VIS:Figure_2_5:p075]\n\n---\n\n### 3. Emissions Gap in 2030 Between NDCs and 1.5°C Pathways (Table 2.2)\nThe emissions gap between NDCs announced prior to COP26 and pathways that limit warming to 1.5°C (>50%) with no or limited overshoot (with immediate action) in 2030 is:\n- **Unconditional NDC elements**: **19–26 GtCO2-eq/yr** [VIS:Table_2_2:p074]\n- **Including conditional NDC elements**: **16–23 GtCO2-eq/yr** [VIS:Table_2_2:p074]",
+          "sufficient_evidence": true
+        },
+        "attached_visuals": [
+          "VIS:Table_2_2:p074",
+          "VIS:Figure_2_5:p075"
+        ],
+        "latency_ms": 15544.61,
+        "prompt_tokens": 8891,
+        "candidates_tokens": 615,
+        "thoughts_tokens": 1008,
+        "total_tokens": 10514
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 2,
+    "usage": {
+      "prompt_tokens": 20765,
+      "candidates_tokens": 903,
+      "thoughts_tokens": 1549,
+      "total_tokens": 23217
+    },
+    "elapsed_ms": 29738.46,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_13",
+    "split": "dev",
+    "category": "multi_hop",
+    "secondary_tags": [
+      "text_plus_chart",
+      "carbon_budget",
+      "cross_page"
+    ],
+    "question": "Combine Section 3.3.1 (p.98) and Figure 3.5 panel (a) (p.99): state the global warming increment per 1000 GtCO2 emitted, the remaining carbon budget from the beginning of 2020 for limiting warming to 1.5°C (50% likelihood), and explain how Figure 3.5 panel (a) compares that 1.5°C budget against lifetime CO2 emissions from existing and planned fossil fuel infrastructure without additional abatement.",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "Based on Section 3.3.1 and Figure 3.5 panel (a) of the IPCC AR6 Synthesis Report:\n\n1. **Global warming increment per 1000 GtCO₂ emitted:**\n   - For every 1000 GtCO₂ emitted by human activity, global mean surface temperature rises by a best estimate of **0.45°C**, with a likely range of **0.27°C to 0.63°C** [ADV_TXT:p098:c01].\n\n2. **Remaining carbon budget from the beginning of 2020 for limiting warming to 1.5°C (50% likelihood):**\n   - The best estimate of the remaining carbon budget from the start of 2020 for a 50% likelihood of limiting warming to 1.5°C is **500 GtCO₂** (varying between 300 and 600 GtCO₂ depending on the level of non-CO₂ warming) [ADV_TXT:p098:c02] [VIS:Figure_3_5:p099].\n\n3. **Comparison in Figure 3.5 panel (a) against lifetime emissions from existing and planned fossil fuel infrastructure:**\n   - Figure 3.5 panel (a) depicts the 1.5°C (>50% chance) remaining carbon budget bar at 500 GtCO₂, with a vertical dashed reference line extending downwards [VIS:Figure_3_5:p099] [ADV_TXT:p099:c01].\n   - **Existing fossil fuel infrastructure:** Projected lifetime CO₂ emissions from existing fossil fuel infrastructure alone (without additional abatement, maintaining historical operating patterns) extend beyond the 500 GtCO₂ dashed reference line, already exceeding the remaining carbon budget for 1.5°C (50%) [VIS:Figure_3_5:p099] [ADV_TXT:p099:c01].\n   - **Existing and planned fossil fuel infrastructure:** When planned infrastructure is added, lifetime emissions exceed the 1.5°C budget by a substantially wider margin, reaching approximately the remaining carbon budget for limiting warming to 2°C with an 83% likelihood [VIS:Figure_3_5:p099] [ADV_TXT:p099:c01].",
+    "citations": [
+      "ADV_TXT:p098:c01",
+      "ADV_TXT:p098:c02",
+      "ADV_TXT:p099:c01",
+      "VIS:Figure_3_5:p099"
+    ],
+    "citation_details": [
+      {
+        "id": "ADV_TXT:p098:c01",
+        "modality": "text",
+        "label": "Section 3: Long-Term Futures (p.82)",
+        "pdf_page": 98,
+        "printed_page": "82",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "ADV_TXT:p098:c02",
+        "modality": "text",
+        "label": "Section 3: Long-Term Futures (p.82)",
+        "pdf_page": 98,
+        "printed_page": "82",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "ADV_TXT:p099:c01",
+        "modality": "text",
+        "label": "Section 3: Long-Term Futures (p.83)",
+        "pdf_page": 99,
+        "printed_page": "83",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "VIS:Figure_3_5:p099",
+        "modality": "chart",
+        "label": "Figure 3.5",
+        "pdf_page": 99,
+        "printed_page": "83",
+        "bbox": [
+          45.0,
+          45.0,
+          575.0,
+          520.0
+        ],
+        "crop_relpath": "data/advanced/crops/VIS_Figure_3_5_p099.png"
+      }
+    ],
+    "inspected_regions": [
+      "VIS:Figure_3_5:p099"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Section 3.3.1 remaining carbon budget 1000 GtCO2 1.5 Figure 3.5",
+        "modality": "all",
+        "results": [
+          {
+            "id": "ADV_TXT:p098:c01",
+            "modality": "text",
+            "pdf_page": 98,
+            "printed_page": "82",
+            "score": 0.032522,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p035:c05",
+            "modality": "text",
+            "pdf_page": 35,
+            "printed_page": "19",
+            "score": 0.031545,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 6
+            }
+          },
+          {
+            "id": "VIS:Figure_3_5:p099",
+            "modality": "chart",
+            "pdf_page": 99,
+            "printed_page": "83",
+            "score": 0.031545,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p098:c05",
+            "modality": "text",
+            "pdf_page": 98,
+            "printed_page": "82",
+            "score": 0.031258,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 5
+            }
+          },
+          {
+            "id": "ADV_TXT:p098:c02",
+            "modality": "text",
+            "pdf_page": 98,
+            "printed_page": "82",
+            "score": 0.030835,
+            "stream_ranks": {
+              "bm25": 8,
+              "dense_text": 2
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p098:c01",
+          "ADV_TXT:p035:c05",
+          "VIS:Figure_3_5:p099",
+          "ADV_TXT:p098:c05",
+          "ADV_TXT:p098:c02"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_3_5:p099",
+        "pdf_page": 99,
+        "printed_page": "83",
+        "bbox": [
+          45.0,
+          45.0,
+          575.0,
+          520.0
+        ],
+        "focus_question": "Look closely at panel (a) of Figure 3.5: What are the numbers and bars for the remaining carbon budget for 1.5°C (50%), and how are lifetime emissions from existing and planned fossil fuel infrastructure depicted and compared to it? Note values, labels, categories (e.g. existing vs planned fossil fuel infrastructure), and any text/annotations."
+      },
+      {
+        "event": "search",
+        "query": "existing and planned fossil fuel infrastructure 3.3.1 660",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p074:c01",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.032018,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p036:c01",
+            "modality": "text",
+            "pdf_page": 36,
+            "printed_page": "20",
+            "score": 0.031754,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 4
+            }
+          },
+          {
+            "id": "ADV_TXT:p099:c02",
+            "modality": "text",
+            "pdf_page": 99,
+            "printed_page": "83",
+            "score": 0.031746,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p099:c01",
+            "modality": "text",
+            "pdf_page": 99,
+            "printed_page": "83",
+            "score": 0.031545,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 6
+            }
+          },
+          {
+            "id": "ADV_TXT:p074:c02",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.030622,
+            "stream_ranks": {
+              "bm25": 9,
+              "dense_text": 2
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p074:c01",
+          "ADV_TXT:p098:c01",
+          "ADV_TXT:p036:c01",
+          "ADV_TXT:p035:c05",
+          "ADV_TXT:p099:c02",
+          "VIS:Figure_3_5:p099",
+          "ADV_TXT:p099:c01",
+          "ADV_TXT:p098:c05",
+          "ADV_TXT:p074:c02",
+          "ADV_TXT:p098:c02"
+        ]
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "ADV_TXT:p098:c01",
+          "ADV_TXT:p098:c02",
+          "ADV_TXT:p099:c01",
+          "VIS:Figure_3_5:p099"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Find Section 3.3.1 text and Figure 3.5 panel a on pages 98-99.",
+          "query": "Section 3.3.1 remaining carbon budget 1000 GtCO2 1.5 Figure 3.5",
+          "modality": "all"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3301.04,
+        "prompt_tokens": 1057,
+        "candidates_tokens": 81,
+        "thoughts_tokens": 147,
+        "total_tokens": 1285
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "region_id": "VIS:Figure_3_5:p099",
+          "focus_question": "Look closely at panel (a) of Figure 3.5: What are the numbers and bars for the remaining carbon budget for 1.5°C (50%), and how are lifetime emissions from existing and planned fossil fuel infrastructure depicted and compared to it? Note values, labels, categories (e.g. existing vs planned fossil fuel infrastructure), and any text/annotations."
+        },
+        "attached_visuals": [],
+        "latency_ms": 3848.02,
+        "prompt_tokens": 3474,
+        "candidates_tokens": 116,
+        "thoughts_tokens": 150,
+        "total_tokens": 3740
+      },
+      {
+        "turn": 3,
+        "function_name": "search_report",
+        "args": {
+          "query": "existing and planned fossil fuel infrastructure 3.3.1 660",
+          "reason": "Check exact text on existing and planned infrastructure emissions in Section 3.3.1 or nearby text",
+          "modality": "text"
+        },
+        "attached_visuals": [
+          "VIS:Figure_3_5:p099"
+        ],
+        "latency_ms": 9625.26,
+        "prompt_tokens": 5785,
+        "candidates_tokens": 63,
+        "thoughts_tokens": 775,
+        "total_tokens": 6623
+      },
+      {
+        "turn": 4,
+        "function_name": "submit_answer",
+        "args": {
+          "answer": "Based on Section 3.3.1 and Figure 3.5 panel (a) of the IPCC AR6 Synthesis Report:\n\n1. **Global warming increment per 1000 GtCO₂ emitted:**\n   - For every 1000 GtCO₂ emitted by human activity, global mean surface temperature rises by a best estimate of **0.45°C**, with a likely range of **0.27°C to 0.63°C** [ADV_TXT:p098:c01].\n\n2. **Remaining carbon budget from the beginning of 2020 for limiting warming to 1.5°C (50% likelihood):**\n   - The best estimate of the remaining carbon budget from the start of 2020 for a 50% likelihood of limiting warming to 1.5°C is **500 GtCO₂** (varying between 300 and 600 GtCO₂ depending on the level of non-CO₂ warming) [ADV_TXT:p098:c02] [VIS:Figure_3_5:p099].\n\n3. **Comparison in Figure 3.5 panel (a) against lifetime emissions from existing and planned fossil fuel infrastructure:**\n   - Figure 3.5 panel (a) depicts the 1.5°C (>50% chance) remaining carbon budget bar at 500 GtCO₂, with a vertical dashed reference line extending downwards [VIS:Figure_3_5:p099] [ADV_TXT:p099:c01].\n   - **Existing fossil fuel infrastructure:** Projected lifetime CO₂ emissions from existing fossil fuel infrastructure alone (without additional abatement, maintaining historical operating patterns) extend beyond the 500 GtCO₂ dashed reference line, already exceeding the remaining carbon budget for 1.5°C (50%) [VIS:Figure_3_5:p099] [ADV_TXT:p099:c01].\n   - **Existing and planned fossil fuel infrastructure:** When planned infrastructure is added, lifetime emissions exceed the 1.5°C budget by a substantially wider margin, reaching approximately the remaining carbon budget for limiting warming to 2°C with an 83% likelihood [VIS:Figure_3_5:p099] [ADV_TXT:p099:c01].",
+          "citations": [
+            "ADV_TXT:p098:c01",
+            "ADV_TXT:p098:c02",
+            "ADV_TXT:p099:c01",
+            "VIS:Figure_3_5:p099"
+          ],
+          "sufficient_evidence": true
+        },
+        "attached_visuals": [
+          "VIS:Figure_3_5:p099"
+        ],
+        "latency_ms": 13607.12,
+        "prompt_tokens": 7715,
+        "candidates_tokens": 610,
+        "thoughts_tokens": 841,
+        "total_tokens": 9166
+      }
+    ],
+    "search_calls": 2,
+    "inspect_calls": 1,
+    "usage": {
+      "prompt_tokens": 18031,
+      "candidates_tokens": 870,
+      "thoughts_tokens": 1913,
+      "total_tokens": 20814
+    },
+    "elapsed_ms": 31283.16,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_14",
+    "split": "dev",
+    "category": "text",
+    "secondary_tags": [
+      "sea_level_rates",
+      "spm"
+    ],
+    "question": "According to SPM A.2.1 (PDF p.21 / printed p.5), by how much did global mean sea level rise in total between 1901 and 2018, and what were the average rates of sea level rise (in mm yr-1) during each of the three sub-periods 1901–1971, 1971–2006, and 2006–2018?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to SPM A.2.1 (p. 5), the observed changes in global mean sea level are as follows:\n\n- **Total rise between 1901 and 2018:** Global mean sea level increased by **0.20 [0.15 to 0.25] m** [ADV_TXT:p021:c03].\n- **Average rates of sea level rise across the three sub-periods:**\n  - **1901–1971:** **1.3 [0.6 to 2.1] mm yr⁻¹** [ADV_TXT:p021:c03]\n  - **1971–2006:** **1.9 [0.8 to 2.9] mm yr⁻¹** [ADV_TXT:p021:c03]\n  - **2006–2018:** **3.7 [3.2 to 4.2] mm yr⁻¹** (*high confidence*) [ADV_TXT:p021:c03]",
+    "citations": [
+      "ADV_TXT:p021:c03"
+    ],
+    "citation_details": [
+      {
+        "id": "ADV_TXT:p021:c03",
+        "modality": "text",
+        "label": "Summary for Policymakers (p.5)",
+        "pdf_page": 21,
+        "printed_page": "5",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      }
+    ],
+    "inspected_regions": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "SPM A.2.1 global mean sea level rise 1901 2018 1971 2006",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p021:c03",
+            "modality": "text",
+            "pdf_page": 21,
+            "printed_page": "5",
+            "score": 0.032787,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p062:c04",
+            "modality": "text",
+            "pdf_page": 62,
+            "printed_page": "46",
+            "score": 0.032002,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p034:c06",
+            "modality": "text",
+            "pdf_page": 34,
+            "printed_page": "18",
+            "score": 0.030769,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 5
+            }
+          },
+          {
+            "id": "ADV_TXT:p029:c01",
+            "modality": "text",
+            "pdf_page": 29,
+            "printed_page": "13",
+            "score": 0.029857,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 8
+            }
+          },
+          {
+            "id": "ADV_TXT:p097:c02",
+            "modality": "text",
+            "pdf_page": 97,
+            "printed_page": "81",
+            "score": 0.028485,
+            "stream_ranks": {
+              "bm25": 15,
+              "dense_text": 6
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p021:c03",
+          "ADV_TXT:p062:c04",
+          "ADV_TXT:p034:c06",
+          "ADV_TXT:p029:c01",
+          "ADV_TXT:p097:c02"
+        ]
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "ADV_TXT:p021:c03"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "query": "SPM A.2.1 global mean sea level rise 1901 2018 1971 2006",
+          "modality": "text",
+          "reason": "Find SPM A.2.1 text describing global mean sea level rise between 1901 and 2018 and the sub-period rates."
+        },
+        "attached_visuals": [],
+        "latency_ms": 3626.43,
+        "prompt_tokens": 1047,
+        "candidates_tokens": 92,
+        "thoughts_tokens": 150,
+        "total_tokens": 1289
+      },
+      {
+        "turn": 2,
+        "function_name": "submit_answer",
+        "args": {
+          "sufficient_evidence": true,
+          "citations": [
+            "ADV_TXT:p021:c03"
+          ],
+          "answer": "According to SPM A.2.1 (p. 5), the observed changes in global mean sea level are as follows:\n\n- **Total rise between 1901 and 2018:** Global mean sea level increased by **0.20 [0.15 to 0.25] m** [ADV_TXT:p021:c03].\n- **Average rates of sea level rise across the three sub-periods:**\n  - **1901–1971:** **1.3 [0.6 to 2.1] mm yr⁻¹** [ADV_TXT:p021:c03]\n  - **1971–2006:** **1.9 [0.8 to 2.9] mm yr⁻¹** [ADV_TXT:p021:c03]\n  - **2006–2018:** **3.7 [3.2 to 4.2] mm yr⁻¹** (*high confidence*) [ADV_TXT:p021:c03]"
+        },
+        "attached_visuals": [],
+        "latency_ms": 7954.66,
+        "prompt_tokens": 3098,
+        "candidates_tokens": 282,
+        "thoughts_tokens": 519,
+        "total_tokens": 3899
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 0,
+    "usage": {
+      "prompt_tokens": 4145,
+      "candidates_tokens": 374,
+      "thoughts_tokens": 669,
+      "total_tokens": 5188
+    },
+    "elapsed_ms": 12048.34,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_15",
+    "split": "dev",
+    "category": "text",
+    "secondary_tags": [
+      "technology_costs",
+      "carbon_pricing",
+      "finance"
+    ],
+    "question": "According to Section 2.2 (PDF p.69 / printed p.53), by what percentages did the unit costs of solar energy, wind energy, and lithium-ion batteries decrease during 2010–2019, what share of global GHG emissions was covered by carbon taxes or emissions trading systems by 2020, and by how much did annual tracked total climate finance flows increase between 2013/14 and 2019/20?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to Section 2.2 (printed p. 53 / PDF p. 69) of the IPCC AR6 Synthesis Report:\n\n- **Unit cost decreases (2010–2019):** Sustained decreases occurred in the unit costs of:\n  - **Solar energy:** decreased by **85%** [ADV_TXT:p069:c02]\n  - **Wind energy:** decreased by **55%** [ADV_TXT:p069:c02]\n  - **Lithium-ion batteries:** decreased by **85%** [ADV_TXT:p069:c02]\n- **Share of global GHG emissions covered by carbon pricing (by 2020):** **Over 20%** of global GHG emissions were covered by carbon taxes or emissions trading systems (medium confidence) [ADV_TXT:p069:c06].\n- **Increase in annual tracked total climate finance flows (between 2013/14 and 2019/20):** Annual tracked total financial flows for climate mitigation and adaptation increased by **up to 60%** (medium confidence) [ADV_TXT:p069:c05].",
+    "citations": [
+      "ADV_TXT:p069:c02",
+      "ADV_TXT:p069:c05",
+      "ADV_TXT:p069:c06"
+    ],
+    "citation_details": [
+      {
+        "id": "ADV_TXT:p069:c02",
+        "modality": "text",
+        "label": "Section 2: Current Status and Trends (p.53)",
+        "pdf_page": 69,
+        "printed_page": "53",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "ADV_TXT:p069:c05",
+        "modality": "text",
+        "label": "Section 2: Current Status and Trends (p.53)",
+        "pdf_page": 69,
+        "printed_page": "53",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "ADV_TXT:p069:c06",
+        "modality": "text",
+        "label": "Section 2: Current Status and Trends (p.53)",
+        "pdf_page": 69,
+        "printed_page": "53",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      }
+    ],
+    "inspected_regions": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Section 2.2 unit costs solar energy wind energy lithium-ion batteries 2010-2019 carbon taxes emissions trading systems climate finance flows 2013/14 2019/20",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p069:c02",
+            "modality": "text",
+            "pdf_page": 69,
+            "printed_page": "53",
+            "score": 0.032787,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p069:c07",
+            "modality": "text",
+            "pdf_page": 69,
+            "printed_page": "53",
+            "score": 0.032002,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p070:c01",
+            "modality": "text",
+            "pdf_page": 70,
+            "printed_page": "54",
+            "score": 0.031754,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p027:c01",
+            "modality": "text",
+            "pdf_page": 27,
+            "printed_page": "11",
+            "score": 0.031258,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 5
+            }
+          },
+          {
+            "id": "ADV_TXT:p069:c05",
+            "modality": "text",
+            "pdf_page": 69,
+            "printed_page": "53",
+            "score": 0.029877,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 9
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p069:c02",
+          "ADV_TXT:p069:c07",
+          "ADV_TXT:p070:c01",
+          "ADV_TXT:p027:c01",
+          "ADV_TXT:p069:c05"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "carbon taxes or emissions trading systems 2020 share of global GHG emissions Section 2.2 p.53 p.69",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p060:c07",
+            "modality": "text",
+            "pdf_page": 60,
+            "printed_page": "44",
+            "score": 0.032522,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p069:c06",
+            "modality": "text",
+            "pdf_page": 69,
+            "printed_page": "53",
+            "score": 0.032522,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p037:c01",
+            "modality": "text",
+            "pdf_page": 37,
+            "printed_page": "21",
+            "score": 0.029437,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 10
+            }
+          },
+          {
+            "id": "ADV_TXT:p060:c03",
+            "modality": "text",
+            "pdf_page": 60,
+            "printed_page": "44",
+            "score": 0.029139,
+            "stream_ranks": {
+              "bm25": 14,
+              "dense_text": 4
+            }
+          },
+          {
+            "id": "ADV_TXT:p074:c03",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.028992,
+            "stream_ranks": {
+              "bm25": 10,
+              "dense_text": 8
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p060:c07",
+          "ADV_TXT:p069:c02",
+          "ADV_TXT:p069:c06",
+          "ADV_TXT:p069:c07",
+          "ADV_TXT:p037:c01",
+          "ADV_TXT:p070:c01",
+          "ADV_TXT:p060:c03",
+          "ADV_TXT:p027:c01",
+          "ADV_TXT:p074:c03",
+          "ADV_TXT:p069:c05"
+        ]
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "ADV_TXT:p069:c02",
+          "ADV_TXT:p069:c05",
+          "ADV_TXT:p069:c06"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Search for Section 2.2 text on unit costs decrease of solar, wind, batteries, share of emissions covered by carbon pricing, and increase in climate finance flows",
+          "query": "Section 2.2 unit costs solar energy wind energy lithium-ion batteries 2010-2019 carbon taxes emissions trading systems climate finance flows 2013/14 2019/20",
+          "modality": "text"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3627.42,
+        "prompt_tokens": 1049,
+        "candidates_tokens": 109,
+        "thoughts_tokens": 144,
+        "total_tokens": 1302
+      },
+      {
+        "turn": 2,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Find the exact share of global GHG emissions covered by carbon taxes or emissions trading systems by 2020 in Section 2.2",
+          "query": "carbon taxes or emissions trading systems 2020 share of global GHG emissions Section 2.2 p.53 p.69",
+          "modality": "text"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4735.83,
+        "prompt_tokens": 3060,
+        "candidates_tokens": 84,
+        "thoughts_tokens": 319,
+        "total_tokens": 3463
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "citations": [
+            "ADV_TXT:p069:c02",
+            "ADV_TXT:p069:c05",
+            "ADV_TXT:p069:c06"
+          ],
+          "sufficient_evidence": true,
+          "answer": "According to Section 2.2 (printed p. 53 / PDF p. 69) of the IPCC AR6 Synthesis Report:\n\n- **Unit cost decreases (2010–2019):** Sustained decreases occurred in the unit costs of:\n  - **Solar energy:** decreased by **85%** [ADV_TXT:p069:c02]\n  - **Wind energy:** decreased by **55%** [ADV_TXT:p069:c02]\n  - **Lithium-ion batteries:** decreased by **85%** [ADV_TXT:p069:c02]\n- **Share of global GHG emissions covered by carbon pricing (by 2020):** **Over 20%** of global GHG emissions were covered by carbon taxes or emissions trading systems (medium confidence) [ADV_TXT:p069:c06].\n- **Increase in annual tracked total climate finance flows (between 2013/14 and 2019/20):** Annual tracked total financial flows for climate mitigation and adaptation increased by **up to 60%** (medium confidence) [ADV_TXT:p069:c05]."
+        },
+        "attached_visuals": [],
+        "latency_ms": 10537.58,
+        "prompt_tokens": 4995,
+        "candidates_tokens": 342,
+        "thoughts_tokens": 808,
+        "total_tokens": 6145
+      }
+    ],
+    "search_calls": 2,
+    "inspect_calls": 0,
+    "usage": {
+      "prompt_tokens": 9104,
+      "candidates_tokens": 535,
+      "thoughts_tokens": 1271,
+      "total_tokens": 10910
+    },
+    "elapsed_ms": 19840.04,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_16",
+    "split": "dev",
+    "category": "text",
+    "secondary_tags": [
+      "adaptation_progress",
+      "avoided_emissions"
+    ],
+    "question": "According to Section 2.2.3 and preceding mitigation text on PDF p.71 (printed p.55), how many countries have included adaptation in climate policies/planning, what approximate share of all documented adaptation targets water-related risks, and what magnitude of avoided emissions was estimated in 2016 from laws and executive orders?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to PDF p. 71 (printed p. 55) of the IPCC AR6 Synthesis Report:\n\n- **Countries including adaptation in climate policies/planning:** At least 170 countries (and many cities) have included adaptation in their climate policies and planning processes [ADV_TXT:p071:c02].\n- **Approximate share targeting water-related risks:** Adaptation to water-related risks and impacts makes up the majority (~60%) of all documented adaptation [ADV_TXT:p071:c02].\n- **Magnitude of avoided emissions in 2016 from laws and executive orders:** Growing numbers of laws and executive orders were estimated to have resulted in 5.9 GtCO2-eq yr⁻¹ of avoided emissions in 2016 (medium confidence) [ADV_TXT:p071:c01].",
+    "citations": [
+      "ADV_TXT:p071:c01",
+      "ADV_TXT:p071:c02"
+    ],
+    "citation_details": [
+      {
+        "id": "ADV_TXT:p071:c01",
+        "modality": "text",
+        "label": "Section 2: Current Status and Trends (p.55)",
+        "pdf_page": 71,
+        "printed_page": "55",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "ADV_TXT:p071:c02",
+        "modality": "text",
+        "label": "Section 2: Current Status and Trends (p.55)",
+        "pdf_page": 71,
+        "printed_page": "55",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      }
+    ],
+    "inspected_regions": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Section 2.2.3 adaptation climate policies planning water-related risks avoided emissions 2016 laws executive orders",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p071:c01",
+            "modality": "text",
+            "pdf_page": 71,
+            "printed_page": "55",
+            "score": 0.032787,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p071:c02",
+            "modality": "text",
+            "pdf_page": 71,
+            "printed_page": "55",
+            "score": 0.031498,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p026:c04",
+            "modality": "text",
+            "pdf_page": 26,
+            "printed_page": "10",
+            "score": 0.030835,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 8
+            }
+          },
+          {
+            "id": "ADV_TXT:p013:c03",
+            "modality": "text",
+            "pdf_page": 13,
+            "printed_page": "xi",
+            "score": 0.030769,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 5
+            }
+          },
+          {
+            "id": "ADV_TXT:p024:c03",
+            "modality": "text",
+            "pdf_page": 24,
+            "printed_page": "8",
+            "score": 0.029236,
+            "stream_ranks": {
+              "bm25": 11,
+              "dense_text": 6
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p071:c01",
+          "ADV_TXT:p071:c02",
+          "ADV_TXT:p026:c04",
+          "ADV_TXT:p013:c03",
+          "ADV_TXT:p024:c03"
+        ]
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "ADV_TXT:p071:c01",
+          "ADV_TXT:p071:c02"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "modality": "text",
+          "reason": "Find Section 2.2.3 and preceding text on PDF p.71 regarding adaptation policies, water-related risks share, and 2016 avoided emissions.",
+          "query": "Section 2.2.3 adaptation climate policies planning water-related risks avoided emissions 2016 laws executive orders"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4027.93,
+        "prompt_tokens": 1015,
+        "candidates_tokens": 88,
+        "thoughts_tokens": 113,
+        "total_tokens": 1216
+      },
+      {
+        "turn": 2,
+        "function_name": "submit_answer",
+        "args": {
+          "answer": "According to PDF p. 71 (printed p. 55) of the IPCC AR6 Synthesis Report:\n\n- **Countries including adaptation in climate policies/planning:** At least 170 countries (and many cities) have included adaptation in their climate policies and planning processes [ADV_TXT:p071:c02].\n- **Approximate share targeting water-related risks:** Adaptation to water-related risks and impacts makes up the majority (~60%) of all documented adaptation [ADV_TXT:p071:c02].\n- **Magnitude of avoided emissions in 2016 from laws and executive orders:** Growing numbers of laws and executive orders were estimated to have resulted in 5.9 GtCO2-eq yr⁻¹ of avoided emissions in 2016 (medium confidence) [ADV_TXT:p071:c01].",
+          "sufficient_evidence": true,
+          "citations": [
+            "ADV_TXT:p071:c01",
+            "ADV_TXT:p071:c02"
+          ]
+        },
+        "attached_visuals": [],
+        "latency_ms": 6453.82,
+        "prompt_tokens": 2622,
+        "candidates_tokens": 243,
+        "thoughts_tokens": 478,
+        "total_tokens": 3343
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 0,
+    "usage": {
+      "prompt_tokens": 3637,
+      "candidates_tokens": 331,
+      "thoughts_tokens": 591,
+      "total_tokens": 4559
+    },
+    "elapsed_ms": 10911.91,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_17",
+    "split": "dev",
+    "category": "text",
+    "secondary_tags": [
+      "srm",
+      "risks_governance"
+    ],
+    "question": "According to Section 3.1.2 and Footnote 122 (PDF p.88 / printed p.72), what four Solar Radiation Modification (SRM) approaches are explicitly named, and what does the report conclude about SRM's effects on atmospheric CO2 concentrations, ocean acidification, and a sudden termination?",
+    "answerable": true,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "answered",
+    "answer": "According to Section 3.1.2 and Footnote 122 of the IPCC AR6 Synthesis Report (PDF p. 88 / printed p. 72):\n\n### 1. Four Explicitly Named SRM Approaches\nFootnote 122 explicitly names the following four proposed Solar Radiation Modification (SRM) approaches [ADV_TXT:p088:c04]:\n- **Stratospheric aerosol injection**\n- **Marine cloud brightening**\n- **Ground-based albedo modifications**\n- **Ocean albedo change**\n\n### 2. Conclusions on Atmospheric $\\text{CO}_2$ Concentrations, Ocean Acidification, and Sudden Termination\nSection 3.1.2 concludes that [ADV_TXT:p088:c03]:\n- **Atmospheric $\\text{CO}_2$ concentrations and ocean acidification:** SRM would not stop atmospheric $\\text{CO}_2$ concentrations from increasing, nor would it reduce resulting ocean acidification under continued anthropogenic emissions (*high confidence*).\n- **Sudden termination:** A sudden and sustained termination of SRM in a high $\\text{CO}_2$ emissions scenario would cause rapid climate change (*high confidence*).",
+    "citations": [
+      "ADV_TXT:p088:c03",
+      "ADV_TXT:p088:c04"
+    ],
+    "citation_details": [
+      {
+        "id": "ADV_TXT:p088:c03",
+        "modality": "text",
+        "label": "Section 3: Long-Term Futures (p.72)",
+        "pdf_page": 88,
+        "printed_page": "72",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      },
+      {
+        "id": "ADV_TXT:p088:c04",
+        "modality": "text",
+        "label": "Section 3: Long-Term Futures (p.72)",
+        "pdf_page": 88,
+        "printed_page": "72",
+        "bbox": [
+          35.0,
+          35.0,
+          575.0,
+          760.0
+        ],
+        "crop_relpath": null
+      }
+    ],
+    "inspected_regions": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Solar Radiation Modification Footnote 122 Section 3.1.2",
+        "modality": "all",
+        "results": [
+          {
+            "id": "ADV_TXT:p088:c04",
+            "modality": "text",
+            "pdf_page": 88,
+            "printed_page": "72",
+            "score": 0.032787,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p145:c03",
+            "modality": "text",
+            "pdf_page": 145,
+            "printed_page": "129",
+            "score": 0.032002,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p088:c02",
+            "modality": "text",
+            "pdf_page": 88,
+            "printed_page": "72",
+            "score": 0.031025,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 6
+            }
+          },
+          {
+            "id": "ADV_TXT:p073:c04",
+            "modality": "text",
+            "pdf_page": 73,
+            "printed_page": "57",
+            "score": 0.027984,
+            "stream_ranks": {
+              "bm25": 10,
+              "dense_text": 13
+            }
+          },
+          {
+            "id": "VIS:Figure_1_1:p055",
+            "modality": "diagram_map",
+            "pdf_page": 55,
+            "printed_page": "39",
+            "score": 0.016393,
+            "stream_ranks": {
+              "dense_image": 1
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p088:c04",
+          "ADV_TXT:p145:c03",
+          "ADV_TXT:p088:c02",
+          "ADV_TXT:p073:c04",
+          "VIS:Figure_1_1:p055"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Solar Radiation Modification approaches if they were to be implemented ocean acidification sudden termination",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p088:c04",
+            "modality": "text",
+            "pdf_page": 88,
+            "printed_page": "72",
+            "score": 0.032266,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p088:c03",
+            "modality": "text",
+            "pdf_page": 88,
+            "printed_page": "72",
+            "score": 0.032258,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p145:c03",
+            "modality": "text",
+            "pdf_page": 145,
+            "printed_page": "129",
+            "score": 0.03125,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 4
+            }
+          },
+          {
+            "id": "ADV_TXT:p088:c02",
+            "modality": "text",
+            "pdf_page": 88,
+            "printed_page": "72",
+            "score": 0.031099,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 8
+            }
+          },
+          {
+            "id": "ADV_TXT:p032:c05",
+            "modality": "text",
+            "pdf_page": 32,
+            "printed_page": "16",
+            "score": 0.015873,
+            "stream_ranks": {
+              "dense_text": 3
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p088:c04",
+          "ADV_TXT:p088:c03",
+          "ADV_TXT:p145:c03",
+          "ADV_TXT:p088:c02",
+          "ADV_TXT:p073:c04",
+          "ADV_TXT:p032:c05",
+          "VIS:Figure_1_1:p055"
+        ]
+      },
+      {
+        "event": "answer",
+        "citations": [
+          "ADV_TXT:p088:c03",
+          "ADV_TXT:p088:c04"
+        ]
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Find text in Section 3.1.2 and Footnote 122 discussing SRM approaches, atmospheric CO2, ocean acidification, and sudden termination.",
+          "query": "Solar Radiation Modification Footnote 122 Section 3.1.2"
+        },
+        "attached_visuals": [],
+        "latency_ms": 2784.52,
+        "prompt_tokens": 1012,
+        "candidates_tokens": 68,
+        "thoughts_tokens": 105,
+        "total_tokens": 1185
+      },
+      {
+        "turn": 2,
+        "function_name": "search_report",
+        "args": {
+          "query": "Solar Radiation Modification approaches if they were to be implemented ocean acidification sudden termination",
+          "modality": "text",
+          "reason": "Search for the full paragraph in Section 3.1.2 discussing SRM risks, atmospheric CO2, ocean acidification, and sudden termination."
+        },
+        "attached_visuals": [],
+        "latency_ms": 3608.06,
+        "prompt_tokens": 2722,
+        "candidates_tokens": 69,
+        "thoughts_tokens": 125,
+        "total_tokens": 2916
+      },
+      {
+        "turn": 3,
+        "function_name": "submit_answer",
+        "args": {
+          "sufficient_evidence": true,
+          "answer": "According to Section 3.1.2 and Footnote 122 of the IPCC AR6 Synthesis Report (PDF p. 88 / printed p. 72):\n\n### 1. Four Explicitly Named SRM Approaches\nFootnote 122 explicitly names the following four proposed Solar Radiation Modification (SRM) approaches [ADV_TXT:p088:c04]:\n- **Stratospheric aerosol injection**\n- **Marine cloud brightening**\n- **Ground-based albedo modifications**\n- **Ocean albedo change**\n\n### 2. Conclusions on Atmospheric $\\text{CO}_2$ Concentrations, Ocean Acidification, and Sudden Termination\nSection 3.1.2 concludes that [ADV_TXT:p088:c03]:\n- **Atmospheric $\\text{CO}_2$ concentrations and ocean acidification:** SRM would not stop atmospheric $\\text{CO}_2$ concentrations from increasing, nor would it reduce resulting ocean acidification under continued anthropogenic emissions (*high confidence*).\n- **Sudden termination:** A sudden and sustained termination of SRM in a high $\\text{CO}_2$ emissions scenario would cause rapid climate change (*high confidence*).",
+          "citations": [
+            "ADV_TXT:p088:c03",
+            "ADV_TXT:p088:c04"
+          ]
+        },
+        "attached_visuals": [],
+        "latency_ms": 9973.48,
+        "prompt_tokens": 3431,
+        "candidates_tokens": 303,
+        "thoughts_tokens": 699,
+        "total_tokens": 4433
+      }
+    ],
+    "search_calls": 2,
+    "inspect_calls": 0,
+    "usage": {
+      "prompt_tokens": 7165,
+      "candidates_tokens": 440,
+      "thoughts_tokens": 929,
+      "total_tokens": 8534
+    },
+    "elapsed_ms": 17186.22,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_18",
+    "split": "dev",
+    "category": "unanswerable",
+    "secondary_tags": [
+      "post_cutoff_data"
+    ],
+    "question": "What were the observed global net anthropogenic greenhouse gas (GHG) emissions (in GtCO2-eq) reported for the years 2022 and 2023 in the IPCC AR6 Synthesis Report?",
+    "answerable": false,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "abstain",
+    "answer": "The IPCC AR6 Synthesis Report does not report observed global net anthropogenic greenhouse gas (GHG) emissions for the years 2022 and 2023. The report's historical assessment of observed global net anthropogenic GHG emissions extends up to 2019 (estimated at 59 ± 6.6 GtCO2-eq in 2019), and data for 2022 and 2023 are post-assessment years not documented as observed annual global net anthropogenic totals in the report.",
+    "citations": [],
+    "citation_details": [],
+    "inspected_regions": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "observed global net anthropogenic greenhouse gas emissions GtCO2-eq",
+        "modality": "all",
+        "results": [
+          {
+            "id": "VIS:Figure_2_2_charts:p061",
+            "modality": "chart",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.031754,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM5:p038",
+            "modality": "chart",
+            "pdf_page": 38,
+            "printed_page": "22",
+            "score": 0.031746,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_image": 3
+            }
+          },
+          {
+            "id": "VIS:Figure_2_1:p059",
+            "modality": "chart",
+            "pdf_page": 59,
+            "printed_page": "43",
+            "score": 0.030478,
+            "stream_ranks": {
+              "bm25": 11,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p020:c03",
+            "modality": "text",
+            "pdf_page": 20,
+            "printed_page": "4",
+            "score": 0.030092,
+            "stream_ranks": {
+              "bm25": 13,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_3_6:p102",
+            "modality": "chart",
+            "pdf_page": 102,
+            "printed_page": "86",
+            "score": 0.02967,
+            "stream_ranks": {
+              "bm25": 10,
+              "dense_image": 5
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Figure_SPM5:p038",
+          "VIS:Figure_2_1:p059",
+          "ADV_TXT:p020:c03",
+          "VIS:Figure_3_6:p102"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "observed global net anthropogenic greenhouse gas emissions 2022 2023",
+        "modality": "all",
+        "results": [
+          {
+            "id": "VIS:Figure_2_1:p059",
+            "modality": "chart",
+            "pdf_page": 59,
+            "printed_page": "43",
+            "score": 0.031498,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_image": 4
+            }
+          },
+          {
+            "id": "ADV_TXT:p038:c02",
+            "modality": "text",
+            "pdf_page": 38,
+            "printed_page": "22",
+            "score": 0.030777,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_text": 4
+            }
+          },
+          {
+            "id": "VIS:Figure_2_2_charts:p061",
+            "modality": "chart",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.02938,
+            "stream_ranks": {
+              "bm25": 17,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM5:p038",
+            "modality": "chart",
+            "pdf_page": 38,
+            "printed_page": "22",
+            "score": 0.029031,
+            "stream_ranks": {
+              "bm25": 16,
+              "dense_image": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p020:c03",
+            "modality": "text",
+            "pdf_page": 20,
+            "printed_page": "4",
+            "score": 0.016393,
+            "stream_ranks": {
+              "dense_text": 1
+            }
+          }
+        ],
+        "context_ids": [
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Figure_2_1:p059",
+          "VIS:Figure_SPM5:p038",
+          "ADV_TXT:p038:c02",
+          "ADV_TXT:p020:c03",
+          "VIS:Figure_3_6:p102"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "observed emissions 2022 2023 GtCO2-eq",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p074:c03",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.031754,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 4
+            }
+          },
+          {
+            "id": "ADV_TXT:p061:c04",
+            "modality": "text",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.030415,
+            "stream_ranks": {
+              "bm25": 10,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p027:c05",
+            "modality": "text",
+            "pdf_page": 27,
+            "printed_page": "11",
+            "score": 0.029857,
+            "stream_ranks": {
+              "bm25": 8,
+              "dense_text": 6
+            }
+          },
+          {
+            "id": "ADV_TXT:p074:c04",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.029551,
+            "stream_ranks": {
+              "bm25": 16,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p020:c03",
+            "modality": "text",
+            "pdf_page": 20,
+            "printed_page": "4",
+            "score": 0.028624,
+            "stream_ranks": {
+              "bm25": 13,
+              "dense_text": 7
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p074:c03",
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Figure_2_1:p059",
+          "ADV_TXT:p061:c04",
+          "VIS:Figure_SPM5:p038",
+          "ADV_TXT:p038:c02",
+          "ADV_TXT:p027:c05",
+          "ADV_TXT:p020:c03",
+          "ADV_TXT:p074:c04",
+          "VIS:Figure_3_6:p102"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "2022 2023 emissions GtCO2-eq",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p074:c03",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.031054,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 7
+            }
+          },
+          {
+            "id": "ADV_TXT:p061:c04",
+            "modality": "text",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.030886,
+            "stream_ranks": {
+              "bm25": 9,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p027:c05",
+            "modality": "text",
+            "pdf_page": 27,
+            "printed_page": "11",
+            "score": 0.03055,
+            "stream_ranks": {
+              "bm25": 7,
+              "dense_text": 4
+            }
+          },
+          {
+            "id": "ADV_TXT:p074:c04",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.029643,
+            "stream_ranks": {
+              "bm25": 14,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p060:c02",
+            "modality": "text",
+            "pdf_page": 60,
+            "printed_page": "44",
+            "score": 0.028543,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 16
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p074:c03",
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Figure_2_1:p059",
+          "ADV_TXT:p061:c04",
+          "VIS:Figure_SPM5:p038",
+          "ADV_TXT:p038:c02",
+          "ADV_TXT:p027:c05",
+          "ADV_TXT:p074:c04",
+          "ADV_TXT:p020:c03",
+          "ADV_TXT:p060:c02",
+          "VIS:Figure_3_6:p102"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "\"2022\" \"emissions\" GtCO2",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p061:c04",
+            "modality": "text",
+            "pdf_page": 61,
+            "printed_page": "45",
+            "score": 0.030886,
+            "stream_ranks": {
+              "bm25": 9,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p027:c05",
+            "modality": "text",
+            "pdf_page": 27,
+            "printed_page": "11",
+            "score": 0.030579,
+            "stream_ranks": {
+              "bm25": 8,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "ADV_TXT:p020:c03",
+            "modality": "text",
+            "pdf_page": 20,
+            "printed_page": "4",
+            "score": 0.03055,
+            "stream_ranks": {
+              "bm25": 7,
+              "dense_text": 4
+            }
+          },
+          {
+            "id": "ADV_TXT:p074:c03",
+            "modality": "text",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.030118,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 9
+            }
+          },
+          {
+            "id": "ADV_TXT:p060:c03",
+            "modality": "text",
+            "pdf_page": 60,
+            "printed_page": "44",
+            "score": 0.028718,
+            "stream_ranks": {
+              "bm25": 5,
+              "dense_text": 15
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p074:c03",
+          "ADV_TXT:p061:c04",
+          "VIS:Figure_2_2_charts:p061",
+          "VIS:Figure_2_1:p059",
+          "ADV_TXT:p027:c05",
+          "VIS:Figure_SPM5:p038",
+          "ADV_TXT:p038:c02",
+          "ADV_TXT:p020:c03",
+          "ADV_TXT:p074:c04",
+          "ADV_TXT:p060:c03",
+          "ADV_TXT:p060:c02"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Find reported global net anthropogenic GHG emissions and check for years covered (e.g. 2019, 2022, 2023).",
+          "query": "observed global net anthropogenic greenhouse gas emissions GtCO2-eq"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4633.05,
+        "prompt_tokens": 990,
+        "candidates_tokens": 68,
+        "thoughts_tokens": 279,
+        "total_tokens": 1337
+      },
+      {
+        "turn": 2,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Check if emissions for 2022 and 2023 are reported",
+          "modality": "all",
+          "query": "observed global net anthropogenic greenhouse gas emissions 2022 2023"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4168.04,
+        "prompt_tokens": 4699,
+        "candidates_tokens": 61,
+        "thoughts_tokens": 164,
+        "total_tokens": 4924
+      },
+      {
+        "turn": 3,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Check if observed global GHG emissions for 2022 or 2023 are reported anywhere in the report.",
+          "modality": "text",
+          "query": "observed emissions 2022 2023 GtCO2-eq"
+        },
+        "attached_visuals": [],
+        "latency_ms": 5576.01,
+        "prompt_tokens": 5116,
+        "candidates_tokens": 70,
+        "thoughts_tokens": 260,
+        "total_tokens": 5446
+      },
+      {
+        "turn": 4,
+        "function_name": "search_report",
+        "args": {
+          "modality": "text",
+          "reason": "Check if 2022 or 2023 observed GHG emissions are reported anywhere in the AR6 Synthesis Report.",
+          "query": "2022 2023 emissions GtCO2-eq"
+        },
+        "attached_visuals": [],
+        "latency_ms": 5397.69,
+        "prompt_tokens": 6130,
+        "candidates_tokens": 69,
+        "thoughts_tokens": 338,
+        "total_tokens": 6537
+      },
+      {
+        "turn": 5,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Check if 2022 emissions are mentioned in the report",
+          "modality": "text",
+          "query": "\"2022\" \"emissions\" GtCO2"
+        },
+        "attached_visuals": [],
+        "latency_ms": 5457.27,
+        "prompt_tokens": 6560,
+        "candidates_tokens": 54,
+        "thoughts_tokens": 344,
+        "total_tokens": 6958
+      },
+      {
+        "turn": 6,
+        "function_name": "submit_answer",
+        "args": {
+          "answer": "The IPCC AR6 Synthesis Report does not report observed global net anthropogenic greenhouse gas (GHG) emissions for the years 2022 and 2023. The report's historical assessment of observed global net anthropogenic GHG emissions extends up to 2019 (estimated at 59 ± 6.6 GtCO2-eq in 2019), and data for 2022 and 2023 are post-assessment years not documented as observed annual global net anthropogenic totals in the report.",
+          "sufficient_evidence": false,
+          "citations": []
+        },
+        "attached_visuals": [],
+        "latency_ms": 6623.35,
+        "prompt_tokens": 6130,
+        "candidates_tokens": 136,
+        "thoughts_tokens": 457,
+        "total_tokens": 6723
+      }
+    ],
+    "search_calls": 5,
+    "inspect_calls": 0,
+    "usage": {
+      "prompt_tokens": 29625,
+      "candidates_tokens": 458,
+      "thoughts_tokens": 1842,
+      "total_tokens": 31925
+    },
+    "elapsed_ms": 33972.61,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_19",
+    "split": "dev",
+    "category": "unanswerable",
+    "secondary_tags": [
+      "explicit_not_assessed",
+      "unallocated_cost"
+    ],
+    "question": "In Figure SPM.7 / Figure 4.4 panel (a), what is the assessed mitigation synergy level (High, Medium, or Low) and confidence rating for 'Coastal defence and hardening', and what numerical net lifetime cost bracket (in USD per tCO2-eq) is allocated to 'Electric vehicles'?",
+    "answerable": false,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "abstain",
+    "answer": "In Figure SPM.7 / Figure 4.4 panel (a):\n\n1. **Mitigation synergy level and confidence rating for 'Coastal defence and hardening'**: \n   The synergy with mitigation is not assessed; the corresponding cell in panel (a) explicitly states \"not assessed\" and provides no synergy level (High, Medium, or Low) or confidence rating dots.\n\n2. **Numerical net lifetime cost bracket for 'Electric vehicles'**: \n   No numerical cost bracket (in USD per tCO2-eq) is allocated to 'Electric vehicles'. In the figure, its bar is shaded grey, which the legend defines as \"Cost not allocated due to high variability or lack of data\".\n\nBecause the requested synergy rating/confidence level is explicitly \"not assessed\" and the numerical cost bracket is explicitly \"not allocated\", sufficient evidence is not available to provide the requested ratings/numerical brackets.",
+    "citations": [],
+    "citation_details": [],
+    "inspected_regions": [
+      "VIS:Figure_4_4:p119",
+      "VIS:Figure_SPM7:p043"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Figure SPM.7 Figure 4.4 Coastal defence and hardening Electric vehicles",
+        "modality": "all",
+        "results": [
+          {
+            "id": "ADV_TXT:p119:c03",
+            "modality": "text",
+            "pdf_page": 119,
+            "printed_page": "103",
+            "score": 0.032018,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 4
+            }
+          },
+          {
+            "id": "ADV_TXT:p043:c04",
+            "modality": "text",
+            "pdf_page": 43,
+            "printed_page": "27",
+            "score": 0.032002,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 3
+            }
+          },
+          {
+            "id": "VIS:Figure_4_4:p119",
+            "modality": "chart",
+            "pdf_page": 119,
+            "printed_page": "103",
+            "score": 0.031281,
+            "stream_ranks": {
+              "bm25": 6,
+              "dense_image": 2
+            }
+          },
+          {
+            "id": "VIS:Figure_SPM7:p043",
+            "modality": "chart",
+            "pdf_page": 43,
+            "printed_page": "27",
+            "score": 0.030886,
+            "stream_ranks": {
+              "bm25": 9,
+              "dense_image": 1
+            }
+          },
+          {
+            "id": "VIS:Figure_2_4:p070",
+            "modality": "chart",
+            "pdf_page": 70,
+            "printed_page": "54",
+            "score": 0.030579,
+            "stream_ranks": {
+              "bm25": 8,
+              "dense_image": 3
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p119:c03",
+          "ADV_TXT:p043:c04",
+          "VIS:Figure_4_4:p119",
+          "VIS:Figure_SPM7:p043",
+          "VIS:Figure_2_4:p070"
+        ]
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_SPM7:p043",
+        "pdf_page": 43,
+        "printed_page": "27",
+        "bbox": [
+          50.0,
+          48.0,
+          565.0,
+          750.0
+        ],
+        "focus_question": "Look at panel (a): Find 'Coastal defence and hardening' under Settlements and Infrastructure or Land/Water/Food. What is its synergy with mitigation level (color/column: High, Medium, Low) and its confidence rating (number of dots: •, ••, •••)? Also find 'Electric vehicles' under mitigation options: what is its net lifetime cost bar color or cost bracket in USD per tCO2-eq (e.g., Costs are lower than reference, 0-20, 20-50, etc., or grey/not allocated)?"
+      },
+      {
+        "event": "inspect_visual",
+        "region_id": "VIS:Figure_4_4:p119",
+        "pdf_page": 119,
+        "printed_page": "103",
+        "bbox": [
+          45.0,
+          45.0,
+          570.0,
+          750.0
+        ],
+        "focus_question": "Check 'Coastal defence and hardening' synergy with mitigation cell (is it 'not assessed'?), and 'Electric vehicles' cost bar (is it grey / 'Cost not allocated due to high variability or lack of data'?)."
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Locate Figure SPM.7 and Figure 4.4 in the report to find mitigation synergy for Coastal defence and hardening and net lifetime cost for Electric vehicles.",
+          "query": "Figure SPM.7 Figure 4.4 Coastal defence and hardening Electric vehicles",
+          "modality": "all"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3199.46,
+        "prompt_tokens": 1008,
+        "candidates_tokens": 74,
+        "thoughts_tokens": 93,
+        "total_tokens": 1175
+      },
+      {
+        "turn": 2,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "region_id": "VIS:Figure_SPM7:p043",
+          "focus_question": "Look at panel (a): Find 'Coastal defence and hardening' under Settlements and Infrastructure or Land/Water/Food. What is its synergy with mitigation level (color/column: High, Medium, Low) and its confidence rating (number of dots: •, ••, •••)? Also find 'Electric vehicles' under mitigation options: what is its net lifetime cost bar color or cost bracket in USD per tCO2-eq (e.g., Costs are lower than reference, 0-20, 20-50, etc., or grey/not allocated)?"
+        },
+        "attached_visuals": [],
+        "latency_ms": 4046.96,
+        "prompt_tokens": 4000,
+        "candidates_tokens": 158,
+        "thoughts_tokens": 151,
+        "total_tokens": 4309
+      },
+      {
+        "turn": 3,
+        "function_name": "inspect_visual_region",
+        "args": {
+          "focus_question": "Check 'Coastal defence and hardening' synergy with mitigation cell (is it 'not assessed'?), and 'Electric vehicles' cost bar (is it grey / 'Cost not allocated due to high variability or lack of data'?).",
+          "region_id": "VIS:Figure_4_4:p119"
+        },
+        "attached_visuals": [
+          "VIS:Figure_SPM7:p043"
+        ],
+        "latency_ms": 11364.68,
+        "prompt_tokens": 6394,
+        "candidates_tokens": 83,
+        "thoughts_tokens": 1035,
+        "total_tokens": 7512
+      },
+      {
+        "turn": 4,
+        "function_name": "submit_answer",
+        "args": {
+          "answer": "In Figure SPM.7 / Figure 4.4 panel (a):\n\n1. **Mitigation synergy level and confidence rating for 'Coastal defence and hardening'**: \n   The synergy with mitigation is not assessed; the corresponding cell in panel (a) explicitly states \"not assessed\" and provides no synergy level (High, Medium, or Low) or confidence rating dots.\n\n2. **Numerical net lifetime cost bracket for 'Electric vehicles'**: \n   No numerical cost bracket (in USD per tCO2-eq) is allocated to 'Electric vehicles'. In the figure, its bar is shaded grey, which the legend defines as \"Cost not allocated due to high variability or lack of data\".\n\nBecause the requested synergy rating/confidence level is explicitly \"not assessed\" and the numerical cost bracket is explicitly \"not allocated\", sufficient evidence is not available to provide the requested ratings/numerical brackets.",
+          "citations": [],
+          "sufficient_evidence": false
+        },
+        "attached_visuals": [
+          "VIS:Figure_SPM7:p043",
+          "VIS:Figure_4_4:p119"
+        ],
+        "latency_ms": 14641.38,
+        "prompt_tokens": 8677,
+        "candidates_tokens": 208,
+        "thoughts_tokens": 1126,
+        "total_tokens": 10011
+      }
+    ],
+    "search_calls": 1,
+    "inspect_calls": 2,
+    "usage": {
+      "prompt_tokens": 20079,
+      "candidates_tokens": 523,
+      "thoughts_tokens": 2405,
+      "total_tokens": 23007
+    },
+    "elapsed_ms": 33920.91,
+    "error": null
+  },
+  {
+    "query_id": "adv_dev_20",
+    "split": "dev",
+    "category": "unanswerable",
+    "secondary_tags": [
+      "external_event_post_cutoff"
+    ],
+    "question": "How much financial compensation was pledged to the Loss and Damage Fund established at COP27 in Sharm el-Sheikh, according to Section 4.8 of the IPCC AR6 Synthesis Report?",
+    "answerable": false,
+    "strategy": "adv_multimodal_3way_rrf_vision",
+    "vision_inspect_enabled": true,
+    "model": "gemini-3.8-flash",
+    "status": "abstain",
+    "answer": "Section 4.8 of the IPCC AR6 Synthesis Report does not mention or report any financial compensation pledged to a Loss and Damage Fund established at COP27 in Sharm el-Sheikh. While the report discusses climate finance needs, gaps, and international cooperation (including mentioning the 2013 Warsaw International Mechanism on Loss and Damage in Section 2.2.1), it does not quantify or provide figures for financial pledges to a COP27 Loss and Damage Fund. Consequently, the evidence is insufficient to answer the question.",
+    "citations": [],
+    "citation_details": [],
+    "inspected_regions": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "COP27 Loss and Damage Fund Section 4.8",
+        "modality": "all",
+        "results": [
+          {
+            "id": "ADV_TXT:p068:c03",
+            "modality": "text",
+            "pdf_page": 68,
+            "printed_page": "52",
+            "score": 0.029287,
+            "stream_ranks": {
+              "bm25": 2,
+              "dense_text": 16
+            }
+          },
+          {
+            "id": "VIS:Figure_3_3_reg:p092",
+            "modality": "diagram_map",
+            "pdf_page": 92,
+            "printed_page": "76",
+            "score": 0.027912,
+            "stream_ranks": {
+              "bm25": 17,
+              "dense_image": 7
+            }
+          },
+          {
+            "id": "ADV_TXT:p049:c05",
+            "modality": "text",
+            "pdf_page": 49,
+            "printed_page": "33",
+            "score": 0.016393,
+            "stream_ranks": {
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p142:c04",
+            "modality": "text",
+            "pdf_page": 142,
+            "printed_page": "126",
+            "score": 0.016393,
+            "stream_ranks": {
+              "bm25": 1
+            }
+          },
+          {
+            "id": "VIS:Table_2_2:p074",
+            "modality": "table",
+            "pdf_page": 74,
+            "printed_page": "58",
+            "score": 0.016393,
+            "stream_ranks": {
+              "dense_image": 1
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p068:c03",
+          "VIS:Figure_3_3_reg:p092",
+          "ADV_TXT:p049:c05",
+          "ADV_TXT:p142:c04",
+          "VIS:Table_2_2:p074"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Section 4.8 finance loss and damage COP27",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p127:c01",
+            "modality": "text",
+            "pdf_page": 127,
+            "printed_page": "111",
+            "score": 0.031099,
+            "stream_ranks": {
+              "bm25": 8,
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p068:c03",
+            "modality": "text",
+            "pdf_page": 68,
+            "printed_page": "52",
+            "score": 0.016393,
+            "stream_ranks": {
+              "bm25": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p127:c07",
+            "modality": "text",
+            "pdf_page": 127,
+            "printed_page": "111",
+            "score": 0.016129,
+            "stream_ranks": {
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p142:c04",
+            "modality": "text",
+            "pdf_page": 142,
+            "printed_page": "126",
+            "score": 0.016129,
+            "stream_ranks": {
+              "bm25": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p014:c04",
+            "modality": "text",
+            "pdf_page": 14,
+            "printed_page": "xii",
+            "score": 0.015873,
+            "stream_ranks": {
+              "bm25": 3
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p127:c01",
+          "ADV_TXT:p068:c03",
+          "VIS:Figure_3_3_reg:p092",
+          "ADV_TXT:p127:c07",
+          "ADV_TXT:p049:c05",
+          "ADV_TXT:p142:c04",
+          "ADV_TXT:p014:c04",
+          "VIS:Table_2_2:p074"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "COP27 Sharm el-Sheikh Loss Damage",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p068:c03",
+            "modality": "text",
+            "pdf_page": 68,
+            "printed_page": "52",
+            "score": 0.031754,
+            "stream_ranks": {
+              "bm25": 4,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p142:c04",
+            "modality": "text",
+            "pdf_page": 142,
+            "printed_page": "126",
+            "score": 0.030478,
+            "stream_ranks": {
+              "bm25": 1,
+              "dense_text": 11
+            }
+          },
+          {
+            "id": "ADV_TXT:p049:c05",
+            "modality": "text",
+            "pdf_page": 49,
+            "printed_page": "33",
+            "score": 0.016393,
+            "stream_ranks": {
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p149:c02",
+            "modality": "text",
+            "pdf_page": 149,
+            "printed_page": "133",
+            "score": 0.016129,
+            "stream_ranks": {
+              "bm25": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p050:c03",
+            "modality": "text",
+            "pdf_page": 50,
+            "printed_page": "34",
+            "score": 0.015873,
+            "stream_ranks": {
+              "dense_text": 3
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p068:c03",
+          "ADV_TXT:p127:c01",
+          "ADV_TXT:p142:c04",
+          "VIS:Figure_3_3_reg:p092",
+          "ADV_TXT:p049:c05",
+          "ADV_TXT:p127:c07",
+          "ADV_TXT:p149:c02",
+          "ADV_TXT:p050:c03",
+          "ADV_TXT:p014:c04",
+          "VIS:Table_2_2:p074"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "\"Section 4.8\" \"Loss and Damage\" Sharm el-Sheikh COP27",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p068:c03",
+            "modality": "text",
+            "pdf_page": 68,
+            "printed_page": "52",
+            "score": 0.032002,
+            "stream_ranks": {
+              "bm25": 3,
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p051:c01",
+            "modality": "text",
+            "pdf_page": 51,
+            "printed_page": "35",
+            "score": 0.016393,
+            "stream_ranks": {
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p142:c04",
+            "modality": "text",
+            "pdf_page": 142,
+            "printed_page": "126",
+            "score": 0.016393,
+            "stream_ranks": {
+              "bm25": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p028:c06",
+            "modality": "text",
+            "pdf_page": 28,
+            "printed_page": "12",
+            "score": 0.016129,
+            "stream_ranks": {
+              "bm25": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p067:c04",
+            "modality": "text",
+            "pdf_page": 67,
+            "printed_page": "51",
+            "score": 0.015873,
+            "stream_ranks": {
+              "dense_text": 3
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p068:c03",
+          "ADV_TXT:p127:c01",
+          "ADV_TXT:p142:c04",
+          "ADV_TXT:p051:c01",
+          "VIS:Figure_3_3_reg:p092",
+          "ADV_TXT:p049:c05",
+          "ADV_TXT:p127:c07",
+          "ADV_TXT:p028:c06",
+          "ADV_TXT:p149:c02",
+          "ADV_TXT:p067:c04",
+          "ADV_TXT:p050:c03",
+          "ADV_TXT:p014:c04",
+          "VIS:Table_2_2:p074"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "COP27 Sharm el-Sheikh",
+        "modality": "text",
+        "results": [
+          {
+            "id": "ADV_TXT:p049:c05",
+            "modality": "text",
+            "pdf_page": 49,
+            "printed_page": "33",
+            "score": 0.016393,
+            "stream_ranks": {
+              "dense_text": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p114:c04",
+            "modality": "text",
+            "pdf_page": 114,
+            "printed_page": "98",
+            "score": 0.016393,
+            "stream_ranks": {
+              "bm25": 1
+            }
+          },
+          {
+            "id": "ADV_TXT:p028:c06",
+            "modality": "text",
+            "pdf_page": 28,
+            "printed_page": "12",
+            "score": 0.016129,
+            "stream_ranks": {
+              "bm25": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p068:c01",
+            "modality": "text",
+            "pdf_page": 68,
+            "printed_page": "52",
+            "score": 0.016129,
+            "stream_ranks": {
+              "dense_text": 2
+            }
+          },
+          {
+            "id": "ADV_TXT:p049:c01",
+            "modality": "text",
+            "pdf_page": 49,
+            "printed_page": "33",
+            "score": 0.015873,
+            "stream_ranks": {
+              "dense_text": 3
+            }
+          }
+        ],
+        "context_ids": [
+          "ADV_TXT:p049:c05",
+          "ADV_TXT:p068:c03",
+          "ADV_TXT:p127:c01",
+          "ADV_TXT:p114:c04",
+          "ADV_TXT:p142:c04",
+          "ADV_TXT:p051:c01",
+          "VIS:Figure_3_3_reg:p092",
+          "ADV_TXT:p028:c06",
+          "ADV_TXT:p127:c07",
+          "ADV_TXT:p068:c01",
+          "ADV_TXT:p149:c02",
+          "ADV_TXT:p049:c01",
+          "ADV_TXT:p067:c04",
+          "ADV_TXT:p050:c03",
+          "ADV_TXT:p014:c04"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "turns": [
+      {
+        "turn": 1,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Search for mentions of COP27, Loss and Damage Fund, and Section 4.8 in the IPCC AR6 Synthesis Report",
+          "query": "COP27 Loss and Damage Fund Section 4.8"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3282.63,
+        "prompt_tokens": 982,
+        "candidates_tokens": 58,
+        "thoughts_tokens": 109,
+        "total_tokens": 1149
+      },
+      {
+        "turn": 2,
+        "function_name": "search_report",
+        "args": {
+          "modality": "text",
+          "query": "Section 4.8 finance loss and damage COP27",
+          "reason": "Check Section 4.8 for mentions of COP27, Loss and Damage Fund, or pledged finance."
+        },
+        "attached_visuals": [],
+        "latency_ms": 3262.29,
+        "prompt_tokens": 3512,
+        "candidates_tokens": 61,
+        "thoughts_tokens": 102,
+        "total_tokens": 3675
+      },
+      {
+        "turn": 3,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Search for mentions of COP27 or Sharm el-Sheikh or Loss and Damage fund in the report",
+          "query": "COP27 Sharm el-Sheikh Loss Damage",
+          "modality": "text"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3828.61,
+        "prompt_tokens": 4369,
+        "candidates_tokens": 56,
+        "thoughts_tokens": 137,
+        "total_tokens": 4562
+      },
+      {
+        "turn": 4,
+        "function_name": "search_report",
+        "args": {
+          "reason": "Check if COP27 or Loss and Damage Fund pledges are mentioned in Section 4.8",
+          "query": "\"Section 4.8\" \"Loss and Damage\" Sharm el-Sheikh COP27",
+          "modality": "text"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3527.62,
+        "prompt_tokens": 4735,
+        "candidates_tokens": 65,
+        "thoughts_tokens": 99,
+        "total_tokens": 4899
+      },
+      {
+        "turn": 5,
+        "function_name": "search_report",
+        "args": {
+          "query": "COP27 Sharm el-Sheikh",
+          "reason": "Check mentions of COP27 in the report",
+          "modality": "text"
+        },
+        "attached_visuals": [],
+        "latency_ms": 3629.66,
+        "prompt_tokens": 5597,
+        "candidates_tokens": 43,
+        "thoughts_tokens": 163,
+        "total_tokens": 5803
+      },
+      {
+        "turn": 6,
+        "function_name": "submit_answer",
+        "args": {
+          "answer": "Section 4.8 of the IPCC AR6 Synthesis Report does not mention or report any financial compensation pledged to a Loss and Damage Fund established at COP27 in Sharm el-Sheikh. While the report discusses climate finance needs, gaps, and international cooperation (including mentioning the 2013 Warsaw International Mechanism on Loss and Damage in Section 2.2.1), it does not quantify or provide figures for financial pledges to a COP27 Loss and Damage Fund. Consequently, the evidence is insufficient to answer the question.",
+          "sufficient_evidence": false,
+          "citations": []
+        },
+        "attached_visuals": [],
+        "latency_ms": 9816.61,
+        "prompt_tokens": 5633,
+        "candidates_tokens": 131,
+        "thoughts_tokens": 755,
+        "total_tokens": 6519
+      }
+    ],
+    "search_calls": 5,
+    "inspect_calls": 0,
+    "usage": {
+      "prompt_tokens": 24828,
+      "candidates_tokens": 414,
+      "thoughts_tokens": 1365,
+      "total_tokens": 26607
+    },
+    "elapsed_ms": 29330.92,
+    "error": null
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "config": "text_only_rag",
+  "split": "dev",
+  "cases": 20,
+  "answered": 11,
+  "abstain": 9,
+  "errors": 0,
+  "avg_search_calls": 3.8,
+  "avg_inspect_calls": 0.0,
+  "total_agent_tokens": 266629,
+  "embed_api_calls": 55,
+  "wall_seconds": 639.27,
+  "median_case_ms": 29728.33
+}

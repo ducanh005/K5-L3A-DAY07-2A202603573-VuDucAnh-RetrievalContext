@@ -1,0 +1,14 @@
+{
+  "config": "multimodal_vision_agent",
+  "split": "dev",
+  "cases": 20,
+  "answered": 16,
+  "abstain": 4,
+  "errors": 0,
+  "avg_search_calls": 2.45,
+  "avg_inspect_calls": 0.7,
+  "total_agent_tokens": 282865,
+  "embed_api_calls": 49,
+  "wall_seconds": 528.73,
+  "median_case_ms": 18143.75
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "query_id": "adv_dev_01",
+    "passed": false,
+    "reason": "Inspected VIS:Table_Box_SPM1:p026 and generated accurate C3/C6/C8 details, but validator aborted because citations were written comma-separated inside one bracket [VIS:Table_Box_SPM1:p026, ADV_TXT:p026:c01]."
+  },
+  {
+    "query_id": "adv_dev_02",
+    "passed": false,
+    "reason": "Got Greenland cells and Antarctic Observed (very likely) right, but misread Antarctic Human contribution unshaded white cell as 'medium confidence (pale cream / off-white)' in Table 2.1."
+  },
+  {
+    "query_id": "adv_dev_03",
+    "passed": true,
+    "reason": "Verified all 3 SETTLEMENTS AND INFRASTRUCTURE rows in VIS:Table_SPM7_Feasibility:p043 (Medium/Low ••/•; Medium/High ••/•; Medium/High •••/••)."
+  },
+  {
+    "query_id": "adv_dev_04",
+    "passed": false,
+    "reason": "Missed diagonal green stripes on Animal and livestock health and productivity and miscounted its dot level as 2 dots instead of 1 dot (Low confidence) on full-page 200-DPI VIS:Figure_SPM1:p023."
+  },
+  {
+    "query_id": "adv_dev_05",
+    "passed": true,
+    "reason": "Verified Emissions -> Climate -> Impacts/Risks, Mitigation Policy, Adaptation Policy, and all 5 SSP curves in VIS:CrossBox2_Diagram:p081."
+  },
+  {
+    "query_id": "adv_dev_06",
+    "passed": true,
+    "reason": "Verified '>3 million years ago' annotation and panel (b) 1-in-6-year drought 1850-1900 SD definition in VIS:Figure_3_1:p086."
+  },
+  {
+    "query_id": "adv_dev_07",
+    "passed": true,
+    "reason": "Verified CO2 410 ppm, CH4 1866 ppb, N2O 332 ppb, and +1.1°C warming from VIS:Figure_2_1:p059."
+  },
+  {
+    "query_id": "adv_dev_08",
+    "passed": true,
+    "reason": "Verified total emissions 38/42/53/59 GtCO2-eq and Eastern Asia shares 13%/16%/24%/27% from VIS:Figure_2_2_charts:p061."
+  },
+  {
+    "query_id": "adv_dev_09",
+    "passed": true,
+    "reason": "Verified USD 55-148/MWh band, $2020/MWh vs $2020/kWh units, and panel (b) GW/EV scales from VIS:Figure_2_4:p070."
+  },
+  {
+    "query_id": "adv_dev_10",
+    "passed": true,
+    "reason": "Verified C1 net zero CO2 (~2050-2055) vs GHG (~2095-2100, 'not all scenarios reach net zero GHG by 2100') and C3 CO2 (~2070-2075) vs GHG median >2100 using VIS:Figure_3_6:p102 and VIS:Table_3_1:p100."
+  },
+  {
+    "query_id": "adv_dev_11",
+    "passed": false,
+    "reason": "Abstained because pack_multimodal_context(budget=7000) dropped 3445-char VIS:Table_Fig2_2d:p061 alongside 5328-char VIS:Figure_2_2_charts:p061."
+  },
+  {
+    "query_id": "adv_dev_12",
+    "passed": true,
+    "reason": "Joined VIS:Table_2_2:p074 and VIS:Figure_2_5:p075 accurately including all 2030 projections, % changes, and BOTH 19-26 (unconditional) and 16-23 (conditional) GtCO2-eq/yr gaps."
+  },
+  {
+    "query_id": "adv_dev_13",
+    "passed": true,
+    "reason": "Combined Section 3.3.1 (0.27-0.63C, 0.45C, 500 GtCO2 [300-600]) and Figure 3.5a comparison via text chunks [ADV_TXT:p098:c01,c02,p099:c01,p036:c01]."
+  },
+  {
+    "query_id": "adv_dev_14",
+    "passed": true,
+    "reason": "Verbatim match for 0.20 [0.15 to 0.25] m total and 1.3/1.9/3.7 mm yr-1 rates in [ADV_TXT:p021:c03]."
+  },
+  {
+    "query_id": "adv_dev_15",
+    "passed": true,
+    "reason": "Verbatim match (85%, 55%, 85%, >20%, up to 60%) in [ADV_TXT:p069:c02,c05,c06]."
+  },
+  {
+    "query_id": "adv_dev_16",
+    "passed": true,
+    "reason": "Exact values (>=170 countries, ~60% water adaptation, 5.9 GtCO2-eq yr-1) in [ADV_TXT:p071:c01,c02]."
+  },
+  {
+    "query_id": "adv_dev_17",
+    "passed": true,
+    "reason": "Named all four SRM approaches and all three conclusions in [ADV_TXT:p088:c03,c04]."
+  },
+  {
+    "query_id": "adv_dev_18",
+    "passed": true,
+    "reason": "Correctly abstained on 2022/2023 emissions inventory."
+  },
+  {
+    "query_id": "adv_dev_19",
+    "passed": false,
+    "reason": "Identified 'not assessed' and 'Cost not allocated' in VIS:Figure_4_4:p119, but submitted status='answered' instead of complying with unanswerable abstention rule (sufficient_evidence=false)."
+  },
+  {
+    "query_id": "adv_dev_20",
+    "passed": true,
+    "reason": "Correctly abstained on absent COP27 Loss and Damage Fund pledge."
+  }
+]
