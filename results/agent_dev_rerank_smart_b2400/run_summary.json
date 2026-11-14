@@ -1,0 +1,22 @@
+{
+  "config": "rerank_smart_b2400",
+  "split": "dev",
+  "spec": {
+    "retriever": "rerank",
+    "context_mode": "smart",
+    "budget": 2400,
+    "top_k": 3,
+    "max_searches": 4
+  },
+  "model": "gemini-3.8-flash",
+  "cases": 19,
+  "answered": 17,
+  "abstain": 2,
+  "errors": 0,
+  "avg_search_calls": 1.89,
+  "total_agent_tokens": 75138,
+  "total_embed_calls": 36,
+  "rerank_tokens": 71268,
+  "total_seconds": 403.17,
+  "median_case_ms": 12891.74
+}

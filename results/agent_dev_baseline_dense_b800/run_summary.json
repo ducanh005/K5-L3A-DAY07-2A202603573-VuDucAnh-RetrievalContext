@@ -1,0 +1,22 @@
+{
+  "config": "baseline_dense_b800",
+  "split": "dev",
+  "spec": {
+    "retriever": "dense",
+    "context_mode": "starter",
+    "budget": 800,
+    "top_k": 3,
+    "max_searches": 4
+  },
+  "model": "gemini-3.8-flash",
+  "cases": 19,
+  "answered": 6,
+  "abstain": 13,
+  "errors": 0,
+  "avg_search_calls": 3.05,
+  "total_agent_tokens": 73952,
+  "total_embed_calls": 58,
+  "rerank_tokens": 0,
+  "total_seconds": 272.46,
+  "median_case_ms": 15760.27
+}

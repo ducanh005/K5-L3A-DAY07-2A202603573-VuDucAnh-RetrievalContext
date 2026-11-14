@@ -1,0 +1,116 @@
+[
+  {
+    "query_id": "q01",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly defines AI system including varying levels of autonomy; supported verbatim by [B:nist-ai-100-1:p006:c02]."
+  },
+  {
+    "query_id": "q02",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Accurately states both risk components (negative impact/magnitude of harm and likelihood of occurrence) from [B:nist-ai-100-1:p009:c02]."
+  },
+  {
+    "query_id": "q03",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Accurately states measurement inability does not imply high or low risk; supported verbatim by [B:nist-ai-100-1:p010:c01]."
+  },
+  {
+    "query_id": "q04",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers No and cites unresolved risk tolerance caveat from [B:nist-ai-100-1:p012:c02]."
+  },
+  {
+    "query_id": "q05",
+    "answer_grade": 2,
+    "citation_support": [true, true],
+    "reason": "Lists all 7 characteristics and context-of-use balancing from [p017:c01], plus tradeoff details from [p018:c04]; both citations verify every claim."
+  },
+  {
+    "query_id": "q06",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Accurately states unanticipated-use robustness goal and minimizing harm to people from [B:nist-ai-100-1:p019:c02]."
+  },
+  {
+    "query_id": "q07",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers No and notes difficulty assessing opaque evolving systems from [B:nist-ai-100-1:p021:c01]."
+  },
+  {
+    "query_id": "q08",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly distinguishes what happened, how, and why/meaning across the 3 characteristics from [B:nist-ai-100-1:p022:c01]."
+  },
+  {
+    "query_id": "q09",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly names systemic, computational/statistical, and human-cognitive biases and notes no discriminatory intent/prejudice is needed from [p023:c01]."
+  },
+  {
+    "query_id": "q10",
+    "answer_grade": 1,
+    "citation_support": [true],
+    "reason": "Accurately states data can change unexpectedly over time with valid citation [p006:c03], but 4th search evicted [p043:c02], omitting Appendix B details on non-representative data, missing ground truth, and stale context."
+  },
+  {
+    "query_id": "q11",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers No, spans fully autonomous to manual, and cites video compression example from [B:nist-ai-100-1:p045:c02]."
+  },
+  {
+    "query_id": "q12",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Accurately states risks/trustworthiness characteristics that will not or cannot be measured must be properly documented from [B:nist-ai-100-1:p034:c01]."
+  },
+  {
+    "query_id": "q13",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Lists all 6 MANAGE 4.1 post-deployment monitoring mechanisms verbatim from [B:nist-ai-100-1:p038:c01]."
+  },
+  {
+    "query_id": "q14",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly explains statistical training-data approximation and next-token prediction yielding accurate or inconsistent outputs from [p010:c02]."
+  },
+  {
+    "query_id": "q15",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers No and explains inference reduction vs training/tuning impacts from [B:nist-ai-600-1:p012:c02]."
+  },
+  {
+    "query_id": "q16",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Accurately explains over-reliance on synthetic data causing disappearing data points and amplified homogenization from [p013:c01]."
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly captures balancing digital content transparency (origin/history of training & generated data) with proprietary training approaches from [p018:c01]."
+  },
+  {
+    "query_id": "u_dev_01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Correctly abstained after 4 hybrid searches confirming no statutory administrative fines exist in NIST AI RMF."
+  },
+  {
+    "query_id": "u_dev_02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Correctly abstained after 4 hybrid searches confirming no mandatory MMLU/SWE-bench accuracy cutoff exists."
+  }
+]

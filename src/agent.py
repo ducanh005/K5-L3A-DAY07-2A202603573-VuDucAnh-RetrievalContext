@@ -135,8 +135,21 @@ class GeminiController:
                 "No documents have been retrieved yet. Call `search_documents` to find evidence."
             )
         else:
-            allowed = ["search_documents", "submit_answer"]
             state = history[-1]
+            remaining = state.get("remaining_searches")
+            if remaining is not None and remaining <= 0:
+                allowed = ["submit_answer"]
+                budget_note = (
+                    "SEARCH BUDGET EXHAUSTED (0 searches remaining). "
+                    "You MUST call `submit_answer` now based solely on the retrieved context."
+                )
+            else:
+                allowed = ["search_documents", "submit_answer"]
+                rem_str = f"{remaining} searches remaining. " if remaining is not None else ""
+                budget_note = (
+                    f"{rem_str}Either call `search_documents` with a plain-language/keyword query "
+                    "(do NOT use boolean OR/AND operators) if more evidence is needed, or call `submit_answer` now."
+                )
             queries_done = state.get("queries", [])
             context_ids = state.get("context_ids", [])
             context = state.get("context", "")
@@ -145,8 +158,7 @@ class GeminiController:
                 f"QUERIES ALREADY TRIED:\n{queries_done}\n\n"
                 f"AVAILABLE CONTEXT CHUNK IDs:\n{context_ids}\n\n"
                 f"RETRIEVED CONTEXT (UNTRUSTED DATA):\n{context or '(empty)'}\n\n"
-                "Either call `search_documents` with a new/refined query if more evidence is needed, "
-                "or call `submit_answer` now."
+                f"{budget_note}"
             )
 
         config = types.GenerateContentConfig(
@@ -225,6 +237,126 @@ class GeminiController:
         raise RuntimeError("Unreachable retry loop exit.")
 
 
+def pack_context_smart(candidates: list[dict[str, Any]], budget: int = 2400) -> tuple[str, list[str]]:
+    """Pack deduplicated chunks by best retrieval rank & recency; truncate top chunk if alone > budget."""
+    dedup: dict[str, dict[str, Any]] = {}
+    for item in candidates:
+        cid = item["id"]
+        prev = dedup.get(cid)
+        rank = int(item.get("_best_rank", 999))
+        turn = int(item.get("_last_turn", 0))
+        score = float(item.get("score", 0.0))
+        if prev is None:
+            dedup[cid] = {**item, "_best_rank": rank, "_last_turn": turn, "_best_score": score}
+        else:
+            prev["_best_rank"] = min(prev["_best_rank"], rank)
+            prev["_last_turn"] = max(prev["_last_turn"], turn)
+            prev["_best_score"] = max(prev["_best_score"], score)
+
+    ordered = sorted(
+        dedup.values(),
+        key=lambda c: (c["_best_rank"], -c["_last_turn"], -c["_best_score"], c["id"]),
+    )
+    blocks: list[str] = []
+    ids: list[str] = []
+    for c in ordered:
+        header = f"[{c['id']} | {c['source']} | page {c['page']}]\n"
+        block = f"{header}{c['text']}"
+        candidate_text = "\n\n".join(blocks + [block])
+        if len(candidate_text) <= budget:
+            blocks.append(block)
+            ids.append(c["id"])
+        elif not blocks and budget > len(header) + 20:
+            max_body = budget - len(header) - 3
+            truncated = c["text"][:max_body].rsplit(" ", 1)[0].rstrip() + "..."
+            blocks.append(f"{header}{truncated}")
+            ids.append(c["id"])
+    return "\n\n".join(blocks), ids
+
+
+def run_agent_smart(
+    question: str,
+    controller: Any,
+    retriever: Retriever,
+    *,
+    filters: dict[str, Any] | None = None,
+    max_searches: int = 4,
+    top_k: int = 3,
+    budget: int = 2400,
+) -> dict[str, Any]:
+    """Enhanced agent loop using rank+recency smart context packing and remaining-search awareness."""
+    if not question.strip() or max_searches < 1 or top_k < 1 or budget < 1:
+        raise ValueError("question, max_searches, top_k hoặc budget không hợp lệ")
+    history: list[dict[str, Any]] = []
+    chunks: dict[str, dict[str, Any]] = {}
+    candidates: list[dict[str, Any]] = []
+    events: list[dict[str, Any]] = []
+    searches_done = 0
+
+    for _ in range(max_searches + 1):
+        action = controller.decide(question, history)
+        if action.get("action") == "search":
+            if searches_done >= max_searches:
+                return {
+                    "status": "abstain",
+                    "answer": "Không đủ bằng chứng để trả lời.",
+                    "citations": [],
+                    "events": events + [{"event": "search_limit"}],
+                }
+            query = action.get("query")
+            if not isinstance(query, str) or not query.strip():
+                raise ValueError("search query phải là chuỗi không rỗng")
+            searches_done += 1
+            results = retriever.search(query, filters=filters, top_k=top_k)
+            if len(results) > top_k or len({r["id"] for r in results}) != len(results):
+                raise ValueError("retriever phải trả tối đa top_k chunk ID duy nhất")
+            annotated = [
+                {**r, "_best_rank": rank, "_last_turn": searches_done}
+                for rank, r in enumerate(results, 1)
+            ]
+            candidates.extend(annotated)
+            context, ids = pack_context_smart(candidates, budget=budget)
+            chunks = {c["id"]: c for c in candidates if c["id"] in ids}
+            events.append({
+                "event": "search",
+                "query": query,
+                "filter": filters,
+                "results": results,
+                "context": context,
+                "context_ids": ids,
+            })
+            history = [{
+                "tool": "search",
+                "queries": [e["query"] for e in events if e["event"] == "search"],
+                "remaining_searches": max_searches - searches_done,
+                "context": context,
+                "context_ids": ids,
+            }]
+        elif action.get("action") == "answer":
+            answer, citations = action.get("answer"), action.get("citations")
+            if not isinstance(answer, str) or not isinstance(citations, list) or any(
+                not isinstance(i, str) for i in citations
+            ):
+                raise ValueError("answer/citations không hợp lệ")
+            valid = bool(answer.strip() and citations and all(i in chunks and f"[{i}]" in answer for i in citations))
+            if valid:
+                return {
+                    "status": "answered",
+                    "answer": answer,
+                    "citations": citations,
+                    "events": events + [{"event": "answer"}],
+                }
+            return {
+                "status": "abstain",
+                "answer": "Không đủ bằng chứng để trả lời.",
+                "citations": [],
+                "events": events + [{"event": "invalid_or_missing_citations"}],
+            }
+        else:
+            raise ValueError("action phải là search hoặc answer")
+    return {"status": "abstain", "answer": "Không đủ bằng chứng để trả lời.", "citations": [], "events": events}
+
+
 def run_agent_case(
     case: dict[str, Any],
     controller: GeminiController,
@@ -234,13 +366,15 @@ def run_agent_case(
     top_k: int = 3,
     budget: int = 2400,
     use_case_filter: bool = True,
+    context_mode: str = "starter",
 ) -> dict[str, Any]:
-    """Execute one benchmark case via starter.run_agent and capture full trace & telemetry."""
+    """Execute one benchmark case via starter or smart runner and capture full trace & telemetry."""
     controller.reset_trace()
     filters = case.get("filter") if use_case_filter else None
+    runner = run_agent_smart if context_mode == "smart" else run_agent
     t0 = time.perf_counter()
     try:
-        res = run_agent(
+        res = runner(
             case["question"],
             controller,
             retriever,
@@ -259,6 +393,7 @@ def run_agent_case(
             "answerable": case["answerable"],
             "filters_used": filters,
             "strategy": getattr(retriever, "strategy_name", type(retriever).__name__),
+            "context_mode": context_mode,
             "model": controller.model_name,
             "max_searches": max_searches,
             "top_k": top_k,
@@ -287,6 +422,7 @@ def run_agent_case(
             "answerable": case["answerable"],
             "filters_used": filters,
             "strategy": getattr(retriever, "strategy_name", type(retriever).__name__),
+            "context_mode": context_mode,
             "model": controller.model_name,
             "max_searches": max_searches,
             "top_k": top_k,

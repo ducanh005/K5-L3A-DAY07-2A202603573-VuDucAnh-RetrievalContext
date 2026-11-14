@@ -1,0 +1,116 @@
+[
+  {
+    "query_id": "q01",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly defines AI system including varying levels of autonomy; fully supported verbatim by [B:nist-ai-100-1:p006:c02]."
+  },
+  {
+    "query_id": "q02",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches (gold chunk skipped by budget=800 or missed)."
+  },
+  {
+    "query_id": "q03",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "q04",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers No and cites unresolved risk tolerance condition verbatim from [B:nist-ai-100-1:p012:c02]."
+  },
+  {
+    "query_id": "q05",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "q06",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers robustness goal and minimizing harm to people; fully supported by [B:nist-ai-100-1:p019:c02]."
+  },
+  {
+    "query_id": "q07",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "q08",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly distinguishes what/how/why across transparency, explainability, and interpretability from [B:nist-ai-100-1:p022:c01]."
+  },
+  {
+    "query_id": "q09",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "q10",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "q11",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly answers No with human-AI configuration spectrum and video compression example from [B:nist-ai-100-1:p045:c02]."
+  },
+  {
+    "query_id": "q12",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches (gold chunk skipped due to FIFO + budget=800)."
+  },
+  {
+    "query_id": "q13",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "q14",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "reason": "Correctly explains statistical training distribution and next-token prediction yielding accurate or inconsistent outputs from [B:nist-ai-600-1:p010:c02]."
+  },
+  {
+    "query_id": "q15",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "q16",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "False abstention on answerable question after 4 searches."
+  },
+  {
+    "query_id": "u_dev_01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Correctly abstained with 'Khong du bang chung de tra loi' when statutory fines are absent from NIST AI RMF."
+  },
+  {
+    "query_id": "u_dev_02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Correctly abstained when no mandatory MMLU/SWE-bench accuracy cutoff exists in the corpus."
+  }
+]

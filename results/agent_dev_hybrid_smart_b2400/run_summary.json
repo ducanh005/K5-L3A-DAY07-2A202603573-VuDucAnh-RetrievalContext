@@ -1,0 +1,22 @@
+{
+  "config": "hybrid_smart_b2400",
+  "split": "dev",
+  "spec": {
+    "retriever": "hybrid",
+    "context_mode": "smart",
+    "budget": 2400,
+    "top_k": 3,
+    "max_searches": 4
+  },
+  "model": "gemini-3.8-flash",
+  "cases": 19,
+  "answered": 17,
+  "abstain": 2,
+  "errors": 0,
+  "avg_search_calls": 1.79,
+  "total_agent_tokens": 73742,
+  "total_embed_calls": 34,
+  "rerank_tokens": 0,
+  "total_seconds": 270.21,
+  "median_case_ms": 9693.54
+}
